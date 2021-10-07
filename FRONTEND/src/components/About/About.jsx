@@ -19,9 +19,6 @@ export default function About() {
             {/* The Text Description Section */}
             <h1>Lorem Ipsum</h1>
             <p className="head-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            
-            {/* Image Rendering */}
-            <img src={''} alt="" />
 
             {/* Card Section */}
             <CardGroup>
