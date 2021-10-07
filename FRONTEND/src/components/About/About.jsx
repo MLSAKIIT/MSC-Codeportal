@@ -1,18 +1,29 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
+//Importing Images
 import img1 from './Images/Code1.svg';
 import img2 from './Images/Sheets.svg';
 import img3 from './Images/Learn.svg';
+
+//Importing CSS
+import './CSS/About.css';
 
 import { Card, CardGroup } from 'react-bootstrap';
 
 export default function About() {
     return (
         <div className="App">
+
+            {/* The Text Description Section */}
             <h1>Lorem Ipsum</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p className="head-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            
+            {/* Image Rendering */}
             <img src={''} alt="" />
+
+            {/* Card Section */}
             <CardGroup>
             <Card>
                 <Card.Img src={img1}/>

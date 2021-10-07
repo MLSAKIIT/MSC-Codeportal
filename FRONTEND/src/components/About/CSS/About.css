@@ -1,0 +1,30 @@
+h1{
+    text-align:left;
+    position: absolute;
+    width: 1135px;
+    height: 36px;
+    left: 100px;
+/* top: 156px; */
+
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #203A61;
+}
+.head-desc{
+    text-align: left;
+    margin-left: 100px;
+    padding-top:50px;
+    position:flex;
+    width:70%;
+    
+
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #203A61;
+}
