@@ -22,25 +22,25 @@ export default function About() {
 
             {/* Card Section */}
             <CardGroup>
-            <Card>
-                <Card.Img src={img1}/>
+            <Card className="card card-1">
+                <Card.Img className="Image img1" src={img1}/>
                 <Card.Body>
-                    <Card.Title>Lorem Ipsum</Card.Title>
-                    <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc hendrerit neque nec urna lobortis.</Card.Text>
+                    <Card.Title className="card-title">Lorem Ipsum</Card.Title>
+                    <Card.Text className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc hendrerit neque nec urna lobortis.</Card.Text>
                 </Card.Body>
             </Card>
-            <Card>
-                <Card.Img src={img2}/>
+            <Card className="card card-2">
+                <Card.Img className="Image img2" src={img2}/>
                 <Card.Body>
-                    <Card.Title>Lorem Ipsum</Card.Title>
-                    <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc hendrerit neque nec urna lobortis.</Card.Text>
+                    <Card.Title className="card-title">Lorem Ipsum</Card.Title>
+                    <Card.Text className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc hendrerit neque nec urna lobortis.</Card.Text>
                 </Card.Body>
             </Card>
-            <Card>
-                <Card.Img src={img3}/>
+            <Card className="card card-3">
+                <Card.Img className="Image img3" src={img3}/>
                 <Card.Body>
-                    <Card.Title>Lorem Ipsum</Card.Title>
-                    <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc hendrerit neque nec urna lobortis.</Card.Text>
+                    <Card.Title className="card-title">Lorem Ipsum</Card.Title>
+                    <Card.Text className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc hendrerit neque nec urna lobortis.</Card.Text>
                 </Card.Body>
             </Card>
             </CardGroup>
