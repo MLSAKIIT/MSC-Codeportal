@@ -26,23 +26,23 @@ That is where Codeportal comes in. Complete with its own online compiler, user r
 
 Sounds interesting? Well, it is 🔥
 
-🚀 Installation
+## 🚀 Installation
 
 1. Open gitbash.
 2. Clone the project by running the command in gitbash given below :
-    git clone [repo-url]
+    `git clone [repo-url]`
    Copy the link from github repo for repo-url. 
 3. Run : 
-    npm install
+    `npm install`
 4. After installation.
    Run : 
-    npm start  
+    `npm start`
 
 ## Dependencies👨‍💻
 
-react 
-react-bootstrap
-sawo
+react  
+react-bootstrap  
+sawo  
 
 
 ## 🛑 Contributors
