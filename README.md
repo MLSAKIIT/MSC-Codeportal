@@ -29,21 +29,21 @@ Sounds interesting? Well, it is 🔥
 
 ## 🛑 Contributors
 
-# Mentors 🍀
-Medhavi Basera
-Arnab Chatterjee
-Shreya Dhir
-Akash Chouhan
+### Mentors 🍀
+Medhavi Basera <br>
+Arnab Chatterjee <br>
+Shreya Dhir <br>
+Akash Chouhan <br>
 
-# Members 🐛
-Pratyay Saha
-Spandan Chakravarty
-Shashikant Shah
-Ankit Srivastava
+### Members 🐛
+Pratyay Saha  <br>
+Spandan Chakravarty  <br>
+Shashikant Shah  <br>
+Ankit Srivastava  <br>
 
-# Learners 🌱
-Aditya Srivastav
-Siddhanta Banerjee
-Ashish Kumar Mishra
-Shreyansh Rai
-Soham Dutta
+### Learners 🌱
+Aditya Srivastav  <br>
+Siddhanta Banerjee  <br>
+Ashish Kumar Mishra  <br>
+Shreyansh Rai  <br>
+Soham Dutta  <br>
