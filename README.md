@@ -1,3 +1,11 @@
+<img src="./FRONTEND/public/msccodeportal.png" />
+
+[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-black-magic.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+
+
 ## 💥 Introduction
 >	Are you falling behind in DSA and struggling with Binary Search Trees? Don’t worry, we’ve got you covered.
 
