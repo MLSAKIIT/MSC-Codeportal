@@ -16,7 +16,6 @@
   font-weight: bold;
   font-size: 36px;
   line-height: 59px;
-  /* margin-left: 6%; */
   color: #FFFFFF;
 }
 
@@ -26,8 +25,6 @@
   font-weight: normal;
   font-size: 20px;
   line-height: 36px;
-  /* identical to box height */
-  /* margin-left: 6%; */
 
   color: #FFFFFF;
 }
@@ -48,4 +45,67 @@
   font-size: 14px;
   line-height: 27px;
   color: #FFFFFF;
+}
+
+.navText{
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 59px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  /* Dark Blue Primary */
+  
+  color: #203A61;
+}
+.login-heading{
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  /* Dark Blue Primary */
+
+  color: #203A61;
+}
+
+.loginSpacing{
+  margin: auto 7% !important;
+  padding: 3%;
+}
+
+.login-body{
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  /* Dark Blue Primary */
+
+  color: #203A61;
+}
+
+.formSpace{
+  margin-bottom: 5%;
+}
+
+::placeholder{
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+
+  color: #C4C4C4;
 }
