@@ -26,6 +26,11 @@ That is where Codeportal comes in. Complete with its own online compiler, user r
 
 Sounds interesting? Well, it is 🔥
 
+# Dependencies👨‍💻
+
+react
+react-bootstrap
+sawo
 
 ## 🛑 Contributors
 
