@@ -18,7 +18,7 @@ Things we’ve to offer to you:
 The only website you’ll ever require to master DSA. 
 
 
-## 💡 Why did we build it?
+## 💡 Why did we build it ?
 
 Two major problems that students face who want to improve and sharpen their skills, practice questions are a good place to keep everything in an organized manner and keep track of their progress.
 
