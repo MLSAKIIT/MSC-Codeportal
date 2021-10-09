@@ -38,6 +38,12 @@ Sounds interesting? Well, it is 🔥
    Run : 
     npm start  
 
+## Dependencies👨‍💻
+
+react 
+react-bootstrap
+sawo
+
 
 ## 🛑 Contributors
 
