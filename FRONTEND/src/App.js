@@ -1,12 +1,14 @@
 // import logo from './logo.svg';
 import './App.css';
 import About from './components/About/About';
+import Landing from './components/Landing/Landing';
 
 function App() {
   return (
     <div>
-      <img src={'/src/components/Images/Code1.svg'} alt="" />
-      <About/>
+      
+      {/* <About/> */}
+      <Landing/>
     </div>
     
   );
