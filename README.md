@@ -26,3 +26,24 @@ That is where Codeportal comes in. Complete with its own online compiler, user r
 
 Sounds interesting? Well, it is 🔥
 
+
+## 🛑 Contributors
+
+# Mentors 🍀
+Medhavi Basera
+Arnab Chatterjee
+Shreya Dhir
+Akash Chouhan
+
+# Members 🐛
+Pratyay Saha
+Spandan Chakravarty
+Shashikant Shah
+Ankit Srivastava
+
+# Learners 🌱
+Aditya Srivastav
+Siddhanta Banerjee
+Ashish Kumar Mishra
+Shreyansh Rai
+Soham Dutta
