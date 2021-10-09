@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+#features{
+  /* Dark Blue Primary */
+  padding: 6%;
+  background: #203A61;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.featureSpacing{
+  margin-bottom: 10%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heading-one{
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 59px;
+  color: #FFFFFF;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.body-one{
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+
+  color: #FFFFFF;
+}
+
+.inner-heading{
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+
+.inner-body{
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.navText{
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 59px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  
+  /* Dark Blue Primary */
+  
+  color: #203A61;
+}
+.login-heading{
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  /* Dark Blue Primary */
+
+  color: #203A61;
 }
 
-.App-link {
-  color: #61dafb;
+.loginSpacing{
+  margin: auto 7% !important;
+  padding: 3%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-body{
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  /* Dark Blue Primary */
+
+  color: #203A61;
+}
+
+.formSpace{
+  margin-bottom: 5%;
+}
+
+::placeholder{
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+
+  color: #C4C4C4;
 }
