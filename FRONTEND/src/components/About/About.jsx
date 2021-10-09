@@ -14,7 +14,7 @@ import { Card, CardGroup } from 'react-bootstrap';
 
 export default function About() {
     return (
-        <div className="App">
+        <div id="App">
 
             {/* The Text Description Section */}
             <h1>Lorem Ipsum</h1>
