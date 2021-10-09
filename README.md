@@ -26,6 +26,18 @@ That is where Codeportal comes in. Complete with its own online compiler, user r
 
 Sounds interesting? Well, it is 🔥
 
+🚀 Installation
+
+1. Open gitbash.
+2. Clone the project by running the command in gitbash given below :
+    git clone [repo-url]
+   Copy the link from github repo for repo-url. 
+3. Run : 
+    npm install
+4. After installation.
+   Run : 
+    npm start  
+
 
 ## 🛑 Contributors
 
