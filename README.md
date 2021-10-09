@@ -3,7 +3,7 @@
 
 While DSA is important for coding, not everyone can master it easily, it takes time, effort, and a lot of practice. That’s why <b>Codeportal</b> might be a great source for you to learn and follow as a self-paced course. You can practice questions from it whenever you want, wherever you want. 
 
-This program is tailored in such a way that it’ll be easy for everyone to follow along and practice DSA.
+This platform is tailored in such a way that it’ll be easy for everyone to follow along and practice DSA.
 
 Things we’ve to offer to you:
 
