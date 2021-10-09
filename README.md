@@ -1,4 +1,4 @@
-## Introduction
+## 💥 Introduction
 >	Are you falling behind in DSA and struggling with Binary Search Trees? Don’t worry, we’ve got you covered.
 
 While DSA is important for coding, not everyone can master it easily, it takes time, effort, and a lot of practice. That’s why <b>Codeportal</b> might be a great source for you to learn and follow as a self-paced course. You can practice questions from it whenever you want, wherever you want. 
