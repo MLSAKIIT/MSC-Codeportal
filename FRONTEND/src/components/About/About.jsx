@@ -10,14 +10,15 @@ import img3 from './Images/Learn.svg';
 //Importing CSS
 import './CSS/About.css';
 
-import { Card, CardGroup } from 'react-bootstrap';
+import { Card, CardGroup, Container } from 'react-bootstrap';
 
 export default function About() {
     return (
-        <div id="App">
+        <div className="About">
 
+            <Container>
             {/* The Text Description Section */}
-            <h1>Lorem Ipsum</h1>
+            <h1 className="header-about">Lorem Ipsum</h1>
             <p className="head-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
             {/* Card Section */}
@@ -45,7 +46,7 @@ export default function About() {
             </Card>
             </CardGroup>
             
-
+            </Container>
         </div>
     )
 }

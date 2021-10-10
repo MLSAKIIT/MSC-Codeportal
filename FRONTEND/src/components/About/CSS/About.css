@@ -1,10 +1,6 @@
-h1{
+
+.header-about{
     text-align:left;
-    position: absolute;
-    width: 1135px;
-    height: 36px;
-    left: 100px;
-/* top: 156px; */
 
     font-family: 'Space Mono', monospace;
     font-style: normal;
@@ -15,8 +11,7 @@ h1{
 }
 .head-desc{
     text-align: left;
-    margin-left: 100px;
-    padding-top:50px;
+    padding-top:10px;
     position:flex;
     width:70%;
     
@@ -36,19 +31,7 @@ h1{
     box-shadow: 0px 0px 10px rgba(32, 58, 97, 0.25);
     border-radius: 10px !important;
 
-    /* margin: 3rem 5% !important; */
-}
-
-.card-1{
-    margin:3rem 0% 3rem 126px !important;
-}
-
-.card-2{
-    margin:3rem 5% !important;
-}
-
-.card-3{
-    margin:3rem 126px 3rem 0% !important;
+    margin: 0 2rem !important;
 }
 
 .Image{
@@ -71,15 +54,9 @@ h1{
     margin-top: 22px !important;
 }
 
-@media (max-width:575px) {
+@media only screen and (max-width:575px) {
     h1{
         text-align:left;
-        position: absolute;
-        width: 1135px;
-        height: 36px;
-        left: 30px;
-    /* top: 156px; */
-    
         font-family: 'Space Mono', monospace;
         font-style: normal;
         font-weight: bold;
@@ -90,18 +67,10 @@ h1{
     .card{
         box-shadow: 0px 0px 10px rgba(32, 58, 97, 0.25);
         border-radius: 10px !important;
-        width:500px;
-    
-        margin: 3rem 30% !important;
+
     }
     .head-desc{
         text-align: left;
-        margin-left: 30px;
-        padding-top:60px;
-        position:flex;
-        width:100%;
-        
-    
         font-family: 'Space Mono', monospace;
         font-style: normal;
         font-weight: normal;
