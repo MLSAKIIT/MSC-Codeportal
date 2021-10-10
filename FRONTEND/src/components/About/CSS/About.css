@@ -1,4 +1,6 @@
-
+.About{
+    padding: 10vh 0;
+}
 .header-about{
     text-align:left;
 
@@ -54,8 +56,19 @@
     margin-top: 22px !important;
 }
 
+@media only screen and (max-width: 991px) {
+    .group-card{
+    display:flex !important;
+    flex-flow: column wrap !important;
+    }
+    .card{
+        margin: 2rem 0 !important;
+    }
+}
+
+
 @media only screen and (max-width:575px) {
-    h1{
+    .header-about{
         text-align:left;
         font-family: 'Space Mono', monospace;
         font-style: normal;
@@ -67,7 +80,7 @@
     .card{
         box-shadow: 0px 0px 10px rgba(32, 58, 97, 0.25);
         border-radius: 10px !important;
-
+        margin: 2rem 1rem !important;
     }
     .head-desc{
         text-align: left;

@@ -22,22 +22,22 @@ export default function About() {
             <p className="head-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
             {/* Card Section */}
-            <CardGroup>
-            <Card className="card card-1">
+            <CardGroup className="group-card">
+            <Card>
                 <Card.Img className="Image img1" src={img1}/>
                 <Card.Body>
                     <Card.Title className="card-title">Lorem Ipsum</Card.Title>
                     <Card.Text className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc hendrerit neque nec urna lobortis.</Card.Text>
                 </Card.Body>
             </Card>
-            <Card className="card card-2">
+            <Card>
                 <Card.Img className="Image img2" src={img2}/>
                 <Card.Body>
                     <Card.Title className="card-title">Lorem Ipsum</Card.Title>
                     <Card.Text className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc hendrerit neque nec urna lobortis.</Card.Text>
                 </Card.Body>
             </Card>
-            <Card className="card card-3">
+            <Card>
                 <Card.Img className="Image img3" src={img3}/>
                 <Card.Body>
                     <Card.Title className="card-title">Lorem Ipsum</Card.Title>
