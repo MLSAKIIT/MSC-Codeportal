@@ -1,7 +1,10 @@
-.Landing{
+.Landing-desc{
     background: #203A61 !important;
+    padding: 4rem 0;
 }
 
+
+/* NavBar Styling Here */
 .color-nav{
     background-color: #203A61 !important;
 }
@@ -27,3 +30,20 @@
 
     color:white !important;
 }
+
+
+
+
+/* Description Styling here */
+
+.desc-text{
+    font-family: 'Space Mono', monospace;
+    font-size: 36px;
+    color: white;
+    /* margin: 2rem; */
+}
+
+.land-button {
+    margin:2rem 1rem 2rem 1rem;
+}
+

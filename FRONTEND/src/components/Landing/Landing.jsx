@@ -15,7 +15,7 @@ export default function Features()  {
         return (
             <div>
 
-                {/* NavBar of The Landing Pag */}
+                {/* NavBar of The Landing Page */}
 
                 <div className="Landing-NavBar">
                     <Navbar className="color-nav" collapseOnSelect expand="lg" variant="light">
@@ -34,8 +34,18 @@ export default function Features()  {
                     </Navbar>
                 </div>
 
-                <div>
-
+                <div className="Landing-desc">
+                    <Container>
+                        <Row>
+                            <Col md={{span: 5, order: 'last'}} className="mx-auto my-auto">
+                                <Code2SVG width="80%"/>
+                            </Col>
+                            <Col md={{span: 7, order: 'first'}} className="mx-auto my-auto">
+                                <span className="desc-text">Your one stop online portal to code, practice and learn from zero to expert.</span>
+                                <Button size="lg" variant="primary" className="btn-xs-block w-75 p-3 land-button">Get started</Button>
+                            </Col>
+                        </Row>
+                    </Container>
                 </div>
             </div>
         )
