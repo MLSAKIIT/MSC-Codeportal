@@ -46,7 +46,7 @@ Sounds interesting? Well, it is 🔥
    Run : 
     `npm start`
 
-## Dependencies👨‍💻
+## 👨‍💻 Dependencies
 
 react  
 react-bootstrap  
