@@ -1,13 +1,17 @@
+// import logo from './logo.svg';
 import './App.css';
-import Features from './components/Features/Features';
-import Login from './components/Login Page/Login';
+import About from './components/About/About';
+import Landing from './components/Landing/Landing';
 
 function App() {
   return (
     <div>
-      <Login />
-      <Features />
+      
+      
+      <Landing/>
+      <About/>
     </div>
+    
   );
 }
 

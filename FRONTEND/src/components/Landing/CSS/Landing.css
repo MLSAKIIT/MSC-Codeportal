@@ -1,0 +1,49 @@
+.Landing-desc{
+    background: #203A61 !important;
+    padding: 4rem 0;
+}
+
+
+/* NavBar Styling Here */
+.color-nav{
+    background-color: #203A61 !important;
+}
+
+
+
+.nav-brand{
+    font-family: Space Mono;
+    font-weight:bold !important;
+    color:white !important;
+}
+
+.navText{
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+
+    color:white !important;
+}
+
+
+
+
+/* Description Styling here */
+
+.desc-text{
+    font-family: 'Space Mono', monospace;
+    font-size: 36px;
+    color: white;
+    /* margin: 2rem; */
+}
+
+.land-button {
+    margin:2rem 1rem 2rem 1rem;
+}
+
