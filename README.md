@@ -64,7 +64,6 @@ Akash Chouhan <br>
 ### Members 🐛
 Pratyay Saha  <br>
 Spandan Chakravarty  <br>
-Shashikant Shah  <br>
 Ankit Srivastava  <br>
 
 ### Learners 🌱
