@@ -1,0 +1,94 @@
+.About{
+    margin: 30vh 0;
+}
+.header-about{
+    text-align:left;
+
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #203A61;
+}
+.head-desc{
+    text-align: left;
+    padding-top:10px;
+    position:flex;
+    width:70%;
+    
+
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #203A61;
+}
+
+/* Class properties */
+
+/* Cards */
+.card{
+    box-shadow: 0px 0px 10px rgba(32, 58, 97, 0.25);
+    border-radius: 10px !important;
+
+    margin: 0 2rem !important;
+}
+
+.Image{
+    padding: 15% 20%;
+
+}
+
+.card-title {
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #203A61;
+}
+
+.card-text {
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+
+    margin-top: 22px !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .group-card{
+    display:flex !important;
+    flex-flow: column wrap !important;
+    }
+    .card{
+        margin: 2rem 0 !important;
+    }
+}
+
+
+@media only screen and (max-width:575px) {
+    .header-about{
+        text-align:left;
+        font-family: 'Space Mono', monospace;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 36px;
+        color: #203A61;
+    }
+    .card{
+        box-shadow: 0px 0px 10px rgba(32, 58, 97, 0.25);
+        border-radius: 10px !important;
+        margin: 2rem 1rem !important;
+    }
+    .head-desc{
+        text-align: left;
+        font-family: 'Space Mono', monospace;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 36px;
+        color: #203A61;
+    }
+}
