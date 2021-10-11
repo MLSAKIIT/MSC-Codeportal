@@ -9,7 +9,10 @@
     background-color: #203A61 !important;
 }
 
-
+.navbar-toggler {
+    background-color: rgba(255,255,255,0.3);
+    border: 1px solid white;
+}
 
 .nav-brand{
     font-family: Space Mono;
