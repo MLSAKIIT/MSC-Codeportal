@@ -1,9 +1,11 @@
 .About{
-    margin: 30vh 0;
+    height: 100vh;
+    background-image: url("../About/Images/waves.png");
+    background-size: 100% 100%;
 }
+
 .header-about{
     text-align:left;
-
     font-family: 'Space Mono', monospace;
     font-style: normal;
     font-weight: bold;
@@ -16,14 +18,18 @@
     padding-top:10px;
     position:flex;
     width:70%;
-    
-
     font-family: 'Space Mono', monospace;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 36px;
     color: #203A61;
+}
+
+.about-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Class properties */
@@ -64,10 +70,15 @@
     .card{
         margin: 2rem 0 !important;
     }
+
+    .About {
+        margin: 3rem 0;
+        height: unset;
+    }
 }
 
-
 @media only screen and (max-width:575px) {
+
     .header-about{
         text-align:left;
         font-family: 'Space Mono', monospace;
