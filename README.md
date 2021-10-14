@@ -1,4 +1,4 @@
-<img src="./FRONTEND/public/msccodeportal.png" />
+<img src="https://user-images.githubusercontent.com/60937304/137291442-d8525b50-40c7-42a7-a1ac-8765be955214.png" />
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
