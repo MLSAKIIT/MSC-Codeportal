@@ -14,7 +14,7 @@ import { Card, CardGroup, Container } from 'react-bootstrap';
 
 export default function About() {
     return (
-        <div className="About about-cont">
+        <div id="about" className="About about-cont">
 
             <Container>
                 {/* The Text Description Section */}

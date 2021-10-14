@@ -70,14 +70,15 @@
     .card{
         margin: 2rem 0 !important;
     }
-}
 
-
-@media only screen and (max-width:575px) {
     .About {
         margin: 3rem 0;
         height: unset;
     }
+}
+
+@media only screen and (max-width:575px) {
+
     .header-about{
         text-align:left;
         font-family: 'Space Mono', monospace;

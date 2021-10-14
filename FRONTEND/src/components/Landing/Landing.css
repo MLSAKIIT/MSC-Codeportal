@@ -4,36 +4,6 @@
     background-size: 100% 100%;
     height: 100vh;
 }
-
-
-/* NavBar Styling Here */
-.color-nav{
-    background-color: rgba(32, 58, 97, 0.5) !important;
-    /* box-shadow: 2px 2px black; */
-    height: 5rem !important;
-}
-
-.nav_logo {
-    width: 35%;
-}
-
-.navText{
-    font-family: Space Mono;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 59px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-
-    color:white !important;
-}
-
-
-
-
 /* Description Styling here */
 
 .desc-text{
