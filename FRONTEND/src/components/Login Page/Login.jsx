@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Sawo from 'sawo'
 import { Navbar, Container, Nav, Button, Row, Col, Form } from "react-bootstrap";
 import { ReactComponent as LoginSVG } from './Login.svg';
-import env from "react-dotenv";
+// import env from "react-dotenv";
 
 import '../Login Page/Login.css'
 
