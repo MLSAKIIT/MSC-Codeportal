@@ -1,0 +1,29 @@
+
+/* NavBar Styling Here */
+.color-nav{
+    background-color: rgba(32, 58, 97, 0.5) !important;
+    height: 5rem !important;
+}
+
+.nav_logo {
+    width: 8rem;
+    height: 100%;
+}
+.navText{
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color:white !important;
+}
+
+@media only screen and (max-width: 768px)
+{
+    .nav_logo {
+        width: 5rem;
+    }
+}
