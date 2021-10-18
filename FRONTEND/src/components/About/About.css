@@ -1,5 +1,5 @@
 .About{
-    height: 100vh;
+    height: 150vh;
     background-image: url("../About/Images/waves.png");
     background-size: 100% 100%;
 }
@@ -75,7 +75,7 @@
     flex-flow: column wrap !important;
     }
     .card{
-        margin: 2rem 0 !important;
+        margin: 2rem 7rem !important;
     }
 
     .About {

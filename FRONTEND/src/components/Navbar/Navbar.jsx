@@ -12,7 +12,7 @@ export default function NavBar() {
                 <Navbar className="color-nav" collapseOnSelect expand="lg" variant="light" fixed="top">
                     <Container>
                         <Navbar.Brand href="/#home">
-                            <img src={qode_white} className="d-inline-block align-top nav_logo" />
+                            <img src={qode_white} className="d-inline-block align-top nav_logo" alt="QCode Logo"/>
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
