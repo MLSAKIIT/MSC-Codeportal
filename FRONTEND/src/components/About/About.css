@@ -32,7 +32,7 @@
     justify-content: center;
 }
 
-/* Class properties */
+
 
 /* Cards */
 .card{
@@ -44,6 +44,7 @@
 
 .Image{
     padding: 15% 20%;
+    height: 200px !important;
 
 }
 
@@ -53,16 +54,23 @@
     font-weight: bold;
     font-size: 24px;
     color: #203A61;
+    margin-bottom: 0px;
+
+    text-align: center;
 }
 
 .card-text {
     font-family: 'Space Mono', monospace;
     font-size: 18px;
 
+    text-align:center;
+
     margin-top: 22px !important;
 }
 
-@media only screen and (max-width: 991px) {
+
+/* Media Queries */
+@media only screen and (max-width: 992px) {
     .group-card{
     display:flex !important;
     flex-flow: column wrap !important;
