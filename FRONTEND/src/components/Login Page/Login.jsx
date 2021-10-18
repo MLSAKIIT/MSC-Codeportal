@@ -35,11 +35,11 @@ const Login = () => {
         <div className="d-flex vh-100">
             <Container fluid="md" className="loginSpacing d-flex justify-content-center">
                 <Row>
-                    <Col md={{ span: 6, order: 'last' }} className="mx-auto my-auto login-col">
+                    <Col md={{ span: 6, order: 'last' }} className="mx-auto my-auto">
                         <LoginSVG width="90%" />
                         <span className="login-body">Lorem ipsum dolor sit amet, dolor consectetur adipiscing elit.</span>
                     </Col>
-                    <Col md={{ span: 6, order: 'first' }} className="mx-auto my-auto login-col-1">
+                    <Col md={{ span: 6, order: 'first' }} className="mx-auto my-auto">
                         <p className="login-heading">Sign In</p>
                         {!isUserLoggedIn ? (
                             <div id="sawo-container" className="sawo-cont"></div>
