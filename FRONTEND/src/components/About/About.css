@@ -44,7 +44,6 @@
 
 .Image{
     padding: 15% 20%;
-    height: 200px !important;
 
 }
 
@@ -82,6 +81,12 @@
     .About {
         margin: 3rem 0;
         height: unset;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .Image{
+        height: 200px !important;
     }
 }
 
