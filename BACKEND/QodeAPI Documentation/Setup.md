@@ -1,4 +1,5 @@
-# Setup in your Dev Environment For Qode
+# Setup your Dev Environment For Qode
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://github.com/MSCKIIT/MSC-Codeportal)
 
 ### Installations
 
@@ -23,4 +24,3 @@
 - Run Qode Server
   - `npm run start`
 
----
