@@ -18,7 +18,7 @@
     margin:2rem 0;
     font-family: 'Space Mono', monospace;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: normal;
 }
 
 @media only screen and (max-width: 768px)
