@@ -33,7 +33,7 @@ export default function Landing() {
                      <Row>
                         <Col className="des-p">
                            <div className="des-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu mauris maximus, porttitor mi nec.</div>
-                           <Button variant="primary" size="lg">Start Practicing</Button>{' '}
+                           <Button variant="primary" size="lg" href="/dashboard-sheet">Start Practicing</Button>{' '}
                         </Col>
                      </Row>
                 </Col>

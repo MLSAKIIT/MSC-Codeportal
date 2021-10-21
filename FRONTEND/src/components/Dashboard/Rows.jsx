@@ -12,7 +12,7 @@ export default function Rows() {
   return (
     <tr className="rows-bg">
       <td>
-        <Checkbox {...label} defaultChecked />
+        <Checkbox {...label}  />
       </td>
       <td>
         <Checkbox

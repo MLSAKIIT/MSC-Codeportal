@@ -1,22 +1,18 @@
 .cols
 {
-    /* background-color: blueviolet; */
     /* height:100vh; */
     padding-bottom: 30px;
 }
 .rows
 {
-    /* background-color: yellow; */
     padding-top: 100px ;
 }
 .rows1
 {
-    /* background-color: yellow; */
     padding-top: 100px ;
 }
 .rows2
 {
-    /* background-color: red; */
     padding-top: 100px ;
 }
 .greet
@@ -27,7 +23,6 @@
 }
 .image
 {
-    /* background-color: aqua; */
     display:flex;
     justify-content: center;
     /* align-items: center; */
@@ -39,7 +34,6 @@
     flex-direction: column;
     justify-content: center;
     font-family: 'Space Mono', monospace;
-    /* background-color: blue; */
 }
 .des-text
 {
