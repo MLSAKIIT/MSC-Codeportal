@@ -18,7 +18,8 @@
     "express-validator": "^6.13.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.11",
-    "mongoose-unique-validator": "^3.0.0"
+    "mongoose-unique-validator": "^3.0.0",
+    "node-fetch": "^2.6.5"
   },
   "devDependencies": {
     "nodemon": "^2.0.13"
