@@ -5,7 +5,8 @@ import Features from './components/Features/Features';
 import Landing from './components/Landing/Landing';
 import Navbar from './components/Navbar/Navbar';
 import Login from './components/Login Page/Login';
-
+import Dashboard from "./components/Dashboard/Landing"
+import QuestionList from './components/Dashboard/QuestionList';
 import {
   BrowserRouter as Router,
   Switch,
@@ -26,6 +27,12 @@ function App() {
           </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/dashboard-1">
+            <Dashboard />
+          </Route>
+          <Route path="/questions">
+            <QuestionList/>
           </Route>
         </div>
       </Switch>
