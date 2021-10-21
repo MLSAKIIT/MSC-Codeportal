@@ -1,0 +1,48 @@
+.question-list {
+  /* background-color: aqua; */
+  min-height: 100vh;
+}
+.topic {
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+.ques-progress {
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+  text-align: center;
+  height: auto;
+  font-style: italic;
+  padding: 20px 0px;
+}
+.Ques-Table {
+  font-family: "Space Mono", monospace;
+  /* background-color: #fff !important; */
+}
+
+.table-head {
+  color: #0078d4;
+  text-align: center;
+}
+.table-head-1 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: darkgray;
+}
+.bookmark {
+  color: #f9ab00;
+}
+.bookmark:hover {
+  color: #f9ab00 !important;
+}
+.rows-bg {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+.solved {
+  background-color: green !important;
+}

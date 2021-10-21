@@ -1,0 +1,44 @@
+.cols
+{
+    /* height:100vh; */
+    padding-bottom: 30px;
+}
+.rows
+{
+    padding-top: 100px ;
+}
+.rows1
+{
+    padding-top: 100px ;
+}
+.rows2
+{
+    padding-top: 100px ;
+}
+.greet
+{
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    font-weight: 600;
+}
+.image
+{
+    display:flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 240px;
+}
+.des-p
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Space Mono', monospace;
+}
+.des-text
+{
+    text-align: center;
+    padding: 30px 0px;
+    font-size: 20px;
+
+}

@@ -65,7 +65,7 @@ const DashboardQ = () => {
                                             <Card.Subtitle className="sheet-subtitle mb-4 text-muted">{cardsSubtitle}</Card.Subtitle>
                                             <ProgressBar className="mb-2" now={progress} variant={guess} label={`${progress}%`} />
                                             <div className="d-flex justify-content-end">
-                                                <Button className="h3 border-0 mx-2 my-2 font-weight-medium" variant={guessBtn}><strong>{btnText}</strong></Button>
+                                                <Button className="h3 border-0 mx-2 my-2 font-weight-medium" variant={guessBtn} href="/questions"><strong>{btnText}</strong></Button>
                                             </div>
                                         </Card.Body>
                                     </Card>
