@@ -5,6 +5,8 @@ import Features from './components/Features/Features';
 import Landing from './components/Landing/Landing';
 import Navbar from './components/Navbar/Navbar';
 import Login from './components/Login Page/Login';
+import DashboardQ from './components/Dashboard/DashboardQ';
+import DashboardSheet from './components/Dashboard/DashboardSheet';
 
 import {
   BrowserRouter as Router,
@@ -26,6 +28,12 @@ function App() {
           </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/dashboard">
+            <DashboardQ />
+          </Route>
+          <Route path="/dashboard-sheet">
+          <DashboardSheet />
           </Route>
         </div>
       </Switch>
