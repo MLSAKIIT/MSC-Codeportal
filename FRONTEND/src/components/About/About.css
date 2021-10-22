@@ -1,12 +1,6 @@
-<<<<<<< HEAD
 .About{
     height: 120vh;
     background-image: url("../About/Images/waves.png");
-=======
-.About {
-    height: 100vh;
-    background-image: url("../About/Images/waves1.png");
->>>>>>> d30f36eabaf5ea52e690aaa2ae48062d696269f9
     background-size: 100% 100%;
 }
 
@@ -86,14 +80,8 @@
         display: flex !important;
         flex-flow: column wrap !important;
     }
-<<<<<<< HEAD
     .card{
         margin: 2rem 7rem !important;
-=======
-
-    .card {
-        margin: 2rem 0 !important;
->>>>>>> d30f36eabaf5ea52e690aaa2ae48062d696269f9
     }
 
     .About {
