@@ -9,7 +9,7 @@ export default function NavBar() {
     return (
         <div>
             <div className="Landing-NavBar">
-                <Navbar className="color-nav" collapseOnSelect expand="lg" variant="light" fixed="top">
+                <Navbar className="color-nav" collapseOnSelect expand="lg" variant="light" sticky="top">
                     <Container>
                         <Navbar.Brand href="/#home">
                             <img src={qode_white} className="d-inline-block align-top nav_logo" alt="QCode Logo"/>
