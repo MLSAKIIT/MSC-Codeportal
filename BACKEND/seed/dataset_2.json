@@ -1,0 +1,2546 @@
+[
+    {
+        "question_id": 1,
+        "problem_statement": "Two sum",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/two-sum/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 2,
+        "problem_statement": "Best Time to Buy and Sell Stock",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 3,
+        "problem_statement": "Merge Sorted Array",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/merge-sorted-array/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 4,
+        "problem_statement": "Move Zeroes",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/move-zeroes/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 5,
+        "problem_statement": "Best Time to Buy and Sell Stock II",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 6,
+        "problem_statement": "Running Sum of 1d Array",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/running-sum-of-1d-array/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 7,
+        "problem_statement": "Find Pivot Index",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/find-pivot-index/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 8,
+        "problem_statement": "Majority Element",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/majority-element/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 9,
+        "problem_statement": "Fibonacci Number",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/fibonacci-number/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 10,
+        "problem_statement": "Squares of a Sorted Array",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/squares-of-a-sorted-array/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 11,
+        "problem_statement": "Pascal's Triangle",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/pascals-triangle/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 12,
+        "problem_statement": "Remove Duplicates from Sorted Array",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 13,
+        "problem_statement": "Merge Intervals",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/merge-intervals/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 14,
+        "problem_statement": "3Sum",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/3sum/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 15,
+        "problem_statement": "Product of Array Except Self",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/product-of-array-except-self/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 16,
+        "problem_statement": "Insert Delete GetRandom O(1)",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/insert-delete-getrandom-o1/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 17,
+        "problem_statement": "Subarray Sum Equals K",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/subarray-sum-equals-k/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 18,
+        "problem_statement": "Next Permutation",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/next-permutation/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 19,
+        "problem_statement": "Spiral Matrix",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/spiral-matrix/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 20,
+        "problem_statement": "Container With Most Water",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/container-with-most-water/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 21,
+        "problem_statement": "Rotate Image",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/rotate-image/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 22,
+        "problem_statement": "Word Search",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/word-search/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 23,
+        "problem_statement": "3Sum Closest",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/3sum-closest/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 24,
+        "problem_statement": "Game of Life",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/game-of-life/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 25,
+        "problem_statement": "Pairs of Songs With Total Durations Divisible by 60",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 26,
+        "problem_statement": "4Sum",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/4sum/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 27,
+        "problem_statement": "Find the Duplicate Number",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/find-the-duplicate-number/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 28,
+        "problem_statement": "Combination Sum",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/combination-sum/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 29,
+        "problem_statement": "Jump Game II",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/jump-game-ii/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 30,
+        "problem_statement": "Maximum Points You Can Obtain from Cards",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 31,
+        "problem_statement": "Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 32,
+        "problem_statement": "Max Area of Island",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/max-area-of-island/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 33,
+        "problem_statement": "Find All Duplicates in an Array",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/find-all-duplicates-in-an-array/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 34,
+        "problem_statement": "K-diff Pairs in an Array",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/k-diff-pairs-in-an-array/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 35,
+        "problem_statement": "Subsets",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/subsets/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 36,
+        "problem_statement": "Invalid Transactions",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/invalid-transactions/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 37,
+        "problem_statement": "Jump Game",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/jump-game/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 38,
+        "problem_statement": "Subarray Sums Divisible by K",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/subarray-sums-divisible-by-k/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 39,
+        "problem_statement": "First Missing Positive",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/first-missing-positive/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 40,
+        "problem_statement": "Largest Rectangle in Histogram",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/largest-rectangle-in-histogram/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 41,
+        "problem_statement": "Insert Delete GetRandom O(1) - Duplicates allowed",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 42,
+        "problem_statement": "Best Time to Buy and Sell Stock III",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 43,
+        "problem_statement": "Max Value of Equation",
+        "topic": "ARRAY",
+        "link": "https://leetcode.com/problems/max-value-of-equation/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 44,
+        "problem_statement": "Maximum Subarray",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/maximum-subarray/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 45,
+        "problem_statement": "Climbing Stairs",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/climbing-stairs",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 46,
+        "problem_statement": "Divisor Game",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/divisor-game/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 47,
+        "problem_statement": "Counting Bits",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/counting-bits/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 48,
+        "problem_statement": "Decode Ways",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/decode-ways/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 49,
+        "problem_statement": "Word Break",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/word-break/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 50,
+        "problem_statement": "Delete and Earn",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/delete-and-earn/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 51,
+        "problem_statement": "Maximal Square",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/maximal-square/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 52,
+        "problem_statement": "Coin Change",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/coin-change/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 53,
+        "problem_statement": "Maximum Product Subarray",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/maximum-product-subarray/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 54,
+        "problem_statement": "Maximum Length of Repeated Subarray",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/maximum-length-of-repeated-subarray/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 55,
+        "problem_statement": "Palindromic Substrings",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/palindromic-substrings/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 56,
+        "problem_statement": "House Robber",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/house-robber/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 57,
+        "problem_statement": "Continuous Subarray Sum",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/continuous-subarray-sum/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 58,
+        "problem_statement": "Knight Dialer",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/knight-dialer/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 59,
+        "problem_statement": "Longest Increasing Subsequence",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/longest-increasing-subsequence/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 60,
+        "problem_statement": "Unique Paths",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/unique-paths/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 61,
+        "problem_statement": "Count Square Submatrices with All Ones",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/count-square-submatrices-with-all-ones/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 62,
+        "problem_statement": "Range Sum Query 2D - Immutable",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/range-sum-query-2d-immutable/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 63,
+        "problem_statement": "Longest Arithmetic Subsequence",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/longest-arithmetic-subsequence/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 64,
+        "problem_statement": "Trapping Rain Water",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/trapping-rain-water/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 65,
+        "problem_statement": "Word Break II",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/word-break-ii/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 66,
+        "problem_statement": "Regular Expression Matching",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/regular-expression-matching/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 67,
+        "problem_statement": "Maximal Rectangle",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/maximal-rectangle/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 68,
+        "problem_statement": "Longest Valid Parentheses",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/longest-valid-parentheses/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 69,
+        "problem_statement": "Edit Distance",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/edit-distance/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 70,
+        "problem_statement": "Minimum Difficulty of a Job Schedule",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 71,
+        "problem_statement": "Frog Jump",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/frog-jump/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 72,
+        "problem_statement": "Best Time to Buy and Sell Stock IV",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 73,
+        "problem_statement": "Burst Balloons",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/burst-balloons/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 74,
+        "problem_statement": "Minimum Cost to Merge Stones",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/minimum-cost-to-merge-stones/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 75,
+        "problem_statement": "Minimum Insertion Steps to Make a String Palindrome",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 76,
+        "problem_statement": "Super Egg Drop",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/super-egg-drop/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 77,
+        "problem_statement": "Count Different Palindromic Subsequences",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/count-different-palindromic-subsequences/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 78,
+        "problem_statement": "Minimum Cost to Cut a Stick",
+        "topic": "DYNAMIC PROGRAMING",
+        "link": "https://leetcode.com/problems/minimum-cost-to-cut-a-stick/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 79,
+        "problem_statement": "Add Strings",
+        "topic": "STRINGS",
+        "link": "https://leetcode.com/problems/add-strings/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 80,
+        "problem_statement": "Longest Common Prefix",
+        "topic": "STRINGS",
+        "link": "https://leetcode.com/problems/longest-common-prefix/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 81,
+        "problem_statement": "Valid Palindrome II",
+        "topic": "STRINGS",
+        "link": "https://leetcode.com/problems/valid-palindrome-ii/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 82,
+        "problem_statement": "Roman to Integer",
+        "topic": "STRINGS",
+        "link": "https://leetcode.com/problems/roman-to-integer/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 83,
+        "problem_statement": "Implement strStr()",
+        "topic": "STRINGS",
+        "link": "https://leetcode.com/problems/implement-strstr/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 84,
+        "problem_statement": "Longest Substring Without Repeating Characters",
+        "topic": "STRINGS",
+        "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 85,
+        "problem_statement": "Minimum Remove to Make Valid Parentheses",
+        "topic": "STRINGS",
+        "link": "https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 86,
+        "problem_statement": "Longest Palindromic Substring",
+        "topic": "STRINGS",
+        "link": "https://leetcode.com/problems/longest-palindromic-substring/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 87,
+        "problem_statement": "Group Anagrams",
+        "topic": "STRINGS",
+        "link": "https://leetcode.com/problems/group-anagrams/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 88,
+        "problem_statement": "Generate Parentheses",
+        "topic": "STRINGS",
+        "link": "https://leetcode.com/problems/generate-parentheses/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 89,
+        "problem_statement": "Basic Calculator II",
+        "topic": "STRINGS",
+        "link": "https://leetcode.com/problems/basic-calculator-ii/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 90,
+        "problem_statement": "Integer to Roman",
+        "topic": "STRINGS",
+        "link": "https://leetcode.com/problems/integer-to-roman/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 91,
+        "problem_statement": "Reverse Words in a String",
+        "topic": "STRINGS",
+        "link": "https://leetcode.com/problems/reverse-words-in-a-string/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 92,
+        "problem_statement": "Simplify Path",
+        "topic": "STRINGS",
+        "link": "https://leetcode.com/problems/simplify-path/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 93,
+        "problem_statement": "ZigZag Conversion",
+        "topic": "STRINGS",
+        "link": "https://leetcode.com/problems/zigzag-conversion/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 94,
+        "problem_statement": "Text Justification",
+        "topic": "STRINGS",
+        "link": "https://leetcode.com/problems/text-justification/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 95,
+        "problem_statement": "Integer to English Words",
+        "topic": "STRINGS",
+        "link": "https://leetcode.com/problems/integer-to-english-words/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 96,
+        "problem_statement": "Minimum Window Substring",
+        "topic": "STRINGS",
+        "link": "https://leetcode.com/problems/minimum-window-substring/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 97,
+        "problem_statement": "Valid Number",
+        "topic": "STRINGS",
+        "link": "https://leetcode.com/problems/valid-number/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 98,
+        "problem_statement": "Distinct Subsequences",
+        "topic": "STRINGS",
+        "link": "https://leetcode.com/problems/distinct-subsequences/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 99,
+        "problem_statement": "Smallest Range Covering Elements from K Lists",
+        "topic": "STRINGS",
+        "link": "https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 100,
+        "problem_statement": "Substring with Concatenation of All Words",
+        "topic": "STRINGS",
+        "link": "https://leetcode.com/problems/substring-with-concatenation-of-all-words/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 101,
+        "problem_statement": "Reverse Integer",
+        "topic": "MATHS",
+        "link": "https://leetcode.com/problems/reverse-integer/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 102,
+        "problem_statement": "Add Binary",
+        "topic": "MATHS",
+        "link": "https://leetcode.com/problems/add-binary/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 103,
+        "problem_statement": "Palindrome Number",
+        "topic": "MATHS",
+        "link": "https://leetcode.com/problems/palindrome-number/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 104,
+        "problem_statement": "Minimum Moves to Equal Array Elements",
+        "topic": "MATHS",
+        "link": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 105,
+        "problem_statement": "Happy Number",
+        "topic": "MATHS",
+        "link": "https://leetcode.com/problems/happy-number/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 106,
+        "problem_statement": "Excel Sheet Column Title",
+        "topic": "MATHS",
+        "link": "https://leetcode.com/problems/excel-sheet-column-title/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 107,
+        "problem_statement": "Missing Number",
+        "topic": "MATHS",
+        "link": "https://leetcode.com/problems/missing-number/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 108,
+        "problem_statement": "Maximum Product of Three Numbers",
+        "topic": "MATHS",
+        "link": "https://leetcode.com/problems/maximum-product-of-three-numbers/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 109,
+        "problem_statement": "Power of Two",
+        "topic": "MATHS",
+        "link": "https://leetcode.com/problems/power-of-two/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 110,
+        "problem_statement": "Encode and Decode TinyURL",
+        "topic": "MATHS",
+        "link": "https://leetcode.com/problems/encode-and-decode-tinyurl/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 111,
+        "problem_statement": "String to Integer (atoi)",
+        "topic": "MATHS",
+        "link": "https://leetcode.com/problems/string-to-integer-atoi/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 112,
+        "problem_statement": "Multiply Strings",
+        "topic": "MATHS",
+        "link": "https://leetcode.com/problems/multiply-strings/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 113,
+        "problem_statement": "Angle Between Hands of a Clock",
+        "topic": "MATHS",
+        "link": "https://leetcode.com/problems/angle-between-hands-of-a-clock/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 114,
+        "problem_statement": "Integer Break",
+        "topic": "MATHS",
+        "link": "https://leetcode.com/problems/integer-break/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 115,
+        "problem_statement": "Valid Square",
+        "topic": "MATHS",
+        "link": "https://leetcode.com/problems/valid-square/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 116,
+        "problem_statement": "The kth Factor of n",
+        "topic": "MATHS",
+        "link": "https://leetcode.com/problems/the-kth-factor-of-n/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 117,
+        "problem_statement": "Basic Calculator",
+        "topic": "MATHS",
+        "link": "https://leetcode.com/problems/basic-calculator/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 118,
+        "problem_statement": "Max Points on a Line",
+        "topic": "MATHS",
+        "link": "https://leetcode.com/problems/max-points-on-a-line/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 119,
+        "problem_statement": "Permutation Sequence",
+        "topic": "MATHS",
+        "link": "https://leetcode.com/problems/permutation-sequence/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 120,
+        "problem_statement": "Number of Digit One",
+        "topic": "MATHS",
+        "link": "https://leetcode.com/problems/number-of-digit-one/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 121,
+        "problem_statement": "Task Scheduler",
+        "topic": "GREEDY ",
+        "link": "https://leetcode.com/problems/task-scheduler/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 122,
+        "problem_statement": "Gas Station",
+        "topic": "GREEDY ",
+        "link": "https://leetcode.com/problems/gas-station/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 123,
+        "problem_statement": "Minimum Deletion Cost to Avoid Repeating Letters",
+        "topic": "GREEDY ",
+        "link": "https://leetcode.com/problems/minimum-deletion-cost-to-avoid-repeating-letters/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 124,
+        "problem_statement": "Maximum Number of Events That Can Be Attended",
+        "topic": "GREEDY ",
+        "link": "https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 125,
+        "problem_statement": "Minimum Deletions to Make Character Frequencies",
+        "topic": "GREEDY ",
+        "link": "https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 126,
+        "problem_statement": "Remove K Digits",
+        "topic": "GREEDY ",
+        "link": "https://leetcode.com/problems/remove-k-digits/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 127,
+        "problem_statement": "Restore the Array From Adjacent Pairs",
+        "topic": "GREEDY ",
+        "link": "https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 128,
+        "problem_statement": "Non-overlapping Intervals",
+        "topic": "GREEDY ",
+        "link": "https://leetcode.com/problems/non-overlapping-intervals/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 129,
+        "problem_statement": "Candy",
+        "topic": "GREEDY ",
+        "link": "https://leetcode.com/problems/candy/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 130,
+        "problem_statement": "Minimum Number of Taps to Open to Water a Garden",
+        "topic": "GREEDY ",
+        "link": "https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 131,
+        "problem_statement": "Create Maximum Number",
+        "topic": "GREEDY ",
+        "link": "https://leetcode.com/problems/create-maximum-number/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 132,
+        "problem_statement": "Letter Combinations of a Phone Number",
+        "topic": "DFS",
+        "link": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 133,
+        "problem_statement": "Course Schedule II",
+        "topic": "DFS",
+        "link": "https://leetcode.com/problems/course-schedule-ii/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 134,
+        "problem_statement": "Decode String",
+        "topic": "DFS",
+        "link": "https://leetcode.com/problems/decode-string/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 135,
+        "problem_statement": "Number of Provinces",
+        "topic": "DFS",
+        "link": "https://leetcode.com/problems/number-of-provinces/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 136,
+        "problem_statement": "Clone Graph",
+        "topic": "DFS",
+        "link": "https://leetcode.com/problems/clone-graph/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 137,
+        "problem_statement": "Shortest Bridge",
+        "topic": "DFS",
+        "link": "https://leetcode.com/problems/shortest-bridge/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 138,
+        "problem_statement": "All Paths From Source to Target",
+        "topic": "DFS",
+        "link": "https://leetcode.com/problems/all-paths-from-source-to-target/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 139,
+        "problem_statement": "Surrounded Regions",
+        "topic": "DFS",
+        "link": "https://leetcode.com/problems/surrounded-regions//",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 140,
+        "problem_statement": "House Robber III",
+        "topic": "DFS",
+        "link": "https://leetcode.com/problems/house-robber-iii/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 141,
+        "problem_statement": "Critical Connections in a Network",
+        "topic": "DFS",
+        "link": "https://leetcode.com/problems/critical-connections-in-a-network/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 142,
+        "problem_statement": "Remove Invalid Parentheses",
+        "topic": "DFS",
+        "link": "https://leetcode.com/problems/remove-invalid-parentheses/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 143,
+        "problem_statement": "Longest Increasing Path in a Matrix",
+        "topic": "DFS",
+        "link": "https://leetcode.com/problems/longest-increasing-path-in-a-matrix/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 144,
+        "problem_statement": "Concatenated Words",
+        "topic": "DFS",
+        "link": "https://leetcode.com/problems/concatenated-words/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 145,
+        "problem_statement": "Making A Large Island",
+        "topic": "DFS",
+        "link": "https://leetcode.com/problems/making-a-large-island/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 146,
+        "problem_statement": "Contain Virus",
+        "topic": "DFS",
+        "link": "https://leetcode.com/problems/contain-virus/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 147,
+        "problem_statement": "24 Game",
+        "topic": "DFS",
+        "link": "https://leetcode.com/problems/24-game/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 148,
+        "problem_statement": "Remove Boxes",
+        "topic": "DFS",
+        "link": "https://leetcode.com/problems/remove-boxes/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 149,
+        "problem_statement": "Diameter of Binary Tree",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/diameter-of-binary-tree/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 150,
+        "problem_statement": "Invert Binary Tree",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/invert-binary-tree/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 151,
+        "problem_statement": "Subtree of Another Tree",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/subtree-of-another-tree/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 152,
+        "problem_statement": "Range Sum of BST",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/range-sum-of-bst/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 153,
+        "problem_statement": "Symmetric Tree",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/symmetric-tree/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 154,
+        "problem_statement": "Convert Sorted Array to Binary Search Tree",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 155,
+        "problem_statement": "Merge Two Binary Trees",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/merge-two-binary-trees/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 156,
+        "problem_statement": "Maximum Depth of Binary Tree",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 157,
+        "problem_statement": "Binary Tree Paths",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/binary-tree-paths/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 158,
+        "problem_statement": "Same Tree",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/same-tree/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 159,
+        "problem_statement": "Lowest Common Ancestor of a Binary Search Tree",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 160,
+        "problem_statement": "Path Sum",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/path-sum/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 161,
+        "problem_statement": "Minimum Absolute Difference in BST",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/minimum-absolute-difference-in-bst/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 162,
+        "problem_statement": "Sum of Left Leaves",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/sum-of-left-leaves/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 163,
+        "problem_statement": "Balanced Binary Tree",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/balanced-binary-tree/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 164,
+        "problem_statement": "Binary Tree Inorder Traversal",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/binary-tree-inorder-traversal/   (USING STACK TOO)",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 165,
+        "problem_statement": "Count Good Nodes in Binary Tree",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/count-good-nodes-in-binary-tree/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 166,
+        "problem_statement": "Lowest Common Ancestor of a Binary Tree",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 167,
+        "problem_statement": "Binary Tree Right Side View",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/binary-tree-right-side-view/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 168,
+        "problem_statement": "All Nodes Distance K in Binary Tree",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 169,
+        "problem_statement": "Validate Binary Search Tree",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/validate-binary-search-tree/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 170,
+        "problem_statement": "Binary Tree Zigzag Level Order Traversal",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 171,
+        "problem_statement": "Binary Search Tree Iterator",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/binary-search-tree-iterator/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 172,
+        "problem_statement": "Binary Tree Level Order Traversal",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 173,
+        "problem_statement": "Path Sum III",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/path-sum-iii/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 174,
+        "problem_statement": "Construct Binary Tree from Preorder and Postorder Traversal",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 175,
+        "problem_statement": "Unique Binary Search Trees",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/unique-binary-search-trees/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 176,
+        "problem_statement": "Recover Binary Search Tree",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/recover-binary-search-tree/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 177,
+        "problem_statement": "Populating Next Right Pointers in Each Node",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/populating-next-right-pointers-in-each-node/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 178,
+        "problem_statement": "Flatten Binary Tree to Linked List",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/flatten-binary-tree-to-linked-list/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 179,
+        "problem_statement": "Maximum Width of Binary Tree",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/maximum-width-of-binary-tree/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 180,
+        "problem_statement": "Unique Binary Search Trees II",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/unique-binary-search-trees-ii/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 181,
+        "problem_statement": "Kth Smallest Element in a BST",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 182,
+        "problem_statement": "Redundant Connection",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/redundant-connection/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 183,
+        "problem_statement": "Serialize and Deserialize Binary Tree",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 184,
+        "problem_statement": "Binary Tree Maximum Path Sum",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 185,
+        "problem_statement": "Vertical Order Traversal of a Binary Tree",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 186,
+        "problem_statement": "Binary Tree Cameras",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/binary-tree-cameras/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 187,
+        "problem_statement": "Sum of Distances in Tree",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/sum-of-distances-in-tree/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 188,
+        "problem_statement": "Number Of Ways To Reconstruct A Tree",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/number-of-ways-to-reconstruct-a-tree/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 189,
+        "problem_statement": "Redundant Connection II",
+        "topic": "TREE",
+        "link": "https://leetcode.com/problems/redundant-connection-ii/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 190,
+        "problem_statement": "Verifying an Alien Dictionary",
+        "topic": "HASH TABLE",
+        "link": "https://leetcode.com/problems/verifying-an-alien-dictionary/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 191,
+        "problem_statement": "Design Hashmap",
+        "topic": "HASH TABLE",
+        "link": "https://leetcode.com/problems/design-hashmap/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 192,
+        "problem_statement": "Top K Frequent Elements",
+        "topic": "HASH TABLE",
+        "link": "https://leetcode.com/problems/top-k-frequent-elements/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 193,
+        "problem_statement": "Design Twitter",
+        "topic": "HASH TABLE",
+        "link": "https://leetcode.com/problems/design-twitter/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 194,
+        "problem_statement": "Square Root",
+        "topic": "BINARY SEARCH",
+        "link": "https://leetcode.com/problems/sqrtx/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 195,
+        "problem_statement": "Binary Search",
+        "topic": "BINARY SEARCH",
+        "link": "https://leetcode.com/problems/binary-search/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 196,
+        "problem_statement": "Count Negative Numbers in a Sorted Matrix",
+        "topic": "BINARY SEARCH",
+        "link": "https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 197,
+        "problem_statement": "Peak Index in a Mountain Array",
+        "topic": "BINARY SEARCH",
+        "link": "https://leetcode.com/problems/peak-index-in-a-mountain-array/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 198,
+        "problem_statement": "Time Based Key-Value Store",
+        "topic": "BINARY SEARCH",
+        "link": "https://leetcode.com/problems/time-based-key-value-store/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 199,
+        "problem_statement": "Search in rotated sorted array",
+        "topic": "BINARY SEARCH",
+        "link": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 200,
+        "problem_statement": "Pow(x,n)",
+        "topic": "BINARY SEARCH",
+        "link": "https://leetcode.com/problems/powx-n/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 201,
+        "problem_statement": "Find First and Last Position of Element in Sorted Array",
+        "topic": "BINARY SEARCH",
+        "link": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 202,
+        "problem_statement": "Find peak element",
+        "topic": "BINARY SEARCH",
+        "link": "https://leetcode.com/problems/find-peak-element/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 203,
+        "problem_statement": "Search a 2D matrix",
+        "topic": "BINARY SEARCH",
+        "link": "https://leetcode.com/problems/search-a-2d-matrix/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 204,
+        "problem_statement": "Divide two integers",
+        "topic": "BINARY SEARCH",
+        "link": "https://leetcode.com/problems/divide-two-integers/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 205,
+        "problem_statement": "Capacity To Ship Packages Within D Days",
+        "topic": "BINARY SEARCH",
+        "link": "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 206,
+        "problem_statement": "MInimum limit of balls in a bag",
+        "topic": "BINARY SEARCH",
+        "link": "https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 207,
+        "problem_statement": "Median of two sorted array",
+        "topic": "BINARY SEARCH",
+        "link": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 208,
+        "problem_statement": "Count of Smaller Numbers After Self",
+        "topic": "BINARY SEARCH",
+        "link": "https://leetcode.com/problems/count-of-smaller-numbers-after-self/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 209,
+        "problem_statement": "Max Sum of Rectangle No Larger Than K",
+        "topic": "BINARY SEARCH",
+        "link": "https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 210,
+        "problem_statement": "Split Array Largest sum",
+        "topic": "BINARY SEARCH",
+        "link": "https://leetcode.com/problems/split-array-largest-sum/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 211,
+        "problem_statement": "Shortest Subarray with Sum at Least K",
+        "topic": "BINARY SEARCH",
+        "link": "https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 212,
+        "problem_statement": "Number of Islands",
+        "topic": "BFS",
+        "link": "https://leetcode.com/problems/number-of-islands/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 213,
+        "problem_statement": "Rotting oranges",
+        "topic": "BFS",
+        "link": "https://leetcode.com/problems/rotting-oranges/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 214,
+        "problem_statement": "Snakes and Ladders",
+        "topic": "BFS",
+        "link": "https://leetcode.com/problems/snakes-and-ladders/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 215,
+        "problem_statement": "Is Graph Bipartite",
+        "topic": "BFS",
+        "link": "https://leetcode.com/problems/is-graph-bipartite/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 216,
+        "problem_statement": "Minimum Jumps to reach home",
+        "topic": "BFS",
+        "link": "https://leetcode.com/problems/minimum-jumps-to-reach-home/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 217,
+        "problem_statement": "Word Ladder",
+        "topic": "BFS",
+        "link": "https://leetcode.com/problems/word-ladder/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 218,
+        "problem_statement": "Word Ladder II",
+        "topic": "BFS",
+        "link": "https://leetcode.com/problems/word-ladder-ii/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 219,
+        "problem_statement": "Cut off trees for golf event",
+        "topic": "BFS",
+        "link": "https://leetcode.com/problems/cut-off-trees-for-golf-event/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 220,
+        "problem_statement": "Reachable Nodes In Subdivided Graph",
+        "topic": "BFS",
+        "link": "https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 221,
+        "problem_statement": "Partition Labels",
+        "topic": "TWO POINTER",
+        "link": "https://leetcode.com/problems/partition-labels/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 222,
+        "problem_statement": "Sort Colours",
+        "topic": "TWO POINTER",
+        "link": "https://leetcode.com/problems/sort-colors/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 223,
+        "problem_statement": "Longest repeating character replacement",
+        "topic": "TWO POINTER",
+        "link": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 224,
+        "problem_statement": "Maximum number of visible points",
+        "topic": "TWO POINTER",
+        "link": "https://leetcode.com/problems/maximum-number-of-visible-points/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 225,
+        "problem_statement": "Subarray with K different integers",
+        "topic": "TWO POINTER",
+        "link": "https://leetcode.com/problems/subarrays-with-k-different-integers/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 226,
+        "problem_statement": "Palindrome Partitioning",
+        "topic": "BACKTRACKING ",
+        "link": "https://leetcode.com/problems/palindrome-partitioning/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 227,
+        "problem_statement": "Combining sum II",
+        "topic": "BACKTRACKING ",
+        "link": "https://leetcode.com/problems/combination-sum-ii/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 228,
+        "problem_statement": "Combination",
+        "topic": "BACKTRACKING ",
+        "link": "https://leetcode.com/problems/combinations/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 229,
+        "problem_statement": "Permutation II",
+        "topic": "BACKTRACKING ",
+        "link": "https://leetcode.com/problems/permutations-ii/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 230,
+        "problem_statement": "Subset II",
+        "topic": "BACKTRACKING ",
+        "link": "https://leetcode.com/problems/subsets-ii/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 231,
+        "problem_statement": "Beautiful Arrangement",
+        "topic": "BACKTRACKING ",
+        "link": "https://leetcode.com/problems/beautiful-arrangement/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 232,
+        "problem_statement": " Subsets",
+        "topic": "BACKTRACKING ",
+        "link": "https://leetcode.com/problems/word-search-ii/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 233,
+        "problem_statement": "Sudoku Solver",
+        "topic": "BACKTRACKING ",
+        "link": "https://leetcode.com/problems/sudoku-solver/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 234,
+        "problem_statement": "N-Queens",
+        "topic": "BACKTRACKING ",
+        "link": "https://leetcode.com/problems/n-queens/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 235,
+        "problem_statement": "Unique Paths III",
+        "topic": "BACKTRACKING ",
+        "link": "https://leetcode.com/problems/unique-paths-iii/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 236,
+        "problem_statement": "Min Stack",
+        "topic": "STACK",
+        "link": "https://leetcode.com/problems/min-stack/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 237,
+        "problem_statement": "Next Greater Element I",
+        "topic": "STACK",
+        "link": "https://leetcode.com/problems/next-greater-element-i/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 238,
+        "problem_statement": "Backspace string compare",
+        "topic": "STACK",
+        "link": "https://leetcode.com/problems/backspace-string-compare/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 239,
+        "problem_statement": "Implement queue using stack",
+        "topic": "STACK",
+        "link": "https://leetcode.com/problems/implement-queue-using-stacks/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 240,
+        "problem_statement": "Implement stack using queue",
+        "topic": "STACK",
+        "link": "https://leetcode.com/problems/implement-stack-using-queues/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 241,
+        "problem_statement": "Remove stack using queue",
+        "topic": "STACK",
+        "link": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 242,
+        "problem_statement": "Daily temperatures",
+        "topic": "STACK",
+        "link": "https://leetcode.com/problems/daily-temperatures/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 243,
+        "problem_statement": "Flatten Nested List Iterator",
+        "topic": "STACK",
+        "link": "https://leetcode.com/problems/flatten-nested-list-iterator/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 244,
+        "problem_statement": "Online Stock Span",
+        "topic": "STACK",
+        "link": "https://leetcode.com/problems/online-stock-span/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 245,
+        "problem_statement": "Minimum Cost Tree From Leaf Values",
+        "topic": "STACK",
+        "link": "https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 246,
+        "problem_statement": "Sum of Subarray Minimums",
+        "topic": "STACK",
+        "link": "https://leetcode.com/problems/sum-of-subarray-minimums/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 247,
+        "problem_statement": "Evaluate Reverse Polish Notation",
+        "topic": "STACK",
+        "link": "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 248,
+        "problem_statement": "LRU Cache",
+        "topic": "DESIGN",
+        "link": "https://leetcode.com/problems/lru-cache/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 249,
+        "problem_statement": "Find Median from Data Stream",
+        "topic": "DESIGN",
+        "link": "https://leetcode.com/problems/find-median-from-data-stream/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 250,
+        "problem_statement": "Design Underground System",
+        "topic": "DESIGN",
+        "link": "https://leetcode.com/problems/design-underground-system/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 251,
+        "problem_statement": "LFU Cache",
+        "topic": "DESIGN",
+        "link": "https://leetcode.com/problems/lfu-cache/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 252,
+        "problem_statement": "Tweet Counts Per Frequency\r",
+        "topic": "DESIGN",
+        "link": "https://leetcode.com/problems/tweet-counts-per-frequency/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 253,
+        "problem_statement": "All O`one Data Structure",
+        "topic": "DESIGN",
+        "link": "https://leetcode.com/problems/all-oone-data-structure/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 254,
+        "problem_statement": "Design Browser History",
+        "topic": "DESIGN",
+        "link": "https://leetcode.com/problems/design-browser-history/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 255,
+        "problem_statement": "Employee Importance",
+        "topic": "GRAPH",
+        "link": "https://leetcode.com/problems/employee-importance/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 256,
+        "problem_statement": "Find the Town Judge",
+        "topic": "GRAPH",
+        "link": "https://leetcode.com/problems/find-the-town-judge/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 257,
+        "problem_statement": "Evaluate Division",
+        "topic": "GRAPH",
+        "link": "https://leetcode.com/problems/evaluate-division/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 258,
+        "problem_statement": "Accounts Merge",
+        "topic": "GRAPH",
+        "link": "https://leetcode.com/problems/accounts-merge/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 259,
+        "problem_statement": "Network Delay Time",
+        "topic": "GRAPH",
+        "link": "https://leetcode.com/problems/network-delay-time/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 260,
+        "problem_statement": "Find Eventual Safe States",
+        "topic": "GRAPH",
+        "link": "https://leetcode.com/problems/find-eventual-safe-states/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 261,
+        "problem_statement": "Keys And Rooms",
+        "topic": "GRAPH",
+        "link": "https://leetcode.com/problems/keys-and-rooms/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 262,
+        "problem_statement": "Possible Bipartiton",
+        "topic": "GRAPH",
+        "link": "https://leetcode.com/problems/possible-bipartition/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 263,
+        "problem_statement": "Most Stones Removed with Same Row or Column",
+        "topic": "GRAPH",
+        "link": "https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 264,
+        "problem_statement": "Regions cut by slashes",
+        "topic": "GRAPH",
+        "link": "https://leetcode.com/problems/regions-cut-by-slashes/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 265,
+        "problem_statement": "Satisfiability of Equality Equations",
+        "topic": "GRAPH",
+        "link": "https://leetcode.com/problems/satisfiability-of-equality-equations/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 266,
+        "problem_statement": "As Far from Land as Possible",
+        "topic": "GRAPH",
+        "link": "https://leetcode.com/problems/as-far-from-land-as-possible/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 267,
+        "problem_statement": "Number of Closed Islands",
+        "topic": "GRAPH",
+        "link": "https://leetcode.com/problems/number-of-closed-islands/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 268,
+        "problem_statement": "Number of Operations to Make Network Connected",
+        "topic": "GRAPH",
+        "link": "https://leetcode.com/problems/number-of-operations-to-make-network-connected/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 269,
+        "problem_statement": "Find the City With the Smallest Number of Neighbors at a Threshold Distance",
+        "topic": "GRAPH",
+        "link": "https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 270,
+        "problem_statement": "Time Needed to Inform All Employees",
+        "topic": "GRAPH",
+        "link": "https://leetcode.com/problems/time-needed-to-inform-all-employees/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 271,
+        "problem_statement": "Delete Node in a Linked List",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/delete-node-in-a-linked-list/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 272,
+        "problem_statement": "Middle of the Linked List",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/middle-of-the-linked-list/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 273,
+        "problem_statement": "Convert Binary Number in a Linked List to Integer",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 274,
+        "problem_statement": " Design HashSet",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/design-hashset/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 275,
+        "problem_statement": "Design Hashmap",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/design-hashmap/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 276,
+        "problem_statement": "Reverse Linked List",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/reverse-linked-list/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 277,
+        "problem_statement": "Merge Two Sorted Lists",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/merge-two-sorted-lists/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 278,
+        "problem_statement": "Remove Duplicates from Sorted List",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/remove-duplicates-from-sorted-list/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 279,
+        "problem_statement": "Intersection of Two Linked Lists",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/intersection-of-two-linked-lists/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 280,
+        "problem_statement": "Linked List cycle",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/linked-list-cycle/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 281,
+        "problem_statement": "Palindrome Linked List",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/palindrome-linked-list/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 282,
+        "problem_statement": "Remove Linked List elements",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/remove-linked-list-elements/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 283,
+        "problem_statement": "Add two numbers",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/add-two-numbers/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 284,
+        "problem_statement": "Copy list with random pointer",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/copy-list-with-random-pointer/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 285,
+        "problem_statement": "Add two numbers II",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/add-two-numbers-ii/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 286,
+        "problem_statement": "Reverse Linked List ",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/reverse-linked-list-ii/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 287,
+        "problem_statement": "Recorder List",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/reorder-list/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 288,
+        "problem_statement": "Remove Nth Node From End of List",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 289,
+        "problem_statement": " Flatten a Multilevel Doubly Linked List",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 290,
+        "problem_statement": "Partition List",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/partition-list/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 291,
+        "problem_statement": "Remove Duplicates from Sorted List II",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 292,
+        "problem_statement": "Odd Even Linked List",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/odd-even-linked-list/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 293,
+        "problem_statement": "Sort List",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/sort-list/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 294,
+        "problem_statement": "Swap Nodes in Pairs",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/swap-nodes-in-pairs/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 295,
+        "problem_statement": "Rotate list",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/rotate-list/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 296,
+        "problem_statement": "Merge k Sorted Lists",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/merge-k-sorted-lists/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 297,
+        "problem_statement": "Reverse Nodes in k-Group",
+        "topic": "Linked List",
+        "link": "https://leetcode.com/problems/reverse-nodes-in-k-group/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 298,
+        "problem_statement": "K Closest Points to Origin",
+        "topic": "Heap",
+        "link": "https://leetcode.com/problems/k-closest-points-to-origin/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 299,
+        "problem_statement": "Kth Largest Element in an Array",
+        "topic": "Heap",
+        "link": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 300,
+        "problem_statement": "Reorganize string",
+        "topic": "Heap",
+        "link": "https://leetcode.com/problems/reorganize-string/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 301,
+        "problem_statement": "Furthest Building You Can Reach",
+        "topic": "Heap",
+        "link": "https://leetcode.com/problems/furthest-building-you-can-reach/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 302,
+        "problem_statement": " Kth Smallest Element in a Sorted Matrix",
+        "topic": "Heap",
+        "link": "https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 303,
+        "problem_statement": "Cheapest Flights Within K Stops",
+        "topic": "Heap",
+        "link": "https://leetcode.com/problems/cheapest-flights-within-k-stops/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 304,
+        "problem_statement": "Find the Most Competitive Subsequence",
+        "topic": "Heap",
+        "link": "https://leetcode.com/problems/find-the-most-competitive-subsequence/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 305,
+        "problem_statement": "Ugly Number II",
+        "topic": "Heap",
+        "link": "https://leetcode.com/problems/ugly-number-ii/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 306,
+        "problem_statement": "Merge k Sorted Lists",
+        "topic": "Heap",
+        "link": "https://leetcode.com/problems/merge-k-sorted-lists/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 307,
+        "problem_statement": "Sliding Window Maximum",
+        "topic": "Heap",
+        "link": "https://leetcode.com/problems/sliding-window-maximum/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 308,
+        "problem_statement": "The Skyline Problem",
+        "topic": "Heap",
+        "link": "https://leetcode.com/problems/the-skyline-problem/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 309,
+        "problem_statement": "Trapping Rain Water II",
+        "topic": "Heap",
+        "link": "https://leetcode.com/problems/trapping-rain-water-ii/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 310,
+        "problem_statement": "Minimum Number of Refueling Stops",
+        "topic": "Heap",
+        "link": "https://leetcode.com/problems/minimum-number-of-refueling-stops/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 311,
+        "problem_statement": "Swim in Rising Water",
+        "topic": "Heap",
+        "link": "https://leetcode.com/problems/swim-in-rising-water/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 312,
+        "problem_statement": "Shortest Path to Get All Keys",
+        "topic": "Heap",
+        "link": "https://leetcode.com/problems/shortest-path-to-get-all-keys/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 313,
+        "problem_statement": "Minimum Cost to Hire K Workers",
+        "topic": "Heap",
+        "link": "https://leetcode.com/problems/minimum-cost-to-hire-k-workers/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 314,
+        "problem_statement": "K-th Smallest Prime Fraction",
+        "topic": "Heap",
+        "link": "https://leetcode.com/problems/k-th-smallest-prime-fraction/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 315,
+        "problem_statement": "Longest Substring with At Least K Repeating Characters",
+        "topic": "Sliding Window",
+        "link": "https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 316,
+        "problem_statement": " Max Consecutive Ones III",
+        "topic": "Sliding Window",
+        "link": "https://leetcode.com/problems/max-consecutive-ones-iii/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 317,
+        "problem_statement": "Grumpy Bookstore Owner",
+        "topic": "Sliding Window",
+        "link": "https://leetcode.com/problems/grumpy-bookstore-owner/",
+        "status": false,
+        "favourite": false
+    },
+    {
+        "question_id": 318,
+        "problem_statement": "Sliding Window Median",
+        "topic": "Sliding Window",
+        "link": "https://leetcode.com/problems/sliding-window-median/",
+        "status": false,
+        "favourite": false
+    }
+]
