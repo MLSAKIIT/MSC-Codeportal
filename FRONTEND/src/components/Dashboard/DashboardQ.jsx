@@ -30,7 +30,7 @@ const DashboardQ = () => {
       
 
     return (
-        <div style={{ marginTop: '100px', overflow: 'hidden', paddingBottom: '20px' }} className="d-flex flex-nowrap justify-content-flex-start">
+        <div style={{ overflow: 'hidden', paddingBottom: '20px' }} className="d-flex flex-nowrap justify-content-flex-start">
             <Row> 
                 <span className="title-span">Hi, Username</span>
                 <div className="d-flex flex-wrap container-fluid">

@@ -9,6 +9,7 @@ import Dashboard from "./components/Dashboard/Landing";
 import QuestionList from "./components/Dashboard/QuestionList";
 import DashboardQ from "./components/Dashboard/DashboardQ";
 import DashboardSheet from "./components/Dashboard/DashboardSheet";
+import IDE from "./components/IDE/IDE";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -37,6 +38,9 @@ function App() {
           </Route>
           <Route path="/dashboard-sheet">
             <DashboardSheet />
+          </Route>
+          <Route path="/ide">
+            <IDE />
           </Route>
         </div>
       </Switch>
