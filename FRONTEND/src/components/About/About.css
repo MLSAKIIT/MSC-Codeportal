@@ -1,23 +1,35 @@
+<<<<<<< HEAD
 .About{
     height: 120vh;
     background-image: url("../About/Images/waves.png");
+=======
+.About {
+    height: 100vh;
+    background-image: url("../About/Images/waves1.png");
+>>>>>>> d30f36eabaf5ea52e690aaa2ae48062d696269f9
     background-size: 100% 100%;
 }
 
-.header-about{
-    text-align:left;
+.header-about {
+    text-align: left;
     font-family: 'Space Mono', monospace;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 36px;
     line-height: 36px;
     color: #203A61;
 }
-.head-desc{
+
+.head-desc {
     text-align: left;
-    padding-top:10px;
-    position:flex;
-    width:70%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 45px;
+    width: 70%;
     font-family: 'Space Mono', monospace;
     font-style: normal;
     font-weight: normal;
@@ -35,14 +47,14 @@
 
 
 /* Cards */
-.card{
+.card {
     box-shadow: 0px 0px 10px rgba(32, 58, 97, 0.25);
     border-radius: 10px !important;
 
     margin: 0 2rem !important;
 }
 
-.Image{
+.Image {
     padding: 15% 20%;
 
 }
@@ -62,7 +74,7 @@
     font-family: 'Space Mono', monospace;
     font-size: 18px;
 
-    text-align:center;
+    text-align: center;
 
     margin-top: 22px !important;
 }
@@ -70,12 +82,18 @@
 
 /* Media Queries */
 @media only screen and (max-width: 992px) {
-    .group-card{
-    display:flex !important;
-    flex-flow: column wrap !important;
+    .group-card {
+        display: flex !important;
+        flex-flow: column wrap !important;
     }
+<<<<<<< HEAD
     .card{
         margin: 2rem 7rem !important;
+=======
+
+    .card {
+        margin: 2rem 0 !important;
+>>>>>>> d30f36eabaf5ea52e690aaa2ae48062d696269f9
     }
 
     .About {
@@ -85,15 +103,15 @@
 }
 
 @media only screen and (min-width: 993px) {
-    .Image{
+    .Image {
         height: 200px !important;
     }
 }
 
 @media only screen and (max-width:575px) {
 
-    .header-about{
-        text-align:left;
+    .header-about {
+        text-align: left;
         font-family: 'Space Mono', monospace;
         font-style: normal;
         font-weight: bold;
@@ -101,12 +119,14 @@
         line-height: 36px;
         color: #203A61;
     }
-    .card{
+
+    .card {
         box-shadow: 0px 0px 10px rgba(32, 58, 97, 0.25);
         border-radius: 10px !important;
         margin: 2rem 1rem !important;
     }
-    .head-desc{
+
+    .head-desc {
         text-align: left;
         font-family: 'Space Mono', monospace;
         font-style: normal;
@@ -114,5 +134,10 @@
         font-size: 24px;
         line-height: 36px;
         color: #203A61;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: center;
+        align-items: flex-start;
     }
 }

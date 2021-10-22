@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 //Importing CSS
 import '../Landing/Landing.css'
 
@@ -29,7 +28,7 @@ export default function Features() {
                         <Col md={{ span: 7, order: 'first' }} className="mx-auto my-auto">
                             <span className="desc-text">Your one stop online portal to code, practice and learn from zero to expert.</span>
                             <br />
-                            <Button href="/login" size="lg" variant="primary" className="btn-xs-block w-4 py-3 land-button">Get Started</Button>
+                            <Button href="/dashboard" size="lg" variant="primary" className="btn-xs-block w-4 py-3 land-button">Get Started</Button>
                         </Col>
                     </Row>
                 </Container>
