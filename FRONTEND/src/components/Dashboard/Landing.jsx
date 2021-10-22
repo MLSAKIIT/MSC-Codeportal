@@ -20,7 +20,7 @@ export default function Landing() {
                      <Row>
                         <Col className="des-p">
                             <div className="des-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu mauris maximus, porttitor mi nec.</div>
-                            <Button variant="primary" size="lg">Open Online IDE</Button>{' '}
+                            <Button variant="primary" size="lg" href="/ide">Open Online IDE</Button>{' '}
                         </Col>
                      </Row>
                 </Col>
