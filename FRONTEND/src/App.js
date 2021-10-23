@@ -16,34 +16,35 @@ import { BrowserRouter as Router, Switch, Route, Link, BrowserRouter } from "rea
 function App() {
   return (
     <div>
-      <Router>
-        <Navbar />
-        <Switch>
-            <Route path="/" exact>
-              <Landing />
-              <About />
-              <Features />
-            </Route>
-            <Route path="/login">
-              <Login />
-            </Route>
-            <Route path="/dashboard">
-              <Dashboard />
-            </Route>
-            <Route path="/questions">
-              <QuestionList />
-            </Route>
-            <Route path="/dashboard-set">
-              <DashboardQ />
-            </Route>
-            <Route path="/dashboard-sheet">
-              <DashboardSheet />
-            </Route>
-        </Switch>
-        <Route path="/ide" exact>
-          <IDE />
-        </Route>
-      </Router>
+        <Router>
+          <Navbar />
+          <Switch>
+              <Route path="/" exact>
+                <Landing />
+                <About />
+                <Features />
+              </Route>
+              <Route path="/login">
+                <Login />
+              </Route>
+              <Route path="/dashboard">
+                <Dashboard />
+              </Route>
+              <Route path="/questions">
+                <QuestionList />
+              </Route>
+              <Route path="/dashboard-set">
+                <DashboardQ />
+              </Route>
+              <Route path="/dashboard-sheet">
+                <DashboardSheet />
+              </Route>
+
+              <Route path="/ide" exact>
+                <IDE />
+              </Route>
+          </Switch>
+        </Router>
 
     </div>
   );

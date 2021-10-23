@@ -13,17 +13,26 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 function IDE() {
 
-  const [code, setCode] = useState("")
+  const [language, setLanguage] = useState({})
+  const [code, setCode] = useState(`#include<iostream>\nusing namespace std;\n\nint main()\n{\n//your code goes here\nreturn 0;\n}`)
   const [input, setInput] = useState("")
+  const [output, setOutput] = useState("")
 
 
   function handleEditorChange(value, event) {
     setCode(value);
-
-    console.log(JSON.stringify(code));
   }
 
-  console.log(input)
+  function handleSubmit(e)
+  {
+    console.log(JSON.stringify(code));
+
+    console.log(JSON.stringify(input))
+
+    setOutput(input)
+
+    console.log(JSON.stringify(output))
+  }
 
   return (
 
@@ -33,16 +42,16 @@ function IDE() {
         <img className="qodeide-logo" src={qodeide} />
 
         <div className="selection-console">
-          <Button className="run-btn" variant="outline-primary" href="/" size="lg">Back Home</Button>
+          <Button className="run-btn" variant="outline-primary" href="/" size="lg" >Back Home</Button>
 
-          <Form.Select className="lang-selector" aria-label="Default select example">
-            <option>C++</option>
-            <option value="1">C</option>
-            <option value="2">JAVA</option>
-            <option value="3">PYTHON</option>
+          <Form.Select className="lang-selector" aria-label="Language Selector">
+            <option value="cpp">C++</option>
+            <option value="c">C</option>
+            <option value="java">JAVA</option>
+            <option value="py">PYTHON</option>
           </Form.Select>
 
-          <Button className="run-btn running" variant="success" size="lg">Run <PlayCircleOutlineIcon/></Button>
+          <Button className="run-btn running" variant="success" size="lg" onClick={e => handleSubmit()}>Run <PlayCircleOutlineIcon/></Button>
 
         </div>
       </div>
@@ -52,7 +61,7 @@ function IDE() {
             <Editor
               height="90vh"
               defaultLanguage="cpp"
-              defaultValue={`#include<iostream>\nusing namespace std;\n\nint main()\n{\n//your code goes here\nreturn 0;\n}`}
+              defaultValue={code}
               onChange={handleEditorChange}
               theme="vs-dark"
               loading="Setting up your environment!"
@@ -63,12 +72,12 @@ function IDE() {
         <Col md={4} className="editor-row">
           <div className="input">
             <p className="input-label">Standard Input</p>
-            <textarea className="input-field" name="w3review" placeholder="stdin" onChange={e => setInput(e.target.value)}></textarea>
+            <textarea className="input-field" placeholder="stdin" onChange={e => setInput(e.target.value)}></textarea>
           </div>
 
           <div className="output">
             <p className="input-label">Standard Output</p>
-            <textarea className="output-field" name="w3review" disabled></textarea>
+            <label className="output-field">{output}</label>
           </div>
         </Col>
       </Row>
