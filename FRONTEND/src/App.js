@@ -11,40 +11,41 @@ import DashboardQ from "./components/Dashboard/DashboardQ";
 import DashboardSheet from "./components/Dashboard/DashboardSheet";
 import IDE from "./components/IDE/IDE";
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link, BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Switch>
-        <div>
-          <Route path="/" exact>
-            <Landing />
-            <About />
-            <Features />
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route path="/dashboard">
-            <Dashboard />
-          </Route>
-          <Route path="/questions">
-            <QuestionList />
-          </Route>
-          <Route path="/dashboard-set">
-            <DashboardQ />
-          </Route>
-          <Route path="/dashboard-sheet">
-            <DashboardSheet />
-          </Route>
-          <Route path="/ide">
-            <IDE />
-          </Route>
-        </div>
-      </Switch>
-    </Router>
+    <div>
+      <Router>
+        <Navbar />
+        <Switch>
+            <Route path="/" exact>
+              <Landing />
+              <About />
+              <Features />
+            </Route>
+            <Route path="/login">
+              <Login />
+            </Route>
+            <Route path="/dashboard">
+              <Dashboard />
+            </Route>
+            <Route path="/questions">
+              <QuestionList />
+            </Route>
+            <Route path="/dashboard-set">
+              <DashboardQ />
+            </Route>
+            <Route path="/dashboard-sheet">
+              <DashboardSheet />
+            </Route>
+        </Switch>
+        <Route path="/ide" exact>
+          <IDE />
+        </Route>
+      </Router>
+
+    </div>
   );
 }
 
