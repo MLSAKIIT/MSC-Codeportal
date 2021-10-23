@@ -42,7 +42,7 @@ function IDE() {
             <option value="3">PYTHON</option>
           </Form.Select>
 
-          <Button className="run-btn" variant="outline-primary" size="lg">Run <PlayCircleOutlineIcon/></Button>
+          <Button className="run-btn running" variant="success" size="lg">Run <PlayCircleOutlineIcon/></Button>
 
         </div>
       </div>

@@ -95,3 +95,15 @@
   font-family: Space Mono;
   width: 200px;
 }
+
+.running {
+  border: 2px solid green !important;
+  background-color: green !important;
+  color: white !important;
+}
+
+.running:hover {
+  color: white !important;
+  border: 2px solid #3cc43c !important;
+  background-color: #3cc43c !important;
+}
