@@ -30,7 +30,7 @@ function IDE() {
     console.log(JSON.stringify(input))
 
     try {
-      const response = await fetch('http://localhost:5000/qode-compiler', {
+      const response = await fetch('http://localhost:5000/api/qode/qode-compiler', {
         method: "POST",
         headers: {
           "Content-type": "application/json; charset=UTF-8"
@@ -42,8 +42,6 @@ function IDE() {
           versionIndex: "3"
         })
       })
-
-      // console.log(await response.json())
 
       const result = await response.json()
 
