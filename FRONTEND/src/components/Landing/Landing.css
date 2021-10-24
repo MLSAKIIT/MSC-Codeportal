@@ -10,7 +10,7 @@
 .desc-text{
     font-family: 'Space Mono', monospace;
     font-size: 36px;
-    color:white !important;
+    color:rgb(255, 255, 255) !important;
     font-weight: 600;
     /* margin: 2rem; */
 }
