@@ -24,21 +24,44 @@
         }
         ```
 
-* Qode Compiler: 
-  * **POST** `http://localhost:5000/qode-compiler`
+* Qode Compiler:
+  * **GET** `http://localhost:5000/api/qode/ping`   
+  * **POST** `http://localhost:5000/api/qode/qode-compiler`
   * **Request Body:** 
     ```json 
-    {
-        "script": "",
-        "language": "c++",
-        "versionIndex": "3"
-    }
+        {
+            "script": "",
+            "stdin": "",
+            "language": "c++",
+            "versionIndex": "3"
+        }
     ```
 
 ---
 
 ## **TEST EXECUTION**
 
+**Ping Test**
+* **GET** `http://localhost:5000/api/qode/ping`
+* **RESPONSE BODY: [Valid Request]**
+  ```json
+  {
+    "status": 200,
+    "time": "2021-10-24T09:10:48.867Z",
+    "endpoints": {
+        "ping": "GET to api/qode/ping",
+        "compiler": "POST to api/qode/qode-compiler"
+    }
+  }
+  ```
+ * **RESPONSE BODY: [Invalid Request]**
+    ```json
+    {
+        "status": 205,
+        "message": "invalid endpoint",
+        "time": "2021-10-24T09:10:56.451Z"
+    }
+    ```
 **Authentication Test**
 * **REQUEST BODY:**
     ```json
@@ -73,8 +96,10 @@
 * **REQUEST BODY:** 
     ```json
     {
-        "script": "#include<iostream> \n using namespace std; \n int digitSum(int x) \n { int sum = 0; while(x){ sum += x%10; x/=10; } return sum; } \n int main(){cout<<digitSum(1387); return 0;}",
-
+        "script": "#include<iostream> \n using namespace std; \n int digitSum(int x) \n 
+        { int sum = 0; while(x){ sum += x%10; x/=10; } return sum; } \n int main(){
+        int num; cin>>num; cout<<digitSum(num); return 0;}",
+        "stdin": 1387,
         "language": "c++",
         "versionIndex": "3"
     }
