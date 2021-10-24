@@ -17,22 +17,46 @@ function IDE() {
   const [code, setCode] = useState(`#include<iostream>\nusing namespace std;\n\nint main()\n{\n//your code goes here\nreturn 0;\n}`)
   const [input, setInput] = useState("")
   const [output, setOutput] = useState("")
+  const [responseCode, setResponseCode] = useState("")
 
 
   function handleEditorChange(value, event) {
     setCode(value);
   }
 
-  function handleSubmit(e)
-  {
+  async function handleSubmit(e) {
     console.log(JSON.stringify(code));
 
     console.log(JSON.stringify(input))
 
-    setOutput(input)
+    try {
+      const response = await fetch('http://localhost:5000/qode-compiler', {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json; charset=UTF-8"
+        },
+        body: JSON.stringify({
+          script: code,
+          stdin: input,
+          language: "cpp",
+          versionIndex: "3"
+        })
+      })
 
-    console.log(JSON.stringify(output))
+      // console.log(await response.json())
+
+      const result = await response.json()
+
+      console.log(result)
+
+      setOutput(result.results.output)
+      setResponseCode(result.results.memory)
+
+    } catch (error) {
+      console.log(error)
+    }
   }
+
 
   return (
 
@@ -51,7 +75,7 @@ function IDE() {
             <option value="py">PYTHON</option>
           </Form.Select>
 
-          <Button className="run-btn running" variant="success" size="lg" onClick={e => handleSubmit()}>Run <PlayCircleOutlineIcon/></Button>
+          <Button className="run-btn running" variant="success" size="lg" onClick={e => handleSubmit()}>Run <PlayCircleOutlineIcon /></Button>
 
         </div>
       </div>
@@ -77,7 +101,7 @@ function IDE() {
 
           <div className="output">
             <p className="input-label">Standard Output</p>
-            <label className="output-field">{output}</label>
+            <pre className="output-field" style={{'color' : responseCode == null ? 'red' : '#6aff00'}}>{output}</pre>
           </div>
         </Col>
       </Row>
@@ -86,39 +110,3 @@ function IDE() {
 }
 
 export default IDE;
-
-
-// import {Controlled as CodeMirror} from 'react-codemirror2';
-
-
-// require('codemirror/lib/codemirror.css');
-// require('codemirror/theme/material.css');
-// require('codemirror/theme/neat.css');
-// require('codemirror/mode/xml/xml.js');
-// require('codemirror/mode/javascript/javascript.js');
-
-
-  // function handleEditorDidMount(editor, monaco) {
-  //   console.log("onMount: the editor instance:", editor);
-  //   console.log("onMount: the monaco instance:", monaco);
-  //   editorRef.current = editor; 
-  // }
-
-  // function handleEditorWillMount(monaco) {
-  //   console.log("beforeMount: the monaco instance:", monaco);
-  // }
-
-  // function handleEditorValidation(markers) {
-  //   // model markers
-  //   // markers.forEach(marker => console.log('onValidate:', marker.message));
-  // }
-
-  // function showValue() {
-  //   alert(editorRef.current.getValue());
-  // }
-
-
-
-                  // onMount={handleEditorDidMount}
-                // beforeMount={handleEditorWillMount}
-                // onValidate={handleEditorValidation}
