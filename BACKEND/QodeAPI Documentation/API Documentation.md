@@ -26,8 +26,19 @@
 
 * Qode Compiler:
   * **GET** `http://localhost:5000/api/qode/ping`   
+  * **GET** `http://localhost:5000/api/qode/problems`
+   
+    **RESPONSE BODY:**
+    ```json
+        {
+            "status": 200,
+            "message": "450 DSA Sheet",
+            "questions": [ ... ]
+        }
+    ```
   * **POST** `http://localhost:5000/api/qode/qode-compiler`
-  * **Request Body:** 
+    
+    **RESQUEST BODY** 
     ```json 
         {
             "script": "",
@@ -61,6 +72,16 @@
         "message": "invalid endpoint",
         "time": "2021-10-24T09:10:56.451Z"
     }
+    ```
+*  **GET** `http://localhost:5000/api/qode/problems`
+   
+    **RESPONSE BODY:**
+    ```json
+        {
+            "status": 200,
+            "message": "450 DSA Sheet",
+            "questions": [ ... ]
+        }
     ```
 **Authentication Test**
 * **REQUEST BODY:**
