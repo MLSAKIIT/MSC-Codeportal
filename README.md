@@ -55,20 +55,10 @@ sawo
 
 ## 🛑 Contributors
 
-### Mentors 🍀
-Medhavi Basera <br>
-Arnab Chatterjee <br>
-Shreya Dhir <br>
-Akash Chouhan <br>
-
-### Members 🐛
-Pratyay Saha  <br>
-Spandan Chakravarty  <br>
-Ankit Srivastava  <br>
-
-### Learners 🌱
-Aditya Srivastav  <br>
-Siddhanta Banerjee  <br>
-Ashish Kumar Mishra  <br>
-Shreyansh Rai  <br>
-Soham Dutta  <br>
+|     Mentors 🍀    |      Members 🐛      |      Learners 🌱     |
+|:----------------:|:-------------------:|:-------------------:|
+| Medhavi Basera   | Pratyay Saha        | Aditya Srivastav    |
+| Arnab Chatterjee | Spandan Chakravarty | Siddhanta Banerjee  |
+| Shreya Dhir      | Ankit Srivastava    | Ashish Kumar Mishra |
+| Akash Chouhan    |                     | Shreyansh Rai       |
+|                  |                     | Soham Dutta         |
