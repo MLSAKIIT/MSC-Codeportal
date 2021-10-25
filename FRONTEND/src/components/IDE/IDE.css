@@ -88,7 +88,8 @@
   margin: 1rem;
   background-color: #1e1e1e;
   color: #0078d4;
-  font-family: Space Mono;
+  font-family: monospace;
+  font-weight: 800;
   font-size: 1.25rem;
   border: 2px solid #0078d4;
   width: 50% !important;
