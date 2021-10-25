@@ -1,7 +1,7 @@
 // Mongo Database Connection: 
 
 const mongoose = require(`mongoose`);
-const MONGO_URI = process.env.MONGO_CLOUD_1 ||process.env.MONGO_URI || `mongodb://localhost:27017/temporary`
+const MONGO_URI = process.env.MONGO_CLOUD_URI || process.env.MONGO_LOCAL_URI
 
 let DBConnectionStatus = true;
 
