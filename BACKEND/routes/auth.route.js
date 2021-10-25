@@ -40,11 +40,7 @@ router.post('/login', async(req,res,next)=>{
             expiresIn : 6600,
             msg : getUser
         })
-        // .catch((err)=>{
-        //     return res.status(401).json({
-        //         message : "Authentication Failed"
-        //     });
-        // });
+
     }).catch((err)=>{
             return res.status(401).json({
                 message : "Authentication Failed",

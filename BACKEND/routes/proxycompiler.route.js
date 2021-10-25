@@ -3,6 +3,7 @@ const express = require('express');
 const _router = express.Router();
 const fetch = require('node-fetch');
 const dotenv = require('dotenv');
+const qodequestionbank_1 = require('../model/questions');
 
 dotenv.config({path: '../.env'});
 
@@ -19,10 +20,31 @@ _router.get('/ping', (req,res,next)=>{
         endpoints :{
             ping: 'GET to api/qode/ping',
             compiler: 'POST to api/qode/qode-compiler',
+            questions: 'POST to api/qode/problems'
         }
     }
     return res.status(200).json(LOG);
 })
+
+_router.get(`/problems`, async(req,res, next)=>{
+    try{
+        const questionbank_1 = await qodequestionbank_1.find({});
+        const data = {
+            status: 200,
+            message: `450 DSA Sheet`,
+            questions: questionbank_1
+        }
+        res.status(200).json(data);
+    }catch(err){
+        return res.status(401).json({
+            message: "Proxy Failed",
+            error : err.message
+        });
+    }
+
+})
+
+
 // check #1: for invalid endpoint requests.
 _router.get('/*', (req,res,next)=>{
     res.status(205).json({
