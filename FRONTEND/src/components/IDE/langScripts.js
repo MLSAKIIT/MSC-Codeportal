@@ -35,25 +35,25 @@ const pythonCode = `
 
 const files = {
   "cplusplus.cpp": {
-    name: "cplusplus.cpp",
+    name: "C++",
     language: "cpp",
     languageCode: "cpp14",
     value: cplusplusCode
   },
   "c.c": {
-    name: "c.c",
+    name: "C",
     language: "c",
     languageCode: "c",
     value: cCode
   },
   "java.java": {
-    name: "java.java",
+    name: "JAVA",
     language: "java",
     languageCode: "java",
     value: javaCode
   },
   "python.py": {
-    name: "python.py",
+    name: "PYTHON",
     language: "python",
     languageCode: "python3",
     value: pythonCode
