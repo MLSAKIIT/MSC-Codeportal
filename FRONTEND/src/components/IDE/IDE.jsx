@@ -3,7 +3,7 @@ import './IDE.css';
 import langScripts from '../IDE/langScripts'
 import qodeide from "../IDE/qodeide.png"
 
-import { Row, Col, Button, Form  } from 'react-bootstrap';
+import { Row, Col, Button, Form, Dropdown } from 'react-bootstrap';
 import Editor from "@monaco-editor/react";
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import Loader from "react-loader-spinner";
@@ -35,8 +35,10 @@ function IDE() {
 
     console.log(JSON.stringify(input))
 
+    console.log(fileName)
+
     try {
-      
+
       const response = await trackPromise(fetch('https://qode-msc.herokuapp.com/api/qode/qode-compiler', {
         method: "POST",
         headers: {
@@ -75,12 +77,21 @@ function IDE() {
         <div className="selection-console">
           <Button className="run-btn" variant="outline-primary" href="/" size="lg" >Back Home</Button>
 
-          <Form.Select className="lang-selector" aria-label="Language Selector">
-            <option value="cpp" onClick={() => setFileName("cplusplus.cpp")}>C++</option>
-            <option value="c" onClick={() => setFileName("c.c")}>C</option>
-            <option value="java" onClick={() => setFileName("java.java")}>JAVA</option>
-            <option value="py" onClick={() => setFileName("python.py")}>PYTHON</option>
-          </Form.Select>
+          <Dropdown className="lang-selector">
+            <Dropdown.Toggle className="lang-selector-btn">
+              {(file || {}).name}
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu className="lang-selector-menu" variant="dark">
+              <Dropdown.Item onClick={() => setFileName("cplusplus.cpp")}>C++</Dropdown.Item>
+              <Dropdown.Item onClick={() => setFileName("c.c")}>C</Dropdown.Item>
+              <Dropdown.Item onClick={() => setFileName("java.java")}>JAVA</Dropdown.Item>
+              <Dropdown.Item onClick={() => setFileName("python.py")}>PYTHON</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+
+          {/* <Button className="run-btn running" variant="success" size="lg" onClick={() => setFileName("java.java")}>Java  </Button>
+          <Button className="run-btn running" variant="success" size="lg" onClick={() => setFileName("python.py")}>Python  </Button> */}
 
           <Button className="run-btn running" variant="success" size="lg" onClick={e => handleSubmit()}><LoaderButton />  </Button>
         </div>
@@ -109,7 +120,7 @@ function IDE() {
 
           <div className="output">
             <p className="input-label">Standard Output</p>
-            <pre className="output-field" style={{'color' : responseCode == null ? 'red' : '#6aff00'}}>{output}</pre>
+            <pre className="output-field" style={{ 'color': responseCode == null ? 'red' : '#6aff00' }}>{output}</pre>
           </div>
         </Col>
       </Row>
@@ -120,14 +131,14 @@ function IDE() {
 function LoaderButton() {
   const { promiseInProgress } = usePromiseTracker();
 
-  return(
-    promiseInProgress 
-    ?
-    <Loader type="Oval" color="#fff" height={25} width={25}/>
-    :
-    <>Run <PlayCircleOutlineIcon/></>
+  return (
+    promiseInProgress
+      ?
+      <Loader type="Oval" color="#fff" height={25} width={25} />
+      :
+      <>Run <PlayCircleOutlineIcon /></>
   )
-  
+
 }
 
 export default IDE;
