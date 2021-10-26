@@ -1,69 +1,38 @@
-import { React, useState } from 'react'
+import { React, useState, useRef } from 'react'
 import './IDE.css';
-import langScripts from '../IDE/langScripts'
+
+import { Container, Row, Col, Button, Form, FloatingLabel } from 'react-bootstrap';
 import qodeide from "../IDE/qodeide.png"
 
-import { Row, Col, Button, Form  } from 'react-bootstrap';
-import Editor from "@monaco-editor/react";
+// import MonacoEditor from 'react-monaco-editor';
+
+import Editor, { DiffEditor, useMonaco, loader } from "@monaco-editor/react";
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
-import Loader from "react-loader-spinner";
-
-import { usePromiseTracker, trackPromise } from "react-promise-tracker";
-
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 function IDE() {
 
-  //defining states
-  const [code, setCode] = useState("")
+  const [language, setLanguage] = useState({})
+  const [code, setCode] = useState(`#include<iostream>\nusing namespace std;\n\nint main()\n{\n//your code goes here\nreturn 0;\n}`)
   const [input, setInput] = useState("")
   const [output, setOutput] = useState("")
-  const [responseCode, setResponseCode] = useState("")
 
-  //fetching and storing language scripts in fileName state
-  const [fileName, setFileName] = useState("cplusplus.cpp");
 
-  const file = langScripts[fileName];
-
-  //monaco editor handle change function
-  function handleEditorChange(value) {
+  function handleEditorChange(value, event) {
     setCode(value);
   }
 
-  //code run function
-  async function handleSubmit(e) {
+  function handleSubmit(e)
+  {
     console.log(JSON.stringify(code));
 
     console.log(JSON.stringify(input))
 
-    try {
-      
-      const response = await trackPromise(fetch('https://qode-msc.herokuapp.com/api/qode/qode-compiler', {
-        method: "POST",
-        headers: {
-          "Content-type": "application/json; charset=UTF-8"
-        },
-        body: JSON.stringify({
-          script: code,
-          stdin: input,
-          language: file.languageCode,
-          versionIndex: "3"
-        })
-      }))
+    setOutput(input)
 
-      const result = await response.json()
-
-      //console logs for testing
-      console.log(result)
-
-      //updating state with fetched results
-      setOutput(result.results.output)
-      setResponseCode(result.results.memory)
-
-    } catch (error) {
-      console.log(error)
-    }
+    console.log(JSON.stringify(output))
   }
-
 
   return (
 
@@ -76,24 +45,23 @@ function IDE() {
           <Button className="run-btn" variant="outline-primary" href="/" size="lg" >Back Home</Button>
 
           <Form.Select className="lang-selector" aria-label="Language Selector">
-            <option value="cpp" onClick={() => setFileName("cplusplus.cpp")}>C++</option>
-            <option value="c" onClick={() => setFileName("c.c")}>C</option>
-            <option value="java" onClick={() => setFileName("java.java")}>JAVA</option>
-            <option value="py" onClick={() => setFileName("python.py")}>PYTHON</option>
+            <option value="cpp">C++</option>
+            <option value="c">C</option>
+            <option value="java">JAVA</option>
+            <option value="py">PYTHON</option>
           </Form.Select>
 
-          <Button className="run-btn running" variant="success" size="lg" onClick={e => handleSubmit()}><LoaderButton />  </Button>
+          <Button className="run-btn running" variant="success" size="lg" onClick={e => handleSubmit()}>Run <PlayCircleOutlineIcon/></Button>
+
         </div>
       </div>
-
       <Row>
         <Col md={8} className="editor-row">
           <div className="editor">
             <Editor
               height="90vh"
-              path={(file || {}).name}
-              defaultLanguage={(file || {}).language}
-              defaultValue={(file || {}).value}
+              defaultLanguage="cpp"
+              defaultValue={code}
               onChange={handleEditorChange}
               theme="vs-dark"
               loading="Setting up your environment!"
@@ -109,7 +77,7 @@ function IDE() {
 
           <div className="output">
             <p className="input-label">Standard Output</p>
-            <pre className="output-field" style={{'color' : responseCode == null ? 'red' : '#6aff00'}}>{output}</pre>
+            <label className="output-field">{output}</label>
           </div>
         </Col>
       </Row>
@@ -117,17 +85,40 @@ function IDE() {
   );
 }
 
-function LoaderButton() {
-  const { promiseInProgress } = usePromiseTracker();
-
-  return(
-    promiseInProgress 
-    ?
-    <Loader type="Oval" color="#fff" height={25} width={25}/>
-    :
-    <>Run <PlayCircleOutlineIcon/></>
-  )
-  
-}
-
 export default IDE;
+
+
+// import {Controlled as CodeMirror} from 'react-codemirror2';
+
+
+// require('codemirror/lib/codemirror.css');
+// require('codemirror/theme/material.css');
+// require('codemirror/theme/neat.css');
+// require('codemirror/mode/xml/xml.js');
+// require('codemirror/mode/javascript/javascript.js');
+
+
+  // function handleEditorDidMount(editor, monaco) {
+  //   console.log("onMount: the editor instance:", editor);
+  //   console.log("onMount: the monaco instance:", monaco);
+  //   editorRef.current = editor; 
+  // }
+
+  // function handleEditorWillMount(monaco) {
+  //   console.log("beforeMount: the monaco instance:", monaco);
+  // }
+
+  // function handleEditorValidation(markers) {
+  //   // model markers
+  //   // markers.forEach(marker => console.log('onValidate:', marker.message));
+  // }
+
+  // function showValue() {
+  //   alert(editorRef.current.getValue());
+  // }
+
+
+
+                  // onMount={handleEditorDidMount}
+                // beforeMount={handleEditorWillMount}
+                // onValidate={handleEditorValidation}
