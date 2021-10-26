@@ -25,7 +25,7 @@ export default function QuestionList() {
     fetchData();
   }, []);
 
-  // console.log(queslist);
+// console.log(queslist);
   return (
     <>
       <Container className="question-list">
