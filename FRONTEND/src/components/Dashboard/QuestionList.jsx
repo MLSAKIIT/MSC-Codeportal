@@ -25,7 +25,7 @@ export default function QuestionList() {
     fetchData();
   }, []);
 
-  console.log(queslist);
+// console.log(queslist);
   return (
     <>
       <Container className="question-list">
@@ -34,7 +34,7 @@ export default function QuestionList() {
           <div className="ques-progress">
             Total Question : XX, X more questions left (xyz% done)
           </div>
-          <Table striped bordered hover className="Ques-Table">
+          <Table bordered className="Ques-Table">
             <thead>
               <tr>
                 <th className="table-head-1">
@@ -50,7 +50,11 @@ export default function QuestionList() {
             </thead>
             <tbody>
               {queslist.map((obj) => (
-                <Rows no={obj.question_id} problem={obj.problem_statement} />
+                <Rows
+                  no={obj.question_id}
+                  problem={obj.problem_statement}
+                  link={obj.link}
+                />
               ))}
             </tbody>
           </Table>
