@@ -8,11 +8,11 @@ import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
-export default function Rows() {
+export default function Rows(props) {
   return (
     <tr className="rows-bg">
       <td>
-        <Checkbox {...label}  />
+        <Checkbox {...label} />
       </td>
       <td>
         <Checkbox
@@ -22,8 +22,8 @@ export default function Rows() {
           className="bookmark"
         />
       </td>
-      <td>1</td>
-      <td>To use the font Icon </td>
+      <td>{props.no}</td>
+      <td>{props.problem}</td>
     </tr>
   );
 }

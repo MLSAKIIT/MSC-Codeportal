@@ -86,21 +86,27 @@
 
 .lang-selector {
   margin: 1rem;
-  background-color: #1e1e1e;
-  color: #0078d4;
-  font-family: monospace;
+  font-family: Space Mono;
   font-weight: 800;
-  font-size: 1.25rem;
-  border: 2px solid #0078d4;
-  width: 50% !important;
-  height: 70%;
+}
+
+.lang-selector-btn {
+  padding: 0.5rem;
+  font-size: 1.25rem !important;
+  width: 175px !important;
+}
+
+.lang-selector-menu{
+  width: 175px !important;
+  font-size: 1.25rem !important;
+
 }
 
 .run-btn {
   border: 2px solid #0078d4;
   color: #0078d4;
   font-family: Space Mono;
-  width: 200px;
+  width: 175px;
 }
 
 .running {
