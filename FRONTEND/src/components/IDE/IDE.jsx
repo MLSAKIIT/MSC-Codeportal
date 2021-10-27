@@ -83,10 +83,10 @@ function IDE() {
             </Dropdown.Toggle>
 
             <Dropdown.Menu className="lang-selector-menu" variant="dark">
-              <Dropdown.Item onClick={() => setFileName("cplusplus.cpp")}>C++</Dropdown.Item>
-              <Dropdown.Item onClick={() => setFileName("c.c")}>C</Dropdown.Item>
-              <Dropdown.Item onClick={() => setFileName("java.java")}>JAVA</Dropdown.Item>
-              <Dropdown.Item onClick={() => setFileName("python.py")}>PYTHON</Dropdown.Item>
+              <Dropdown.Item onClick={() => setFileName("cplusplus.cpp")}><img src="https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png" height="22px" width="20px" style={{'margin' : '0 1rem'}}/>C++</Dropdown.Item>
+              <Dropdown.Item onClick={() => setFileName("c.c")}><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/695px-C_Programming_Language.svg.png" height="22px" width="20px" style={{'margin' : '0 1rem'}}/>C</Dropdown.Item>
+              <Dropdown.Item onClick={() => setFileName("java.java")}><img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" height="20px" width="20px" style={{'margin' : '0 1rem'}}/>JAVA</Dropdown.Item>
+              <Dropdown.Item onClick={() => setFileName("python.py")}><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" height="20px" width="20px" style={{'margin' : '0 1rem'}}/>PYTHON</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
 
