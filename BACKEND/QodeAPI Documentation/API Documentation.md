@@ -4,9 +4,9 @@
 
 ## Server end points
 
-* Base : **GET** `http://localhost:5000/`
+* Base : **GET** `https://qode-msc.herokuapp.com/`
 * Authentication:
-    * **POST** `http://localhost:5000/api/auth/login`
+    * **POST** `https://qode-msc.herokuapp.com/api/auth/login`
     * **Request Body:**
         ```json
         {
@@ -14,7 +14,7 @@
             "password": ""
         }
         ```
-    * **POST** `http://localhost:5000/api/auth/signup`
+    * **POST** `https://qode-msc.herokuapp.com/api/auth/signup`
     * **Request Body:**
         ```json
         {
@@ -23,21 +23,14 @@
             "password": ""
         }
         ```
-
+* Qode Practice: 
+  * **GET** `https://qode-msc.herokuapp.com/api/qode/problems`
+  * **GET** `https://qode-msc.herokuapp.com/api/qode/sheet1?topic=`
+  * **GET** `https://qode-msc.herokuapp.com/api/qode/sheet2?topic=`
 * Qode Compiler:
-  * **GET** `http://localhost:5000/api/qode/ping`   
-  * **GET** `http://localhost:5000/api/qode/problems`
-   
-    **RESPONSE BODY:**
-    ```json
-        {
-            "status": 200,
-            "message": "450 DSA Sheet",
-            "questions": [ ... ]
-        }
-    ```
-  * **POST** `http://localhost:5000/api/qode/qode-compiler`
-    
+  * **GET** `https://qode-msc.herokuapp.com/api/qode/ping`   
+  * **POST** `https://qode-msc.herokuapp.com/api/qode/qode-compiler`
+  
     **RESQUEST BODY** 
     ```json 
         {
@@ -53,15 +46,17 @@
 ## **TEST EXECUTION**
 
 **Ping Test**
-* **GET** `http://localhost:5000/api/qode/ping`
+* **GET** `https://qode-msc.herokuapp.com/api/qode/ping`
 * **RESPONSE BODY: [Valid Request]**
   ```json
   {
     "status": 200,
     "time": "2021-10-24T09:10:48.867Z",
     "endpoints": {
-        "ping": "GET to api/qode/ping",
-        "compiler": "POST to api/qode/qode-compiler"
+        "ping": "https://qode-msc.herokuapp.com/api/qode/ping",
+        "compiler": "https://qode-msc.herokuapp.com/api/qode/qode-compiler",
+        "Qode_Practice_Sheet_1": "https://qode-msc.herokuapp.com/api/qode/sheet1?topic=",
+        "Qode_Practice_Sheet_2": "https://qode-msc.herokuapp.com/api/qode/sheet1?topic="
     }
   }
   ```
@@ -73,22 +68,55 @@
         "time": "2021-10-24T09:10:56.451Z"
     }
     ```
-*  **GET** `http://localhost:5000/api/qode/problems`
+*  **GET** `https://qode-msc.herokuapp.com/api/qode/problems`
    
     **RESPONSE BODY:**
     ```json
         {
             "status": 200,
-            "message": "450 DSA Sheet",
-            "questions": [ ... ]
+            "message": "Qode Practice Problem [Complete Set]",
+            "questions": [
+                {
+                    "_id": "",
+                    "question_id": ,
+                    "problem_statement": "",
+                    "topic": "",
+                    "link": "",
+                    "status": ,
+                    "favourite": ,
+                     "__v": 0
+                }
+            ]
         }
     ```
+* **GET** `https://qode-msc.herokuapp.com/api/qode/sheet<NUMBER>?topic=<TOPIC>`
+    
+    **RESPONSE BODY:**
+    ```json
+        {
+            "status": 200,
+            "message": "Problem Set #<NUMBER> On <TOPIC>",
+            "questions": [
+                {
+                    "_id": "",
+                    "question_id": ,
+                    "problem_statement": "",
+                    "topic": "",
+                    "link": "",
+                    "status": ,
+                    "favourite": ,
+                     "__v": 0
+                }
+            ]
+        }
+    ```
+  
 **Authentication Test**
 * **REQUEST BODY:**
     ```json
     {
-     "email": "admin_1@qode.com",
-     "password": "admin_123"
+     "email": "mail@qode.com",
+     "password": "<PASSWORD>"
     }
     ```
 * **RESPONSE BODY: [SUCCESS]**
@@ -98,8 +126,8 @@
         "expiresIn": 6600,
         "msg": {
             "_id": "<MONGO_DB_ID>",
-            "name": "admin_1",
-            "email": "admin_1@qode.com",
+            "name": "<USER_NAME>",
+            "email": "mail@qode.com",
             "password": "<HASHED_PASSWORD>",
             "__v": 0
         }
@@ -117,9 +145,7 @@
 * **REQUEST BODY:** 
     ```json
     {
-        "script": "#include<iostream> \n using namespace std; \n int digitSum(int x) \n 
-        { int sum = 0; while(x){ sum += x%10; x/=10; } return sum; } \n int main(){
-        int num; cin>>num; cout<<digitSum(num); return 0;}",
+        "script": "#include<iostream>\nusing namespace std;\n int digitSum(int x) \n{ int sum = 0; while(x){ sum += x%10; x/=10; } return sum; } \n int main(){int num; cin>>num; cout<<digitSum(num);return 0;}",
         "stdin": 1387,
         "language": "c++",
         "versionIndex": "3"
