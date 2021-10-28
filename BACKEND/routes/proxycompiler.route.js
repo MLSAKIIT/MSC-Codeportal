@@ -8,30 +8,32 @@ const qodequestionbank_1 = require('../model/questions');
 dotenv.config({path: '../.env'});
 
 
-// Credential For Compiler Test:
+/* Credential For Compiler Test: */
 const clientId = process.env.CLIENT_ID;
 const clientSecret = process.env.CLIENT_SECRET;
-
+const sheet2_index = require('../seed/dataset_1.json').length;
 
 _router.get('/ping', (req,res,next)=>{
     const LOG = {
         status: 200,
         time: new Date(),
         endpoints :{
-            ping: 'GET to api/qode/ping',
-            compiler: 'POST to api/qode/qode-compiler',
-            questions: 'POST to api/qode/problems'
+            ping: "https://qode-msc.herokuapp.com/api/qode/ping",
+            compiler: "https://qode-msc.herokuapp.com/api/qode/qode-compiler",
+            Qode_Practice_Sheet_1: "https://qode-msc.herokuapp.com/api/qode/sheet1?topic=",
+            Qode_Practice_Sheet_2: "https://qode-msc.herokuapp.com/api/qode/sheet2?topic="
         }
     }
     return res.status(200).json(LOG);
 })
 
+/*  */ 
 _router.get(`/problems`, async(req,res, next)=>{
     try{
         const questionbank_1 = await qodequestionbank_1.find({});
         const data = {
             status: 200,
-            message: `450 DSA Sheet`,
+            message: `Qode Practice Problem [Complete Set]`,
             questions: questionbank_1
         }
         res.status(200).json(data);
@@ -44,6 +46,51 @@ _router.get(`/problems`, async(req,res, next)=>{
 
 })
 
+_router.get('/sheet1', async(req,res,next)=>{
+    try{
+        const topic = req.query.topic || "";
+        let filteredData = (topic !== "")? await qodequestionbank_1.find({topic: topic})
+                                         : await qodequestionbank_1.find({})
+
+        const data = {
+            status: 200,
+            message: `Problem Set #1 ${topic === ""? "" :"On "+ topic}`,
+            questions: filteredData
+        }
+        res.status(200).json(data);
+    }catch(err){
+        return res.status(401).json({
+            message: "Proxy Failed",
+            error : err.message
+        });
+    }
+})
+
+
+_router.get('/sheet2', async(req,res,next)=>{
+    try{
+        let secondaryfilterData = [];
+        const topic = req.query.topic || "";
+        const filteredData = (topic !== "")? await qodequestionbank_1.find({topic: topic})
+                                           : await qodequestionbank_1.find({})
+        for (let question of filteredData) {
+                if(question.question_id > sheet2_index)
+                    secondaryfilterData.push(question);
+        }
+        
+        const data = {
+            status: 200,
+            message: `Problem Set #2 ${topic === ""? "" :"On "+ topic}`,
+            questions: secondaryfilterData
+        }
+        res.status(200).json(data);
+    }catch(err){
+        return res.status(401).json({
+            message: "Proxy Failed",
+            error : err.message
+        });
+    }
+})
 
 // check #1: for invalid endpoint requests.
 _router.get('/*', (req,res,next)=>{
