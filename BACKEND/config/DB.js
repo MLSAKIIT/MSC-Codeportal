@@ -1,10 +1,9 @@
 // Mongo Database Connection:
 require('dotenv/config')
 const mongoose = require(`mongoose`)
-const MONGO_URI =
-    process.env.MONGO_URI ||
-    process.env.MONGO_CLOUD_URI ||
-    `mongodb://localhost:27017/temporary`
+const MONGO_URI =   process.env.MONGO_URI ||
+                    process.env.MONGO_CLOUD_URI ||
+                    `mongodb://localhost:27017/temporary`
 console.log(MONGO_URI)
 let DBConnectionStatus = true
 
