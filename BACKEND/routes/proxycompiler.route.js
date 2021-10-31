@@ -51,11 +51,15 @@ _router.get('/sheet1', async(req,res,next)=>{
         const topic = req.query.topic || "";
         let filteredData = (topic !== "")? await qodequestionbank_1.find({topic: topic})
                                          : await qodequestionbank_1.find({})
-
+        let secondaryfilterData = [];
+        for(let questions of filteredData){
+            if(questions.question_id<=sheet2_index)
+                secondaryfilterData.push(questions);
+        }
         const data = {
             status: 200,
             message: `Problem Set #1 ${topic === ""? "" :"On "+ topic}`,
-            questions: filteredData
+            questions: secondaryfilterData
         }
         res.status(200).json(data);
     }catch(err){
