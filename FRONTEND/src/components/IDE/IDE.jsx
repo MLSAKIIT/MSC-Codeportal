@@ -6,6 +6,8 @@ import qodeide from "../IDE/qodeide.png"
 import { Row, Col, Button, Form, Dropdown } from 'react-bootstrap';
 import Editor from "@monaco-editor/react";
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
+import PlayCircleFilledWhiteTwoToneIcon from '@mui/icons-material/PlayCircleFilledWhiteTwoTone';
+import PlayCircleFilledWhiteOutlinedIcon from '@mui/icons-material/PlayCircleFilledWhiteOutlined';
 import Loader from "react-loader-spinner";
 
 import { usePromiseTracker, trackPromise } from "react-promise-tracker";
@@ -75,7 +77,7 @@ function IDE() {
         <img className="qodeide-logo" src={qodeide} />
 
         <div className="selection-console">
-          <Button className="run-btn" variant="outline-primary" href="/" size="lg" >Back Home</Button>
+          <Button className="run-btn" variant="outline-primary" href="/"  >Back Home</Button>
 
           <Dropdown className="lang-selector">
             <Dropdown.Toggle className="lang-selector-btn">
@@ -90,10 +92,7 @@ function IDE() {
             </Dropdown.Menu>
           </Dropdown>
 
-          {/* <Button className="run-btn running" variant="success" size="lg" onClick={() => setFileName("java.java")}>Java  </Button>
-          <Button className="run-btn running" variant="success" size="lg" onClick={() => setFileName("python.py")}>Python  </Button> */}
-
-          <Button className="run-btn running" variant="success" size="lg" onClick={e => handleSubmit()}><LoaderButton />  </Button>
+          <Button className="run-btn running" variant="success"  onClick={e => handleSubmit()}><LoaderButton />  </Button>
         </div>
       </div>
 
@@ -134,9 +133,9 @@ function LoaderButton() {
   return (
     promiseInProgress
       ?
-      <Loader type="Oval" color="#fff" height={25} width={25} />
+      <Loader type="Oval" color="#fff" height={20} width={20} />
       :
-      <>Run <PlayCircleOutlineIcon /></>
+      <>Run <PlayCircleFilledWhiteOutlinedIcon className="play-btn"/></>
   )
 
 }
