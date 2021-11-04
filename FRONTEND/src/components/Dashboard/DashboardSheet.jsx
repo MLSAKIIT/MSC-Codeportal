@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 import sheetimg from "../About/Images/Learn.svg";
 
 const DashboardSheet = () => {
-  //set url
+  //setting sheet id
   const [sheet, setsheet] = useState("");
 
+  //onClick sheet functions
   const sheet1 = () => {
     setsheet(1);
   };
@@ -48,7 +49,7 @@ const DashboardSheet = () => {
             style={{ textDecoration: "none", color: "#000" }}
             to={{
               pathname: "/dashboard-set/sheet2",
-              state: { sheetid:2 },
+              state: { sheetid: 2 },
             }}
           >
             <Card className="w-75" onClick={sheet2}>

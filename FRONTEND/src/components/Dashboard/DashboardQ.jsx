@@ -3,9 +3,19 @@ import { useLocation } from "react-router-dom";
 import { Card, Row, Col } from "react-bootstrap";
 import "./DashboardQ.css";
 import ProgressCard from "./ProgressCard";
+import sheetimg from "../About/Images/Learn.svg";
+import {
+  getData,
+  updateDBData,
+  resetDBData,
+  exportDBData,
+  importDBData,
+} from "../../services/dbServices";
 
 const DashboardQ = (props) => {
+  
   const location = useLocation();
+  //getting sheet id from route
   const sheet = location.state?.sheetid;
   const [topiclist, setTopicList] = useState([]);
 
@@ -24,15 +34,14 @@ const DashboardQ = (props) => {
         const response = await fetch(url);
         const json = await response.json();
         setTopicList(json.questions);
-        console.log(json);
       } catch (error) {
         console.log("error", error);
       }
     };
     fetchData();
   }, []);
-  console.log("topic list", topiclist);
-  
+  // console.log("topic list", topiclist);
+
   return (
     <div
       style={{ overflow: "hidden", paddingBottom: "20px" }}
@@ -47,7 +56,13 @@ const DashboardQ = (props) => {
               style={{ width: "18rem", height: "30rem" }}
             >
               <Card.Body>
-                <Card.Title className="sheet-title">Sheet Name</Card.Title>
+                <Card.Title className="sheet-title">
+                  {sheet == 1
+                    ? "Striver's sheet"
+                    : sheet == 2
+                    ? "DSA Sheet by Fraz"
+                    : "450 DSA"}
+                </Card.Title>
                 <Card.Subtitle className="sheet-subtitle mb-4 text-muted">
                   Name
                 </Card.Subtitle>
@@ -84,17 +99,6 @@ const DashboardQ = (props) => {
             <Row xs={2} md={3} className="mx-0 px-0 g-4 order-2">
               {/* {Array.from({ length: 12 }).map((_, idx) => ( */}
               <ProgressCard key="1" />
-              <ProgressCard key="2" />
-              <ProgressCard key="3" />
-              <ProgressCard key="4" />
-              <ProgressCard key="5" />
-              <ProgressCard key="6" />
-              <ProgressCard key="7" />
-              <ProgressCard key="8" />
-              <ProgressCard key="9" />
-              <ProgressCard key="10" />
-              <ProgressCard key="11" />
-              <ProgressCard key="12" />
 
               {/* ))} */}
             </Row>
