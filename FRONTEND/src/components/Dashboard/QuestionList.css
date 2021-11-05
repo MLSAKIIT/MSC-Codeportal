@@ -41,8 +41,28 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  /* background-color: red; */
 }
+.unsolved:hover {
+  background-color: rgba(209, 199, 199, 0.308);
+}
+
 .solved {
-  background-color: green !important;
+  background-color: #1e8e3e;
+  color: #fff !important;
+}
+.solved .prob-style {
+  color: #fff !important;
+}
+.unsolved {
+  background-color: #fff;
+}
+.solved:hover {
+  background-color: #1e8e3e77;
+  color: #fff !important;
+}
+.prob-style {
+  text-decoration: none;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
 }
