@@ -1,4 +1,6 @@
 import { React, useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
+
 import "../Dashboard/QuestionList.css";
 import Rows from "./Rows";
 import { Container, Row, Col, Table } from "react-bootstrap";
@@ -7,17 +9,18 @@ import BookmarkIcon from "@mui/icons-material/Bookmark";
 import Checkbox from "@mui/material/Checkbox";
 import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 
-export default function QuestionList() {
+export default function QuestionList(props) {
+  const location = useLocation();
+  const sheet = location.state?.api;
   const [queslist, setQuesList] = useState([]);
 
   useEffect(() => {
-    const url = "https://qode-msc.herokuapp.com/api/qode/problems";
+    // const url = "https://qode-msc.herokuapp.com/api/qode/problems";
     const fetchData = async () => {
       try {
-        const response = await fetch(url);
+        const response = await fetch(sheet);
         const json = await response.json();
         setQuesList(json.questions);
-        // console.log(json);
       } catch (error) {
         console.log("error", error);
       }
@@ -25,7 +28,7 @@ export default function QuestionList() {
     fetchData();
   }, []);
 
-// console.log(queslist);
+  // console.log(queslist);
   return (
     <>
       <Container className="question-list">
