@@ -21,9 +21,16 @@
     color:white !important;
 }
 
+
+
+
 @media only screen and (max-width: 768px)
 {
     .nav_logo {
         width: 7rem;
+    }
+    .navbar-collapse{
+        background-color: #2C5087 !important;
+        border-radius: 17px !important;
     }
 }
