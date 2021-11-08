@@ -7,7 +7,6 @@ const localVersion = localStorage.getItem("450version");
 window.localVersion = localVersion;
 window.version = version;
 
-
 //insert function for sheet 1
 export function insertData(callback) {
   QuestionData.forEach((topic, index) => {
