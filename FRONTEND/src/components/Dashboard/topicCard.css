@@ -13,31 +13,67 @@
   border-radius: 10px; /* roundness of the scroll thumb */
   border: 3px solid rgba(78, 78, 78, 0.452); /* creates padding around scroll thumb */
 }
+
 .inprogress-card {
-  background-color: #aad6b9;
+  /* background: linear-gradient(
+    132.03deg,
+    #aad6b9 4.19%,
+    rgba(18, 214, 214, 0) 81.59%
+  ); */
+  background: #56ab2f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #a8e063,
+    #56ab2f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #a8e063,
+    #56ab2f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border: none;
   border-radius: 15px;
   height: 90%;
+  padding-bottom: 20px;
+  font-family: sans-serif;
 }
+
 .darkCard {
   opacity: 0.9;
 }
 .topicName {
   color: #333333;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 700;
 }
 .totalQuestion {
   color: #4f4f4f;
   font-weight: 700;
+  font-size: 14px;
 }
 .notstarted-card {
-  background-color: #aad0f6;
+  background: #ff416c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff4b2b,
+    #ff416c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff4b2b,
+    #ff416c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: sans-serif;
+  border: none;
   border-radius: 15px;
   height: 90%;
+  padding-bottom: 20px;
 }
 
 .percentDone {
   color: #4f4f4f;
+  font-size: 12px;
 }
 
 .container-custom2 {
@@ -60,6 +96,142 @@
 .hvr-grow:active {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
+}
+
+/* ----------Me--------------- */
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  max-height: 100vh;
+  /* background-color: #d3cce3; */
+}
+.header-background {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: flex-end;
+  padding: 40px 120px;
+  height: 60vh;
+  top: -150px;
+  width: 100%;
+  background: linear-gradient(
+    -45deg,
+    #acb6e5,
+    #acb6e5,
+    #74ebd577,
+    #74ebd5a6,
+    #acb6e5,
+    #acb6e55d
+  );
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+  -webkit-transform: skewY(4deg);
+  -moz-transform: skewY(4deg);
+  -ms-transform: skewY(4deg);
+  -o-transform: skewY(4deg);
+  transform: skewY(4deg);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.header-title {
+  text-align: right;
+  font-weight: 800px;
+}
+.header-title > h1 {
+  font-weight: 900 !important;
+  font-size: 5rem;
+  color: #fff;
+}
+.progress-update {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -150px;
+  /* position: absolute; */
+}
+.boxes-1 {
+  width: 300px;
+  height: fit-content;
+  margin-bottom: 50px !important;
+  padding: 15px 0px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxes-2 {
+  width: 300px;
+  height: 350px;
+  margin-bottom: 50px !important;
+  font-weight: 600;
+}
+.boxes-3 {
+  width: 300px;
+  height: fit-content;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 50px !important;
+  background: #d3cce3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e9e4f0,
+    #d3cce3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e9e4f0,
+    #d3cce3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.ques-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.circle-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.hero {
+  padding-bottom: 50px;
+}
+.card-col {
+  margin: 40px 0px;
+  height: 110vh;
+  overflow: scroll;
+  padding: 40px 0px;
+  position: relative;
+  top: -120px;
+  border-radius: 15px;
+}
+.btn {
+  font-size: 14px;
 }
 
 @media screen and (max-height: 650px) {
