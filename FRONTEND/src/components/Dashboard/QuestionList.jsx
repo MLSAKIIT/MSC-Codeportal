@@ -54,33 +54,27 @@ export default function QuestionList({ data, updateData }) {
     {
       dataField: "id",
       text: "Q-Id",
-      headerStyle: { width: "160px", fontSize: "20px" },
+      headerStyle: { width: "120px", fontSize: "15px" },
       headerAlign: "center",
     },
     {
       dataField: "question",
       text: "Questions",
-      headerStyle: { fontSize: "20px" },
+      headerStyle: { fontSize: "15px" },
       headerAlign: "center",
     },
     {
       dataField: "_is_selected",
       text: "Is Selected",
-      headerStyle: { fontSize: "20px" },
+      headerStyle: { fontSize: "15px" },
       hidden: true,
       sort: true,
     },
-    {
-      dataField: "_search_text",
-      text: "Search Text",
-      headerStyle: { fontSize: "20px" },
-      hidden: true,
-    },
   ];
-  const rowStyle = { fontSize: "20px" };
+  const rowStyle = { fontSize: "13px" };
   const selectRow = {
     mode: "checkbox",
-    style: { background: "#c8e6c9" },
+    style: { background: "#6ECB63" },
     selected: select,
     onSelect: handleSelect,
     hideSelectAll: true,
@@ -148,10 +142,8 @@ export default function QuestionList({ data, updateData }) {
   }
 
   return (
-    <>
-      <h3 className="text-center mb-4">
-        <Link to="/">Topics</Link>/{topicName}
-      </h3>
+    <div className="question-landing">
+      <h1 className="text-center mb-4 topic-name">{topicName}</h1>
 
       {data === undefined ? (
         <div className="d-flex justify-content-center">
@@ -168,9 +160,6 @@ export default function QuestionList({ data, updateData }) {
         >
           {(props) => (
             <div>
-              {/* <div className="header-rand">
-                {SearchBar({ ...props.searchProps })}
-              </div> */}
               <div className="container " style={{ overflowAnchor: "none" }}>
                 <BootstrapTable
                   {...props.baseProps}
@@ -183,6 +172,6 @@ export default function QuestionList({ data, updateData }) {
         </ToolkitProvider>
       )}
       <ToastContainer />
-    </>
+    </div>
   );
 }
