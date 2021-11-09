@@ -97,7 +97,7 @@ function App() {
         </Switch>
         {/* TOPIC ROUTE */}
         <Route
-          path="/array"
+          path="/sheet3/array"
           children={
             <QuestionList data={questionData[0]} updateData={updateData} />
           }

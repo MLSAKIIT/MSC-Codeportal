@@ -1,16 +1,21 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Badge from "react-bootstrap/Badge";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-// import Fade from "react-reveal/Fade";
+import { Pie } from "react-chartjs-2";
 import { Link } from "react-router-dom";
-// import { ThemeContext } from "../../App";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "./topicCard.css";
+import { Container } from "react-bootstrap";
+import profile from "./images/Profile.jpeg";
 
 export default function ProgressCard({ questionData }) {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   // const dark = useContext(ThemeContext);
 
   // This component takes all the topicsData(here questionData ) and renders a TopicCard Component
@@ -30,10 +35,14 @@ export default function ProgressCard({ questionData }) {
     //adding solved questions of every topic to totalSolved
     totalSolved += doneQuestions;
     totalQuestions += questions.length;
+
     if (started) {
       return (
         // <Fade duration={500 + index * 0.4} key={index}>
-        <div className="col mb-4">
+        <div
+          className="col mb-6"
+          // style={{ backgroundColor: "yellow" }}
+        >
           <Link
             to={`/${topic.topicName
               .replace(/[^A-Z0-9]+/gi, "_")
@@ -41,7 +50,7 @@ export default function ProgressCard({ questionData }) {
             style={{ textDecoration: "none" }}
           >
             <Card
-              className={`mb-3 inprogress-card animate__slideInDown hvr-grow 
+              className={`mb-4 inprogress-card animate__slideInDown hvr-grow 
                 `}
             >
               <Card.Body>
@@ -51,23 +60,30 @@ export default function ProgressCard({ questionData }) {
                       {topic.topicName}
                     </Card.Title>
                   </Col>
-                  <Col>
-                    <h4>
-                      <Badge
-                        pill
-                        variant="success"
-                        className="float-right"
-                        style={{ fontWeight: "500", cursor: "pointer" }}
-                      >
-                        {questionsRemainig === 0 ? "Done 👏🏻" : "Solve Now 🙇🏻‍♂️"}
-                      </Badge>
-                    </h4>
-                  </Col>
                 </Row>
+
                 <Card.Text className="totalQuestion">
                   Total Questions {topic.questions.length} <br />
                   {`${questionsRemainig}`} More to go
                 </Card.Text>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    marginTop: "15px",
+                  }}
+                >
+                  <h4>
+                    <Badge
+                      pill
+                      variant="success"
+                      className="float-right btn"
+                      style={{ fontWeight: "500", cursor: "pointer" }}
+                    >
+                      {questionsRemainig === 0 ? "Done 👏🏻" : "Solve Now 👩🏻‍💻"}
+                    </Badge>
+                  </h4>
+                </div>
                 <p className="percentDone mb-1">
                   <b>{percentDone}% Done</b>
                 </p>
@@ -85,7 +101,10 @@ export default function ProgressCard({ questionData }) {
     } else {
       return (
         // <Fade duration={500 + index * 50} key={index}>
-        <div className="col mb-4">
+        <div
+          className="col mb-6"
+          // style={{ backgroundColor: "blue" }}
+        >
           <Link
             to={`/${topic.topicName
               .replace(/[^A-Z0-9]+/gi, "_")
@@ -96,21 +115,13 @@ export default function ProgressCard({ questionData }) {
               <Card.Body>
                 <Row>
                   <Col>
-                    <Card.Title className="topicName"> {topicName} </Card.Title>
-                  </Col>
-                  <Col>
-                    <h4>
-                      <Badge
-                        pill
-                        variant="primary"
-                        className="float-right"
-                        style={{ fontWeight: "500", cursor: "pointer" }}
-                      >
-                        Start Now
-                      </Badge>
-                    </h4>
+                    <Card.Title className="topicName float-left">
+                      {" "}
+                      {topicName}{" "}
+                    </Card.Title>
                   </Col>
                 </Row>
+
                 <Card.Text className="totalQuestion">
                   Total Questions {questions.length}
                 </Card.Text>
@@ -119,6 +130,23 @@ export default function ProgressCard({ questionData }) {
                     <i>Not yet started</i>
                   </b>
                 </p>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    marginTop: "15px",
+                  }}
+                >
+                  <h4>
+                    <Badge
+                      pill
+                      className="float-right btn"
+                      style={{ fontWeight: "500", cursor: "pointer" }}
+                    >
+                      Start Now 🚀
+                    </Badge>
+                  </h4>
+                </div>
               </Card.Body>
             </Card>
           </Link>
@@ -127,114 +155,85 @@ export default function ProgressCard({ questionData }) {
       );
     }
   });
-  console.log(totalSolved, totalQuestions);
+
+  const data = {
+    labels: ["Unsolved", "Solved"],
+    datasets: [
+      {
+        label: "progress",
+        data: [totalQuestions - totalSolved, totalSolved],
+        backgroundColor: ["#e022013f", "#6dcb6369"],
+        borderColor: ["#E02401", "#6ECB63"],
+        borderWidth: 2,
+      },
+    ],
+    borderRadius: "2px",
+  };
+
   return (
-    <>
-      <h4 className="text-center mb-4">
-        {/* {totalSolved
-          ? `Total Questions Solved : ${totalSolved} (${(
-              (totalSolved / totalQuestions) *
-              100
-            ).toFixed(2)}% Done)`
-          : "Start Solving"} */}
-        {/* <p className="percentDone container mt-1">
-          {totalSolved ? (
-            <ProgressBar
-              animated={
-                ((totalSolved / totalQuestions) * 100).toFixed(2) === "100"
-                  ? false
-                  : true
-              }
-              variant="success"
-              now={((totalSolved / totalQuestions) * 100).toFixed(2)}
-              style={{ margin: "0.2em 5em" }}
-            />
-          ) : null}
-        </p> */}
-      </h4>
-      {/* <div className="container container-custom">
-        <div className="row row-cols-1 row-cols-md-3 mt-3 grids">
-          {ProgressCard}
+    <div>
+      <div className="header-background">
+        <div className="header-title" data-aos="zoom-in-down">
+          <h1>DSA sheet by Fraz.</h1>
         </div>
-      </div> */}
-      <div
-        style={{ overflow: "hidden", paddingBottom: "20px" }}
-        className="d-flex flex-nowrap justify-content-flex-start"
-      >
-        <Row>
-          <span className="title-span">Dashboard</span>
-          <div className="d-flex flex-wrap container-fluid">
-            <Col
-              lg={3}
-              className="d-inline"
-            >
-              <Card
-                className="sheet-body"
-                style={{
-                  width: "18rem",
-                  height: "30rem",
-                  // backgroundColor: "red",
-                  position: "fixed",
-                }}
-              >
-                <Card.Body>
-                  <Card.Title className="sheet-title">
-                    {/* {sheet == 1
-                      ? "Striver's sheet"
-                      : sheet == 2
-                      ? "DSA Sheet by Fraz"
-                      : "450 DSA"} */}
-                  </Card.Title>
-                  <Card.Subtitle className="sheet-subtitle mb-4 text-muted">
-                    Name
-                  </Card.Subtitle>
-
-                  <Card.Title className="sheet-title">
-                    Total No. of Questions
-                  </Card.Title>
-                  <Card.Subtitle className="sheet-subtitle mb-4 text-muted">
-                    {totalQuestions}
-                  </Card.Subtitle>
-
-                  <Card.Title className="sheet-title">
-                    Total No. of Solved Questions
-                  </Card.Title>
-                  <Card.Subtitle className="sheet-subtitle mb-4 text-muted">
-                    {totalSolved
-                      ? `${totalSolved} (${(
-                          (totalSolved / totalQuestions) *
-                          100
-                        ).toFixed(2)}% Done)`
-                      : "0"}
-                  </Card.Subtitle>
-
-                  <Card.Title className="sheet-title">
-                    Total No. of Unsolved Questions
-                  </Card.Title>
-                  <Card.Subtitle className="sheet-subtitle mb-4 text-muted">
-                    {totalQuestions - totalSolved
-                      ? `${totalQuestions - totalSolved} (${(
-                          ((totalQuestions - totalSolved) / totalQuestions) *
-                          100
-                        ).toFixed(2)}% Done)`
-                      : "totalQuestions"}
-                  </Card.Subtitle>
-
-                  <Card.Title className="sheet-title">Favourites</Card.Title>
-                  <Card.Subtitle className="sheet-subtitle mb-4 text-muted">
-                    xx Questions
-                  </Card.Subtitle>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col className="px-0">
-              <Row xs={1} md={3} className="mx-0 px-0 g-3 order-2">
-                {ProgressCard}
-              </Row>
-            </Col>
-          </div>
-        </Row>
       </div>
-    </>
+      <Container className="hero">
+        <div className="dashboard-container ">
+          <Col
+            lg={4}
+            md={4}
+            sm={4}
+            className="progress-update"
+            // style={{ backgroundColor: "red", right: "0%", height: "100vh" }}
+          >
+            <Card className="boxes-1">
+              <div className="circle">
+                <img src={profile} alt="" srcset="" className="circle-img" />
+              </div>
+              <div className="intro">
+                <h6 style={{ fontWeight: "600" }}>Welcome back,</h6>
+                <h4 style={{ fontWeight: "600" }}>Medhavi Basera</h4>
+              </div>
+            </Card>
+            <Card className="boxes-2">
+              <Card.Body>
+                <>
+                  <div className="header">
+                    <p className="title">Progress</p>
+                  </div>
+                  <Pie data={data} />
+                </>
+
+                {/* <PieChart data={(totalSolved, totalQuestions - totalSolved)} /> */}
+              </Card.Body>
+            </Card>
+            <Card className="boxes-3">
+              <Card.Body>
+                <div className="ques-data">
+                  <p>Total questions </p>
+                  <p> {totalQuestions}</p>
+                </div>
+                <div className="ques-data">
+                  <p>Solved questions </p>
+                  <p> {totalSolved}</p>
+                </div>
+                <div className="ques-data">
+                  <p>Unsolved questions </p>
+                  <p> {totalQuestions - totalSolved}</p>
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
+          <div
+            className="card-col"
+            // style={{ backgroundColor: "red" }}
+          >
+            <Row xs={1} md={2} className="mx-5 px-0 g-2 order-2">
+              {ProgressCard}
+            </Row>
+          </div>
+        </div>
+      </Container>
+    </div>
   );
 }

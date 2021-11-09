@@ -1,7 +1,7 @@
 
 /* NavBar Styling Here */
 .color-nav{
-    background-color: rgba(32, 58, 97) !important;
+    /* background-color: rgba(32, 58, 97) !important; */
     height: 5rem !important;
 }
 
@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color:white !important;
+    /* color:white !important; */
 }
 
 @media only screen and (max-width: 768px)
