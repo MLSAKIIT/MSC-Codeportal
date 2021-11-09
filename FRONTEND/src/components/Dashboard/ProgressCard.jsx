@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { Component, useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Badge from "react-bootstrap/Badge";
@@ -11,6 +11,7 @@ import "aos/dist/aos.css";
 import "./topicCard.css";
 import { Container } from "react-bootstrap";
 import profile from "./images/Profile.jpeg";
+import ScrollButton from "react-scroll-button";
 
 export default function ProgressCard({ questionData }) {
   useEffect(() => {
@@ -41,6 +42,7 @@ export default function ProgressCard({ questionData }) {
         // <Fade duration={500 + index * 0.4} key={index}>
         <div
           className="col mb-6"
+
           // style={{ backgroundColor: "yellow" }}
         >
           <Link
@@ -101,10 +103,7 @@ export default function ProgressCard({ questionData }) {
     } else {
       return (
         // <Fade duration={500 + index * 50} key={index}>
-        <div
-          className="col mb-6"
-          // style={{ backgroundColor: "blue" }}
-        >
+        <div className="col mb-6">
           <Link
             to={`/${topic.topicName
               .replace(/[^A-Z0-9]+/gi, "_")
@@ -172,7 +171,7 @@ export default function ProgressCard({ questionData }) {
 
   return (
     <div>
-      <div className="header-background">
+      <div className="header-background" id="target">
         <div className="header-title" data-aos="zoom-in-down">
           <h1>DSA sheet by Fraz.</h1>
         </div>
@@ -224,10 +223,14 @@ export default function ProgressCard({ questionData }) {
               </Card.Body>
             </Card>
           </Col>
-          <div
-            className="card-col"
-            // style={{ backgroundColor: "red" }}
-          >
+          <div className="card-col" id="style-1">
+            <ScrollButton
+              behavior={"smooth"}
+              buttonBackgroundColor={"#acb6e5"}
+              iconType={"arrow-up"}
+              style={{ fontSize: "24px" }}
+              targetId={"target"}
+            />
             <Row xs={1} md={2} className="mx-5 px-0 g-2 order-2">
               {ProgressCard}
             </Row>

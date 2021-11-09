@@ -33,6 +33,7 @@
     "react-promise-tracker": "^2.1.0",
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
+    "react-scroll-button": "^1.1.2",
     "react-spinners": "^0.11.0",
     "react-toastify": "^8.1.0",
     "sawo": "^1.0.1",
