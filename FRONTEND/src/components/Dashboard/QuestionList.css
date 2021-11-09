@@ -1,70 +1,3 @@
-/* .question-list {
- 
-  min-height: 100vh;
-}
-.topic {
-  font-family: "Space Mono", monospace;
-  font-size: 24px;
-  font-weight: 600;
-  text-align: center;
-}
-.ques-progress {
-  font-family: "Space Mono", monospace;
-  font-size: 16px;
-  text-align: center;
-  height: auto;
-  font-style: italic;
-  padding: 20px 0px;
-}
-.Ques-Table {
-  font-family: "Space Mono", monospace;
-}
-
-.table-head {
-  color: #0078d4;
-  text-align: center;
-}
-.table-head-1 {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: darkgray;
-}
-.bookmark {
-  color: #f9ab00;
-}
-.bookmark:hover {
-  color: #f9ab00 !important;
-}
-.rows-bg {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-.unsolved:hover {
-  background-color: rgba(209, 199, 199, 0.308);
-}
-
-.solved {
-  background-color: #1e8e3e;
-  color: #fff !important;
-}
-.solved .prob-style {
-  color: #fff !important;
-}
-.unsolved {
-  background-color: #fff;
-}
-.solved:hover {
-  background-color: #1e8e3e77;
-  color: #fff !important;
-}
-.prob-style {
-  text-decoration: none;
-  display: flex;
-  justify-content: center !important;
-  align-items: center !important;
-}  */
 .Toastify__toast-body {
   color: white;
   font-family: "Ubuntu Mono", monospace;
@@ -79,35 +12,27 @@
 
 /* Marked Complete */
 .Toastify__toast.toast-Done {
-  background: #27ae60;
+  background: #56ab2f;
+  background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);
+  background: linear-gradient(to right, #a8e063, #56ab2f);
 }
 
 .Toastify__toast.toast-Done .Toastify__progress-bar {
-  background: #c8e6c9;
+  background: #fcfcfc96;
 }
 
 /* Marked Incomplete */
 .Toastify__toast.toast-Incomplete {
-  background: #007bff;
+  background: #ff416c;
+  background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
 }
 
 .Toastify__toast.toast-Incomplete .Toastify__progress-bar {
-  background: #aad0f6;
+  background: #fcfcfc96;
 }
 
 /* Notes section */
-
-.note-container {
-  background: white;
-  position: absolute;
-  display: block;
-  width: 50%;
-  padding: 2% 1%;
-  top: 30%;
-  right: 25%;
-  border: 2px solid black;
-  border-radius: 0.5em;
-}
 
 .question-title {
   width: 100%;
@@ -122,77 +47,11 @@
   word-wrap: break-word;
 }
 
-.note-section {
-  background: rgb(255, 255, 255);
-  display: none;
-  border: 2px solid #27ae60;
-  border-radius: 5px;
-  position: relative;
-  margin-bottom: 0.5em;
-  width: 100%;
-  padding: 0.5em 0.8em;
-  resize: none;
-  height: 10em;
-}
-.note-section:focus-visible {
-  outline: none;
-}
-
-::placeholder {
-  color: black;
-  opacity: 0.5;
-}
 .button-container {
   display: flex;
   align-items: right;
   flex-direction: row-reverse;
   justify-content: flex-end;
-}
-
-.note-exit {
-  display: none;
-  position: relative;
-  width: 5em;
-  background: #dc3545;
-  margin-right: 0.3em;
-  border-radius: 0.3em;
-  color: white;
-}
-
-.note-save {
-  display: none;
-  position: relative;
-  background: #27ae60;
-  width: 5em;
-  border-radius: 0.3em;
-  margin-right: 0.3em;
-  color: white;
-}
-
-.note-area {
-  display: none;
-  height: 10em;
-  width: 10em;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(2px);
-
-  top: 0;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-}
-
-#tooltip-top > .tooltip-inner {
-  background-color: #fff;
-  color: green;
-  border: 1px solid #062e56;
-}
-
-#tooltip-top > .tooltip-arrow {
-  border-top: 5px solid #062e56;
-}
-.dark-table {
-  color: white;
 }
 
 .question-link:hover {
@@ -217,9 +76,30 @@
   color: white;
   background-color: #1a8647;
 }
-.pick-random-btn {
-  z-index: 0 !important; /*To Override z-index set by Bootstrap*/
-}
+
 .table > tbody {
   text-align: center !important;
+}
+td > a {
+  text-decoration: none;
+  font-size: 14px;
+  padding: 25px 0px !important;
+}
+.table > thead {
+  background-color: #435560;
+  color: #fff;
+  font-size: 13px !important;
+}
+
+/* me */
+.topic-name {
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.question-landing {
+  /* background: #74ebd5;
+  background: -webkit-linear-gradient(to right, #acb6e5, #74ebd5);
+  background: linear-gradient(to right, #acb6e5, #74ebd5);
+  min-height: 100vh; */
 }

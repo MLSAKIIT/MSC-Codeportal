@@ -16,17 +16,9 @@
 
 .inprogress-card {
   color: #fff;
-  background: #56ab2f; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #a8e063,
-    #56ab2f
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #a8e063,
-    #56ab2f
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #56ab2f;
+  background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);
+  background: linear-gradient(to right, #a8e063, #56ab2f);
 
   border: none;
   border-radius: 15px;
@@ -50,17 +42,9 @@
   font-size: 14px;
 }
 .notstarted-card {
-  background: #ff416c; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ff4b2b,
-    #ff416c
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #ff4b2b,
-    #ff416c
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ff416c;
+  background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
   font-family: sans-serif;
   border: none;
   border-radius: 15px;
