@@ -1,31 +1,40 @@
 .cols
 {
     /* height:100vh; */
+    display: flex;
+    flex-direction: row;
     padding-bottom: 30px;
+    position: relative;
 }
 .rows
 {
-    padding-top: 50px ;
+    padding-top: 10px ;
 }
 .rows1
 {
     padding-top: 100px ;
+    border: 0.5px solid #f2f2f2;
+    border-right: none;
+    padding: 30px;
 }
 .rows2
 {
     padding-top: 100px ;
+    border: 0.5px solid #f2f2f2;
+    padding: 30px;
 }
 .greet
 {
     font-family: 'Space Mono', monospace;
     font-size: 24px;
     font-weight: 600;
+    margin-bottom: 10px;
+    font-family: 'Work Sans', sans-serif;
 }
 .image
 {
     display:flex;
     justify-content: center;
-    /* align-items: center; */
     height: 240px;
 }
 .des-p
@@ -40,5 +49,8 @@
     text-align: center;
     padding: 30px 0px;
     font-size: 20px;
+}
 
+.custom-shape-divider-top-1636734134 .shape-fill {
+    fill: rgba(32, 58, 97) !important;
 }
