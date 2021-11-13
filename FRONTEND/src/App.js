@@ -326,4 +326,36 @@ function IntegratedDevelopmentEnvironment() {
   );
 }
 
+function Qode() {
+  return (
+    <div>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path="/" exact>
+            <Landing />
+            {/* <About />
+            <Features /> */}
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/dashboard">
+            <Dashboard />
+          </Route>
+          <Route path="/questions">
+            <QuestionList />
+          </Route>
+          {/* <Route path="/dashboard-set">
+            <DashboardQ />
+          </Route> */}
+          <Route path="/dashboard-sheet">
+            <DashboardSheet />
+          </Route>
+        </Switch>
+      </Router>
+    </div>
+  );
+}
+
 export default App;
