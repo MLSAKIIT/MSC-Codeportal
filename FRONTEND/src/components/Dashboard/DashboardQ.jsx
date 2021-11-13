@@ -4,16 +4,8 @@ import { Card, Row, Col } from "react-bootstrap";
 import "./DashboardQ.css";
 import ProgressCard from "./ProgressCard";
 import sheetimg from "../About/Images/Learn.svg";
-import {
-  getData,
-  updateDBData,
-  resetDBData,
-  exportDBData,
-  importDBData,
-} from "../../services/dbServices";
 
 const DashboardQ = (props) => {
-  
   const location = useLocation();
   //getting sheet id from route
   const sheet = location.state?.sheetid;
@@ -97,10 +89,7 @@ const DashboardQ = (props) => {
           </Col>
           <Col className="px-0">
             <Row xs={2} md={3} className="mx-0 px-0 g-4 order-2">
-              {/* {Array.from({ length: 12 }).map((_, idx) => ( */}
-              <ProgressCard key="1" />
-
-              {/* ))} */}
+              {/* <ProgressCard /> */}
             </Row>
           </Col>
         </div>
