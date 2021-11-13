@@ -7,17 +7,18 @@ import Col from "react-bootstrap/Col";
 import { Pie } from "react-chartjs-2";
 import { Link } from "react-router-dom";
 import Aos from "aos";
-import "aos/dist/aos.css";
-import "./topicCard.css";
+import Fade from "react-reveal/Fade";
 import { Container } from "react-bootstrap";
 import profile from "./images/Profile.jpeg";
 import ScrollButton from "react-scroll-button";
+
+import "aos/dist/aos.css";
+import "./topicCard.css";
 
 export default function ProgressCard({ questionData }) {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
-  // const dark = useContext(ThemeContext);
 
   // This component takes all the topicsData(here questionData ) and renders a TopicCard Component
 
@@ -28,132 +29,135 @@ export default function ProgressCard({ questionData }) {
 
   let totalSolved = 0;
   let totalQuestions = 0;
+
   // Mapping questionData to topicCard array
   let ProgressCard = questionData.map((topic, index) => {
     let { topicName, doneQuestions, questions, started } = topic;
     let percentDone = findPercentage(doneQuestions, questions.length);
     let questionsRemainig = questions.length - doneQuestions;
+
     //adding solved questions of every topic to totalSolved
     totalSolved += doneQuestions;
     totalQuestions += questions.length;
 
     if (started) {
       return (
-        // <Fade duration={500 + index * 0.4} key={index}>
-        <div
-          className="col mb-6"
+        <Fade duration={500 + index * 0.4} key={index}>
+          <div
+            className="col mb-6"
 
-          // style={{ backgroundColor: "yellow" }}
-        >
-          <Link
-            to={`/${topic.topicName
-              .replace(/[^A-Z0-9]+/gi, "_")
-              .toLowerCase()}`}
-            style={{ textDecoration: "none" }}
+            // style={{ backgroundColor: "yellow" }}
           >
-            <Card
-              className={`mb-4 inprogress-card animate__slideInDown hvr-grow 
-                `}
+            <Link
+              to={`/sheet1/${topic.topicName
+                .replace(/[^A-Z0-9]+/gi, "_")
+                .toLowerCase()}`}
+              style={{ textDecoration: "none" }}
             >
-              <Card.Body>
-                <Row>
-                  <Col>
-                    <Card.Title className="topicName">
-                      {topic.topicName}
-                    </Card.Title>
-                  </Col>
-                </Row>
+              <Card
+                className={`mb-4 inprogress-card animate__slideInDown hvr-grow 
+                `}
+              >
+                <Card.Body>
+                  <Row>
+                    <Col>
+                      <Card.Title className="topicName">
+                        {topic.topicName}
+                      </Card.Title>
+                    </Col>
+                  </Row>
 
-                <Card.Text className="totalQuestion">
-                  Total Questions {topic.questions.length} <br />
-                  {`${questionsRemainig}`} More to go
-                </Card.Text>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    marginTop: "15px",
-                  }}
-                >
-                  <h4>
-                    <Badge
-                      pill
-                      variant="success"
-                      className="float-right btn"
-                      style={{ fontWeight: "500", cursor: "pointer" }}
-                    >
-                      {questionsRemainig === 0 ? "Done 👏🏻" : "Solve Now 👩🏻‍💻"}
-                    </Badge>
-                  </h4>
-                </div>
-                <p className="percentDone mb-1">
-                  <b>{percentDone}% Done</b>
-                </p>
-                <ProgressBar
-                  animated={percentDone === 100 ? false : true}
-                  variant="success"
-                  now={percentDone}
-                />
-              </Card.Body>
-            </Card>
-          </Link>
-        </div>
-        // </Fade>
+                  <Card.Text className="totalQuestion">
+                    Total Questions {topic.questions.length} <br />
+                    {`${questionsRemainig}`} More to go
+                  </Card.Text>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      marginTop: "15px",
+                    }}
+                  >
+                    <h4>
+                      <Badge
+                        pill
+                        variant="success"
+                        className="float-right btn"
+                        style={{ fontWeight: "500", cursor: "pointer" }}
+                      >
+                        {questionsRemainig === 0 ? "Done 👏🏻" : "Solve Now 👩🏻‍💻"}
+                      </Badge>
+                    </h4>
+                  </div>
+                  <p className="percentDone mb-1">
+                    <b>{percentDone}% Done</b>
+                  </p>
+                  <ProgressBar
+                    animated={percentDone === 100 ? false : true}
+                    variant="success"
+                    now={percentDone}
+                  />
+                </Card.Body>
+              </Card>
+            </Link>
+          </div>
+        </Fade>
       );
     } else {
       return (
-        // <Fade duration={500 + index * 50} key={index}>
-        <div className="col mb-6">
-          <Link
-            to={`/${topic.topicName
-              .replace(/[^A-Z0-9]+/gi, "_")
-              .toLowerCase()}`}
-            style={{ textDecoration: "none" }}
-          >
-            <Card className={`mb-3 notstarted-card hvr-grow `}>
-              <Card.Body>
-                <Row>
-                  <Col>
-                    <Card.Title className="topicName float-left">
-                      {" "}
-                      {topicName}{" "}
-                    </Card.Title>
-                  </Col>
-                </Row>
+        <Fade duration={500 + index * 50} key={index}>
+          <div className="col mb-6">
+            <Link
+              to={`/sheet1/${topic.topicName
+                .replace(/[^A-Z0-9]+/gi, "_")
+                .toLowerCase()}`}
+              style={{ textDecoration: "none" }}
+            >
+              <Card className={`mb-3 notstarted-card hvr-grow `}>
+                <Card.Body>
+                  <Row>
+                    <Col>
+                      <Card.Title className="topicName float-left">
+                        {" "}
+                        {topicName}{" "}
+                      </Card.Title>
+                    </Col>
+                  </Row>
 
-                <Card.Text className="totalQuestion">
-                  Total Questions {questions.length}
-                </Card.Text>
-                <p className="percentDone mb-1">
-                  <b>
-                    <i>Not yet started</i>
-                  </b>
-                </p>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    marginTop: "15px",
-                  }}
-                >
-                  <h4>
-                    <Badge
-                      pill
-                      className="float-right btn"
-                      style={{ fontWeight: "500", cursor: "pointer" }}
-                    >
-                      Start Now 🚀
-                    </Badge>
-                  </h4>
-                </div>
-              </Card.Body>
-            </Card>
-          </Link>
-        </div>
-        // </Fade>
+                  <Card.Text className="totalQuestion">
+                    Total Questions {questions.length}
+                  </Card.Text>
+                  <p className="percentDone mb-1">
+                    <b>
+                      <i>Not yet started</i>
+                    </b>
+                  </p>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      marginTop: "15px",
+                    }}
+                  >
+                    <h4>
+                      <Badge
+                        pill
+                        className="float-right btn"
+                        style={{ fontWeight: "500", cursor: "pointer" }}
+                      >
+                        Start Now 🚀
+                      </Badge>
+                    </h4>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Link>
+          </div>
+        </Fade>
       );
     }
   });
+  console.log(totalSolved, totalQuestions);
 
   const data = {
     labels: ["Unsolved", "Solved"],
@@ -187,7 +191,7 @@ export default function ProgressCard({ questionData }) {
           >
             <Card className="boxes-1">
               <div className="circle">
-                <img src={profile} alt="" srcset="" className="circle-img" />
+                <img src={profile} alt="" className="circle-img" />
               </div>
               <div className="intro">
                 <h6 style={{ fontWeight: "600" }}>Welcome back,</h6>

@@ -7,7 +7,7 @@ export default [
     questions: [
       {
         Topic: "Array",
-        Problem: "Reverse the array 3",
+        Problem: "Reverse the array 3 in sheet 2",
         Done: false,
         Bookmark: false,
         Notes: "",
@@ -15,7 +15,7 @@ export default [
       },
       {
         Topic: "Array",
-        Problem: "Find the maximum and minimum element in an array",
+        Problem: "Find the maximum and minimum element in an array in sheet 2",
         Done: false,
         Bookmark: false,
         Notes: "",
@@ -308,7 +308,7 @@ export default [
     questions: [
       {
         Topic: "Matrix",
-        Problem: "Spiral traversal on a Matrix",
+        Problem: "Spiral traversal on a Matrix in sheet 2",
         Done: false,
         Bookmark: false,
         Notes: "",
@@ -397,7 +397,7 @@ export default [
     questions: [
       {
         Topic: "String",
-        Problem: "Reverse a String",
+        Problem: "Reverse a String in sheet 2 ",
         Done: false,
         Bookmark: false,
         Notes: "",
@@ -765,8 +765,7 @@ export default [
     questions: [
       {
         Topic: "Searching & Sorting",
-        Problem:
-          "Find first and last positions of an element in a sorted array",
+        Problem: "Find first and last positions of sheet 2",
         Done: false,
         Bookmark: false,
         Notes: "",
@@ -1063,8 +1062,7 @@ export default [
     questions: [
       {
         Topic: "LinkedList",
-        Problem:
-          "Write a Program to reverse the Linked List. (Both Iterative and recursive)",
+        Problem: "Write a Program to reverse the Linked List. in sheet 2",
         Done: false,
         Bookmark: false,
         Notes: "",
@@ -1366,7 +1364,7 @@ export default [
     questions: [
       {
         Topic: "Binary Trees",
-        Problem: "level order traversal",
+        Problem: "level order traversal in sheet 2",
         Done: false,
         Bookmark: false,
         Notes: "",
@@ -1661,7 +1659,7 @@ export default [
     questions: [
       {
         Topic: "Binary Search Trees",
-        Problem: "Find a value in a BST",
+        Problem: "Find a value in a BST in sheet 2",
         Done: false,
         Bookmark: false,
         Notes: "",
@@ -1846,7 +1844,7 @@ export default [
     questions: [
       {
         Topic: "Greedy",
-        Problem: "Activity Selection Problem",
+        Problem: "Activity Selection Problem in sheet 2 ",
         Done: false,
         Bookmark: false,
         Notes: "",
@@ -2138,7 +2136,7 @@ export default [
     questions: [
       {
         Topic: "BackTracking",
-        Problem: "Rat in a maze Problem",
+        Problem: "Rat in a maze Problem in sheet 2",
         Done: false,
         Bookmark: false,
         Notes: "",
@@ -2300,7 +2298,7 @@ export default [
     questions: [
       {
         Topic: "Stacks & Queues",
-        Problem: " Implement Stack from Scratch",
+        Problem: " Implement Stack from Scratch in sheet 2",
         Done: false,
         Bookmark: false,
         Notes: "",
@@ -2619,7 +2617,7 @@ export default [
     questions: [
       {
         Topic: "Heap",
-        Problem: "Implement a Maxheap/MinHeap using arrays and recursion.",
+        Problem: "Implement a Maxheap/MinHeap using sheet 2",
         Done: false,
         Bookmark: false,
         Notes: "",
@@ -2772,7 +2770,7 @@ export default [
     questions: [
       {
         Topic: "Graph",
-        Problem: "Create a Graph, print it",
+        Problem: "Create a Graph, print it in sheet 2",
         Done: false,
         Bookmark: false,
         Notes: "",
@@ -3129,7 +3127,7 @@ export default [
     questions: [
       {
         Topic: "Trie",
-        Problem: "Construct a trie from scratch",
+        Problem: "Construct a trie from scratch in sheet 2",
         Done: false,
         Bookmark: false,
         Notes: "",
@@ -3185,7 +3183,7 @@ export default [
     questions: [
       {
         Topic: "Dynamic Programming",
-        Problem: "Coin ChangeProblem",
+        Problem: "Coin ChangeProblem in sheet 2",
         Done: false,
         Bookmark: false,
         Notes: "",
@@ -3677,7 +3675,7 @@ export default [
     questions: [
       {
         Topic: "Bit Manipulation",
-        Problem: "Count set bits in an integer",
+        Problem: "Count set bits in an integer in sheet 2",
         Done: false,
         Bookmark: false,
         Notes: "",

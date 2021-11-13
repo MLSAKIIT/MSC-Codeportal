@@ -86,15 +86,15 @@ td > a {
   padding: 25px 0px !important;
 }
 .table > thead {
-  background-color: #435560;
-  color: #fff;
+  background-color: #eeeeee;
+  color: #393e46;
   font-size: 13px !important;
 }
 
 /* me */
 .topic-name {
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .question-landing {
