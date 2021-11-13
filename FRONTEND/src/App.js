@@ -56,8 +56,8 @@ function Qode() {
         <Switch>
           <Route path="/" exact>
             <Landing />
-            <About />
-            <Features />
+            {/* <About />
+            <Features /> */}
           </Route>
           <Route path="/login">
             <Login />
