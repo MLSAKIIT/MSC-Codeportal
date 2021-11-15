@@ -108,7 +108,7 @@ td > a {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  /* background-size: auto; */
+
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   /* background: #74ebd5;

@@ -29,6 +29,7 @@ export default function Features() {
           }}
         >
           <img
+            className="background-img"
             style={{
               position: "absolute",
               zIndex: "-1",
@@ -74,6 +75,7 @@ export default function Features() {
 
         <ParallaxLayer
           sticky={{ start: 1.2, end: 3.2 }}
+          className="qode"
           style={{
             ...alignCenter,
             justifyContent: "flex-start",
@@ -81,8 +83,8 @@ export default function Features() {
           }}
         >
           <div className="parallax-card sticky">
-            <p style={{ fontSize: "6rem" }}>Qode</p>
-            <p style={{ fontSize: "3rem" }}>by MSC KIIT</p>
+            <p className="card-text-head">Qode</p>
+            <p className="card-text">by MSC KIIT</p>
           </div>
         </ParallaxLayer>
 
@@ -95,9 +97,9 @@ export default function Features() {
           }}
         >
           <div className="parallax-card parallax purple">
-            <p style={{ fontSize: "5rem" }}>Code</p>
+            <p className="card-text-head-2">Code</p>
             <p>
-              <ul>
+              <ul className="card-text-2">
                 <li>
                   Full Fledged IDE with C++, Java, Python and more support!
                 </li>
@@ -113,9 +115,9 @@ export default function Features() {
           style={{ ...alignCenter, justifyContent: "flex-end" }}
         >
           <div className="parallax-card parallax blue">
-            <p style={{ fontSize: "5rem" }}>Practice</p>
+            <p className="card-text-head-2">Practice</p>
             <p>
-              <ul>
+              <ul className="card-text-2">
                 <li>Over 1000+ questions of Data Structures and Algorithms</li>
                 <li>
                   From LeetCode, GeeksForGeeks, CodeChef, CodeForces, SPOJ,
@@ -136,8 +138,8 @@ export default function Features() {
           style={{ ...alignCenter, justifyContent: "flex-end" }}
         >
           <div className="parallax-card parallax orange">
-            <p style={{ fontSize: "5rem" }}>Compete</p>
-            <p>
+            <p className="card-text-head-2">Compete</p>
+            <p className="card-text-2">
               Compete with hundreds of other coders at our home-brewed
               hackathons.
             </p>
@@ -162,21 +164,21 @@ export default function Features() {
             alignItems: "center",
           }}
         >
-          <p className="scrollText overhead">We got you covered 💪</p>
+          <p style={{ marginBottom: "40px" }} className="scrollText overhead">
+            We got you covered 💪
+          </p>
 
           <Container
-          // style={{ backgroundColor: "#191A19" }}
+          // style={{ backgroundColor: "red" }}
           >
             <Row className="para-why">
               <Col xs={12} md={6}>
                 <div>
-                  <p style={{ fontSize: "4rem", color: "#fff" }}>
-                    User Centric Dashboard
-                  </p>
-                  <p style={{ fontSize: "1.5rem", color: "#525252" }}>
+                  <p className="about-feature-head">User Centric Dashboard</p>
+                  <p className="about-feature-body">
                     Track your progress efficiently in one place. ⭐
                   </p>
-                  <p style={{ fontSize: "1.5rem", color: "#525252" }}>
+                  <p className="about-feature-body">
                     Overall Progress + Topic Wise Progress + Total Progress
                     Graph 🚀
                   </p>
@@ -188,36 +190,18 @@ export default function Features() {
             </Row>
 
             <Row className="para-why">
-              <Col xs={12} md={6}>
+              <Col xs={12} md={6} xs={{ order: 2 }} lg={{ order: 1 }}>
                 <img className="landingImg-1" src={questions} />
               </Col>
-              <Col xs={12} md={6}>
+              <Col xs={12} md={6} xs={{ order: 1 }} lg={{ order: 2 }}>
                 <div>
-                  <p
-                    style={{
-                      fontSize: "4rem",
-                      color: "#fff",
-                      textAlign: "right",
-                    }}
-                  >
+                  <p className="about-feature-head align-right">
                     Organized tables
                   </p>
-                  <p
-                    style={{
-                      fontSize: "1.5rem",
-                      color: "#525252",
-                      textAlign: "right",
-                    }}
-                  >
+                  <p className="about-feature-body align-right">
                     Keep a track of solved/unsolved questions efficiently 📑
                   </p>
-                  <p
-                    style={{
-                      fontSize: "1.5rem",
-                      color: "#525252",
-                      textAlign: "right",
-                    }}
-                  >
+                  <p className="about-feature-body align-right">
                     Visit the topic related questions in one click ✌🏻
                   </p>
                 </div>
@@ -227,11 +211,11 @@ export default function Features() {
             <Row className="para-why">
               <Col xs={12} md={6}>
                 <div>
-                  <p style={{ fontSize: "4rem", color: "#fff" }}>Online IDE</p>
-                  <p style={{ fontSize: "1.4rem", color: "#525252" }}>
+                  <p className="about-feature-head">Online IDE</p>
+                  <p className="about-feature-body">
                     Supports languages like C, C++, Python, Java 👩🏻‍💻
                   </p>
-                  <p style={{ fontSize: "1.4rem", color: "#525252" }}>
+                  <p className="about-feature-body">
                     Code and compete at one place 🔥
                   </p>
                 </div>
