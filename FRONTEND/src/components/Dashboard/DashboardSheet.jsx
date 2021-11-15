@@ -27,7 +27,7 @@ const DashboardSheet = () => {
           <Link
             style={{ textDecoration: "none", color: "#000" }}
             to={{
-              pathname: "/dashboard-set/sheet1",
+              pathname: "/dashboard",
               state: { sheetid: 1 },
             }}
           >
@@ -48,7 +48,7 @@ const DashboardSheet = () => {
           <Link
             style={{ textDecoration: "none", color: "#000" }}
             to={{
-              pathname: "/dashboard-set/sheet2",
+              pathname: "/dashboard",
               state: { sheetid: 2 },
             }}
           >
@@ -69,7 +69,7 @@ const DashboardSheet = () => {
           <Link
             style={{ textDecoration: "none", color: "#000" }}
             to={{
-              pathname: "/dashboard-set/sheet3",
+              pathname: "/dashboard",
               state: { sheetid: 3 },
             }}
           >

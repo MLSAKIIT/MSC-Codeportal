@@ -95,8 +95,6 @@ function App() {
           <Switch>
             <Route path="/" exact>
               <Landing />
-              {/* <About />
-              <Features /> */}
             </Route>
             <Route path="/login">
               <Login />

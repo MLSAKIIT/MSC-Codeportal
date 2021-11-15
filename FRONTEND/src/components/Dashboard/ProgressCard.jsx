@@ -127,9 +127,12 @@ export default function ProgressCard({ questionData }) {
                   <Card.Text className="totalQuestion">
                     Total Questions {questions.length}
                   </Card.Text>
-                  <p className="percentDone mb-1">
+                  <p
+                    className="percentDone mb-1"
+                    style={{ textAlign: "center" }}
+                  >
                     <b>
-                      <i>Not yet started</i>
+                      <i className="not-started">Not yet started</i>
                     </b>
                   </p>
                   <div
@@ -174,7 +177,7 @@ export default function ProgressCard({ questionData }) {
   };
 
   return (
-    <div>
+    <div style={{ backgroundColor: "#e0e5ec" }}>
       <div className="header-background" id="target">
         <div className="header-title" data-aos="zoom-in-down">
           <h1>DSA sheet by Fraz.</h1>

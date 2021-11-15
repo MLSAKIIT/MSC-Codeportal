@@ -79,6 +79,7 @@
 
 .table > tbody {
   text-align: center !important;
+  background: rgba(255, 255, 255, 0.568);
 }
 td > a {
   text-decoration: none;
@@ -98,6 +99,18 @@ td > a {
 }
 
 .question-landing {
+  background: #ece9e6;
+  background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
+  background: linear-gradient(to right, #ffffff, #ece9e6);
+
+  background-image: url(./images/Vector-1.svg);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  /* background-size: auto; */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   /* background: #74ebd5;
   background: -webkit-linear-gradient(to right, #acb6e5, #74ebd5);
   background: linear-gradient(to right, #acb6e5, #74ebd5);
