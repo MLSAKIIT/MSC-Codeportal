@@ -133,14 +133,14 @@
   background-image: url(./Images/133.svg);
   background-color: #fff9b68e;
   background-blend-mode: screen;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(20px);
 }
 
 .purple {
   background-image: url(./Images/11.svg);
   background-color: #bee9e1e5;
   background-blend-mode: screen;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(20px);
 }
 
 .orange {

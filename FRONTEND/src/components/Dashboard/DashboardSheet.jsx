@@ -24,12 +24,16 @@ const DashboardSheet = () => {
     >
       <Row xs={1} md={3} style={{ marginLeft: "20px" }} className="g-4">
         <Col>
-          <Link
+          {/* <Link
             style={{ textDecoration: "none", color: "#000" }}
             to={{
-              pathname: "/dashboard",
+              pathname: "https://7f7e9984.msc-codeportal.pages.dev/",
               state: { sheetid: 1 },
             }}
+          > */}
+          <a
+            href="https://7f7e9984.msc-codeportal.pages.dev/"
+            style={{ style: "none", textDecoration: "none" }}
           >
             <Card className="w-75" onClick={sheet1}>
               <Image src={sheetimg} roundedCircle />
@@ -42,13 +46,14 @@ const DashboardSheet = () => {
                 </Card.Text>
               </Card.Body>
             </Card>
-          </Link>
+          </a>
+          {/* </Link> */}
         </Col>
         <Col>
           <Link
             style={{ textDecoration: "none", color: "#000" }}
             to={{
-              pathname: "/dashboard",
+              pathname: "https://7f7e9984.msc-codeportal.pages.dev/",
               state: { sheetid: 2 },
             }}
           >
@@ -69,7 +74,7 @@ const DashboardSheet = () => {
           <Link
             style={{ textDecoration: "none", color: "#000" }}
             to={{
-              pathname: "/dashboard",
+              pathname: "https://7f7e9984.msc-codeportal.pages.dev/",
               state: { sheetid: 3 },
             }}
           >
