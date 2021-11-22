@@ -87,7 +87,7 @@
   display: flex;
   flex-direction: row;
   position: relative;
-  max-height: 100vh;
+  max-height: fit-content;
   /* background-color: #d3cce3; */
 }
 .header-background {
@@ -156,6 +156,7 @@
   flex-direction: column;
   position: relative;
   top: -150px;
+  /* padding-bottom: 60px; */
   /* position: absolute; */
 }
 .boxes-1 {
@@ -252,10 +253,24 @@
   .container-custom {
     height: 56vh;
   }
+  .header-title > h1 {
+    font-size: 2rem !important;
+  }
 }
-
-@media screen and (max-height: 750px) {
-  .container-custom {
-    height: 54vh;
+@media screen and (max-width: 650px) {
+  #style-1 {
+    background-color: #d7e5f7;
+  }
+  .header-background {
+    padding-top: 140px;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 55vh;
+  }
+  .header-title > h1 {
+    font-size: 4rem !important;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 }
