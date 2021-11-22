@@ -10,7 +10,7 @@ export default function Landing() {
         <>
          <Container className="cols">
              <Row className="rows">
-                  <div className="greet">Hi, Username</div>
+                  {/* <div className="greet">Hi, Username</div> */}
                 <Col xs={12} md={6} className="rows1">
                      <Row>
                         <Col className="image">

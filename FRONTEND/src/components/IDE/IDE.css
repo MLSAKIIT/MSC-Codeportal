@@ -4,14 +4,14 @@
 
 .input {
   border: 2px #203a61 solid;
-  border-radius: 1rem;
+  border-radius: 10px;
   width: 95%;
   margin: 1rem 0;
 }
 
 .output {
   border: 2px #203a61 solid;
-  border-radius: 1rem;
+  border-radius: 10px;
   width: 95%;
   margin: 1rem 0;
 }
@@ -63,9 +63,9 @@
 
 .ide-toolbar {
   height: 75px;
-  border: 2px #203a61 solid;
+  /* border: 2px #203a61 solid; */
   border-radius: 10px;
-  margin: 5px 12px;
+  margin: 5px;
   display: flex;
   justify-content: space-between;
 }
@@ -91,14 +91,13 @@
 }
 
 .lang-selector-btn {
-  padding: 0.5rem;
-  font-size: 1.25rem !important;
-  width: 175px !important;
+  font-size: 1rem !important;
+  width: 160px !important;
 }
 
 .lang-selector-menu{
-  width: 175px !important;
-  font-size: 1.25rem !important;
+  width: 160px !important;
+  /* font-size: 1.25rem !important; */
 
 }
 
@@ -106,7 +105,12 @@
   border: 2px solid #0078d4;
   color: #0078d4;
   font-family: Space Mono;
-  width: 175px;
+  width: 150px;
+}
+
+.play-btn {
+  height: 20px !important;
+  width: 20px !important;
 }
 
 .running {

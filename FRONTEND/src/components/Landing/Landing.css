@@ -1,32 +1,35 @@
-.Landing-desc{
-    background-color: #203A61 !important;
-    /* background-color:rgba(32, 58, 97, 0.5) !important; */
-    background-image: url("./Images/waves.png");
-    background-size: 100% 100%;
-    height: 100vh;
+.Landing-desc {
+  background: linear-gradient(120deg, #ff00c7 0%, #51003f 100%),
+    linear-gradient(120deg, #0030ad 0%, #00071a 100%),
+    linear-gradient(180deg, #000346 0%, #ff0000 100%),
+    linear-gradient(60deg, #0029ff 0%, #aa0014 100%),
+    radial-gradient(100% 165% at 100% 100%, #ff00a8 0%, #00ff47 100%),
+    radial-gradient(100% 150% at 0% 0%, #fff500 0%, #51d500 100%);
+  background-blend-mode: overlay, color-dodge, overlay, overlay, difference,
+    normal;
+  height: 100vh;
 }
+
 /* Description Styling here */
 
-.desc-text{
-    font-family: 'Space Mono', monospace;
-    font-size: 36px;
-    color:rgb(255, 255, 255) !important;
-    font-weight: 600;
-    /* margin: 2rem; */
+.desc-text {
+  font-family: "Space Mono", monospace;
+  font-size: 36px;
+  color: rgb(255, 255, 255) !important;
+  font-weight: 600;
+  /* margin: 2rem; */
 }
 
 .land-button {
-    margin:2rem 0;
-    font-family: 'Space Mono', monospace;
-    font-size: 1.5rem;
-    font-weight: normal; 
-    
+  margin: 2rem 0;
+  font-family: "Space Mono", monospace;
+  font-size: 1.5rem;
+  font-weight: normal;
 }
 
-@media only screen and (max-width: 768px)
-{
-    .Landing-desc {
-        padding: 5rem 0;
-        height: unset;
-    }
+@media only screen and (max-width: 768px) {
+  .Landing-desc {
+    padding: 5rem 0;
+    height: unset;
+  }
 }

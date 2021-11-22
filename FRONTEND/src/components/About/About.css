@@ -1,100 +1,97 @@
 .About {
     height: 100vh;
-    background-image: url("../About/Images/waves1.png");
-    background-size: 100% 100%;
+    /* background-image: url("../About/Images/waves1.png");
+    background-size: 100% 100%; */
+
+    background: linear-gradient(120deg, #FF00C7 0%, #51003F 100%), linear-gradient(120deg, #0030AD 0%, #00071A 100%), linear-gradient(180deg, #000346 0%, #FF0000 100%), linear-gradient(60deg, #0029FF 0%, #AA0014 100%), radial-gradient(100% 165% at 100% 100%, #FF00A8 0%, #00FF47 100%), radial-gradient(100% 150% at 0% 0%, #FFF500 0%, #51D500 100%);
+background-blend-mode: overlay, color-dodge, overlay, overlay, difference, normal;
 }
 
 .header-about {
-    text-align: left;
-    font-family: 'Space Mono', monospace;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 36px;
-    color: #203A61;
+  text-align: left;
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: #203a61;
 }
 
 .head-desc {
-    text-align: left;
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    justify-content: center;
-    align-items: flex-start;
-    padding-bottom: 45px;
-    width: 70%;
-    font-family: 'Space Mono', monospace;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 36px;
-    color: #203A61;
+  text-align: left;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 45px;
+  width: 70%;
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: #203a61;
 }
 
 .about-cont {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-
 
 /* Cards */
 .card {
-    box-shadow: 0px 0px 10px rgba(32, 58, 97, 0.25);
-    border-radius: 10px !important;
+  box-shadow: 0px 0px 10px rgba(32, 58, 97, 0.25);
+  border-radius: 10px !important;
 
-    margin: 0 2rem !important;
+  margin: 0 2rem !important;
 }
 
 .Image {
-    padding: 15% 20%;
-
+  padding: 15% 20%;
 }
 
 .card-title {
-    font-family: 'Space Mono', monospace;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    color: #203A61;
-    margin-bottom: 0px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: #203a61;
+  margin-bottom: 0px;
 
-    text-align: center;
+  text-align: center;
 }
 
 .card-text {
-    font-family: 'Space Mono', monospace;
-    font-size: 18px;
+  font-size: 18px;
 
-    text-align: center;
+  text-align: center;
 
-    margin-top: 22px !important;
+  margin-top: 22px !important;
 }
-
 
 /* Media Queries */
 @media only screen and (max-width: 992px) {
-    .group-card {
-        display: flex !important;
-        flex-flow: column wrap !important;
-    }
+  .group-card {
+    display: flex !important;
+    flex-flow: column wrap !important;
+  }
 
-    .card {
-        margin: 2rem 0 !important;
-    }
+  .card {
+    margin: 2rem 0 !important;
+  }
 
-    .About {
-        margin: 3rem 0;
-        height: unset;
-    }
+  .About {
+    margin: 3rem 0;
+    height: unset;
+  }
 }
 
 @media only screen and (min-width: 993px) {
-    .Image {
-        height: 200px !important;
-    }
+  .Image {
+    height: 200px !important;
+  }
 }
 
 @media only screen and (max-width:575px) {

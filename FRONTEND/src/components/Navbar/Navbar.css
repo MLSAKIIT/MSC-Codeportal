@@ -1,7 +1,7 @@
 
 /* NavBar Styling Here */
 .color-nav{
-    background-color: rgba(32, 58, 97) !important;
+    background-color: transparent !important;
     height: 5rem !important;
 }
 
@@ -10,7 +10,7 @@
     height: 100%;
 }
 .navText{
-    font-family: Space Mono;
+    font-family: 'Gilroy-Bold', sans-serif !important;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color:white !important;
+    /* color:white !important; */
 }
 
 @media only screen and (max-width: 768px)
