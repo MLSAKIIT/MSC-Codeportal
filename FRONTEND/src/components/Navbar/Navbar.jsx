@@ -22,7 +22,7 @@ export default function NavBar() {
                                 <Nav.Link href="/#home" className="px-4 my-auto navText">Home</Nav.Link>
                                 <Nav.Link href="/#about" className="px-4 my-auto navText">About</Nav.Link>
                                 <Nav.Link href="/#features" className="px-4 my-auto navText">Features</Nav.Link>
-                                <Nav.Link href="/login" className="px-4 my-auto navText"><Button variant="primary" size="md">Sign In</Button>{' '}</Nav.Link>
+                                <Nav.Link href="/login" className="px-4 my-auto navText"><Button variant="primary" className="white-btn" size="md">Sign In</Button>{' '}</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>

@@ -1,9 +1,29 @@
 import { React, useState } from "react";
 import { Card, Image, Row, Col } from "react-bootstrap";
+import styled from "styled-components";
 import { Link } from "react-router-dom";
-import sheetimg from "../About/Images/Learn.svg";
+import Tilty from "react-tilty";
+import DashboardOverview from "./DashboardOverview";
 
 const DashboardSheet = () => {
+  const data = [
+    {
+      id: 1,
+      title: "Striver's Sheet",
+      content:
+        "Curated SDE sheet 180 questions, which comes up with video editorials, comprising of 180+ ques",
+    },
+    {
+      id: 2,
+      title: "DSA Sheet \n by Fraz",
+      content: "Curated SDE sheet 180 questions, which comes up with video editorials, comprising of 180+ ques",
+    },
+    {
+      id: 3,
+      title: "450 DSA",
+      content: "Curated SDE sheet 180 questions, which comes up with video editorials, comprising of 180+ ques",
+    },
+  ];
   //setting sheet id
   const [sheet, setsheet] = useState("");
 
@@ -18,82 +38,81 @@ const DashboardSheet = () => {
     setsheet(3);
   };
 
+  const dataList = data.map((d) => <DashboardOverview d={d} />);
+
   return (
-    <div
-      style={{ marginTop: "50px", overflow: "hidden", paddingBottom: "20px" }}
-    >
-      <Row xs={1} md={3} style={{ marginLeft: "20px" }} className="g-4">
+    <>
+      <CardsIndexContainer xs={1} md={3} className="g-4">
         <Col>
-          {/* <Link
-            style={{ textDecoration: "none", color: "#000" }}
-            to={{
-              pathname: "https://7f7e9984.msc-codeportal.pages.dev/",
-              state: { sheetid: 1 },
-            }}
-          > */}
           <a
             href="https://7f7e9984.msc-codeportal.pages.dev/"
             style={{ style: "none", textDecoration: "none" }}
           >
-            <Card className="w-75" onClick={sheet1}>
-              <Image src={sheetimg} roundedCircle />
-              <Card.Body>
-                <Card.Title>Striver's Sheet</Card.Title>
-                <Card.Text className="px-2">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </Card.Text>
-              </Card.Body>
-            </Card>
+            <Tilty className="tilty" glare scale={1.05} maxGlare={0.5}>
+              <CardContainer onClick={sheet1}>
+                <CardWrapper>{dataList[0]}</CardWrapper>
+              </CardContainer>
+            </Tilty>
           </a>
-          {/* </Link> */}
         </Col>
         <Col>
-          <Link
-            style={{ textDecoration: "none", color: "#000" }}
-            to={{
-              pathname: "https://7f7e9984.msc-codeportal.pages.dev/",
-              state: { sheetid: 2 },
-            }}
+          <a
+            href="https://7f7e9984.msc-codeportal.pages.dev/"
+            style={{ style: "none", textDecoration: "none" }}
           >
-            <Card className="w-75" onClick={sheet2}>
-              <Image src={sheetimg} roundedCircle />
-              <Card.Body>
-                <Card.Title>DSA shhet by Fraz</Card.Title>
-                <Card.Text className="px-2">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Link>
+            <Tilty className="tilty" glare scale={1.05} maxGlare={0.5}>
+              <CardContainer onClick={sheet2}>
+                <CardWrapper style={{alignItems: 'center'}}>{dataList[1]}</CardWrapper>
+              </CardContainer>
+            </Tilty>
+          </a>
         </Col>
         <Col>
-          <Link
-            style={{ textDecoration: "none", color: "#000" }}
-            to={{
-              pathname: "https://7f7e9984.msc-codeportal.pages.dev/",
-              state: { sheetid: 3 },
-            }}
+          <a
+            href="https://7f7e9984.msc-codeportal.pages.dev/"
+            style={{ style: "none", textDecoration: "none" }}
           >
-            <Card className="w-75" onClick={sheet3}>
-              <Image src={sheetimg} roundedCircle />
-              <Card.Body>
-                <Card.Title>450 DSA</Card.Title>
-                <Card.Text className="px-2">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Link>
+            <Tilty className="tilty" glare scale={1.05} maxGlare={0.5}>
+              <CardContainer onClick={sheet3}>
+                <CardWrapper>{dataList[2]}</CardWrapper>
+              </CardContainer>
+            </Tilty>
+          </a>
         </Col>
-      </Row>
-    </div>
+      </CardsIndexContainer>
+    </>
   );
 };
 
 export default DashboardSheet;
+
+const CardsIndexContainer = styled(Row)`
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-decoration: none;
+`;
+
+const CardContainer = styled(Col)`
+  width: 320px;
+  height: 580px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: #d9e4f5;
+  background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+  border-radius: 28px;
+  box-shadow: 0px 0px 12px 1px rgba(15, 15, 15, 0.05);
+  position: relative;
+`;
+
+const CardWrapper = styled.div`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  oevrflow: hidden;
+  border-radius: 28px;
+  padding-top: 50px;
+`;

@@ -16,11 +16,13 @@
   font-family: "Gilroy-Bold", sans-serif !important;
   padding: 80px 0px;
 }
+
 .layer-1 {
   /* background: #c9d6ff;
   background: -webkit-linear-gradient(to right, #e2e2e2, #c9d6ff);
   background: linear-gradient(to right, #e2e2e2, #c9d6ff); */
 }
+
 .background {
   background: #fff;
   background: -webkit-linear-gradient(-180deg, #fff, #d3cce3);
@@ -33,25 +35,143 @@
   width: 100vw;
   height: 100vh;
 }
+
 .cta-btn {
   padding: 10px;
   width: 200px;
   font-size: 22px !important;
+  background: -webkit-linear-gradient(45deg, rgb(0, 4, 128), rgb(170, 0, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border: none;
-}
-.cta-btn:hover {
-  color: #000 !important;
 }
 
 .scrollText {
-  font-size: 10rem;
+  font-size: 11rem;
   font-weight: 800;
-  color: #000;
-  width: 60%;
+  color: #4700ba;  
   text-align: left;
   line-height: 10rem;
   letter-spacing: -5px;
 }
+
+.landingText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.animated-gradient-bg-1 {
+  position: relative;
+  display: block;
+}
+
+
+.animated-gradient-bg-1::before {
+  content: 'Practice.';
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.animated-gradient-bg-2 {
+  position: relative;
+  display: block;
+}
+
+
+.animated-gradient-bg-2::before {
+  content: 'Compete.';
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.animated-gradient-bg-3 {
+  position: relative;
+  display: block;
+}
+
+
+.animated-gradient-bg-3::before {
+  content: 'Qode.';
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+
+.animated-gradient-fg-1 {
+  background: linear-gradient(90deg, #0896bd 0%, #0012af 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.animated-gradient-text-fg-1 {
+  animation: smoooth1 8s infinite;
+}
+
+.animated-gradient-fg-2 {
+  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.animated-gradient-text-fg-2 {
+  animation: smoooth2 8s infinite;
+}
+
+.animated-gradient-fg-3 {
+  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.animated-gradient-text-fg-3 {
+  animation: smoooth3 8s infinite;
+}
+
+
+@keyframes smoooth1 {
+  0%, 16.667%, 100% {
+    opacity: 1;
+  }
+  33.333%, 83.333% {
+    opacity: 0;
+  }
+}
+
+@keyframes smoooth2 {
+  0%, 100% {
+    opacity: 0;
+  }
+  33.333%, 50% {
+    opacity: 1;
+  }
+  16.667%, 66.667% {
+    opacity: 0;
+  }
+}
+
+@keyframes smoooth3 {
+  0%, 50%, 100% {
+    opacity: 0;
+  }
+  66.667%, 83.333% {
+    opacity: 1;
+  }
+}
+
 
 .overhead {
   margin-top: 50rem;
@@ -105,18 +225,22 @@
   transform: rotate(2deg);
   transition: 0.5s all ease-in-out;
 }
+
 .landingImg-1 {
   width: 100%;
   border-radius: 1rem;
   transform: rotate(-2deg);
   transition: 0.5s all ease-in-out;
 }
+
 .landingImg:hover {
   transform: rotate3d(1, 3, 1, 0deg) scale(1.1);
 }
+
 .landingImg-1:hover {
   transform: rotate3d(1, 3, 1, 0deg) scale(1.1);
 }
+
 .parallax {
   margin-right: 10%;
 }
@@ -149,6 +273,7 @@
   background-color: #acb6e5b2;
   backdrop-filter: blur(20px);
 }
+
 .lastpage {
   background-color: #acb6e5b2;
   backdrop-filter: blur(3px);
@@ -158,53 +283,67 @@
   -ms-filter: blur(3px);
   filter: blur(3px);
 }
+
 .card-text-head {
   font-size: 6rem;
 }
+
 .card-text-head-2 {
   font-size: 5rem;
 }
+
 .card-text {
   font-size: 3rem;
 }
+
 .card-text-2 {
   font-size: 1.3rem;
 }
+
 .about-feature-head {
   font-size: 4rem;
   color: #fff;
 }
+
 .about-feature-body {
   font-size: 1.5rem;
   color: #525252;
 }
+
 .align-right {
   text-align: right;
 }
+
 @media only screen and (min-width: 650px) and (max-width: 1200px) {
   .scrollText {
     font-size: 8rem;
     line-height: 8rem;
     letter-spacing: -5px;
   }
+
   .card-text-head {
     font-size: 4rem;
   }
+
   .card-text-2 {
     font-size: 1rem;
   }
+
   .card-text {
     font-size: 2rem;
   }
+
   .card-text-head-2 {
     font-size: 3rem;
   }
+
   .parallax-card {
     font-size: 1.5rem;
     height: 25rem;
     width: 35%;
     border-radius: 10px;
   }
+
   .overhead {
     font-size: 4.5rem;
     width: 100%;
@@ -213,15 +352,18 @@
     padding: 0px 30px;
     text-align: center;
   }
+
   .about-feature-head {
     font-size: 2.3rem;
     color: #fff;
   }
+
   .about-feature-body {
     font-size: 0.8rem;
     color: #525252;
   }
 }
+
 @media only screen and (max-width: 650px) {
   .qode {
     /* backdrop-filter: blur(12px); */
@@ -230,34 +372,42 @@
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-    background-position: center; /* Center the image */
+    background-position: center;
+    /* Center the image */
     margin: 0px;
     z-index: -1;
   }
+
   .background-img {
     width: 260%;
   }
+
   .scrollText {
     font-size: 4rem;
     line-height: 5rem;
     letter-spacing: 0px;
   }
+
   .card-text-head {
     font-size: 2.3rem;
   }
+
   .card-text-2 {
     font-size: 0.4rem;
     margin-left: 0px;
     padding-left: 0px;
   }
+
   .card-text {
     font-size: 0.8rem;
   }
+
   .card-text-head-2 {
     font-size: 2rem;
     margin-bottom: 0px;
     padding-bottom: 0px;
   }
+
   .parallax-card {
     font-size: 1.5rem;
     height: 10rem;
@@ -265,6 +415,7 @@
     width: 43%;
     border-radius: 10px;
   }
+
   .overhead {
     font-size: 2rem;
     width: 100%;
@@ -272,34 +423,42 @@
     padding: 0px 10px;
     text-align: center;
   }
+
   .about-feature-head {
     text-align: center;
     font-size: 2.3rem;
   }
+
   .about-feature-body {
     text-align: center;
     font-size: 0.8rem;
     margin-bottom: 10px;
   }
+
   .landingImg {
     transform: rotate(0deg);
     transition: 0.5s all ease-in-out;
   }
+
   .landingImg-1 {
     transform: rotate(0deg);
     transition: 0.5s all ease-in-out;
   }
+
   .landingImg:hover {
     transform: rotate3d(1, 3, 1, 0deg) scale(1.09);
   }
+
   .landingImg-1:hover {
     transform: rotate3d(1, 3, 1, 0deg) scale(1.09);
   }
+
   .sticky {
     margin-left: 3%;
     filter: blur(0px);
   }
 }
+
 /* 
 @media (max-width: 750px) {
   .card {

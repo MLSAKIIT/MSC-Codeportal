@@ -2,7 +2,7 @@ import React, { Component, useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Badge from "react-bootstrap/Badge";
-import { Pie } from "react-chartjs-2";
+import { Pie, Doughnut } from "react-chartjs-2";
 import { Link } from "react-router-dom";
 import Aos from "aos";
 import Fade from "react-reveal/Fade";
@@ -213,7 +213,7 @@ export default function ProgressCard({ questionData }) {
                     <div className="header">
                       <p className="title">Progress</p>
                     </div>
-                    <Pie data={data} />
+                    <Doughnut data={data} />
                   </>
 
                   {/* <PieChart data={(totalSolved, totalQuestions - totalSolved)} /> */}
