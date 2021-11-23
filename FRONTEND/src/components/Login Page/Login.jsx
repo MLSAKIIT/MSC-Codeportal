@@ -50,7 +50,7 @@ export class Login extends Component {
                                 buttonText="Sign In with Google"
                                 onSuccess={this.responseGoogle}
                                 onFailure={this.responseGoogle}
-                                cookiePolicy={'single_host_policy'}
+                                cookiePolicy={'single_host_origin'}
                             />
                             
                             
