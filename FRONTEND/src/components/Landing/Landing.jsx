@@ -160,7 +160,7 @@ export default function Features() {
             alignItems: "center",
           }}
         >
-          <p style={{ marginBottom: "40px" }} className="scrollText overhead">
+          <p style={{ marginBottom: "40px", color: "azure" }} className="scrollText overhead">
             We got you covered 💪
           </p>
 
