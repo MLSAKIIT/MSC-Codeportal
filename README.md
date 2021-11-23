@@ -1,64 +1,70 @@
-<img src="https://user-images.githubusercontent.com/60937304/137291442-d8525b50-40c7-42a7-a1ac-8765be955214.png" />
+# Getting Started with Create React App
 
-[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/powered-by-black-magic.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
 
-## 💥 Introduction
->	Are you falling behind in DSA and struggling with Binary Search Trees? Don’t worry, we’ve got you covered.
+In the project directory, you can run:
 
-While DSA is important for coding, not everyone can master it easily, it takes time, effort, and a lot of practice. That’s why <b>Codeportal</b> might be a great source for you to learn and follow as a self-paced course. You can practice questions from it whenever you want, wherever you want. 
+### `yarn start`
 
-This platform is tailored in such a way that it’ll be easy for everyone to follow along and practice DSA.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Things we’ve to offer to you:
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-•	Master DSA from basic to advanced level
+### `yarn test`
 
-•	Solve the problems asked in product-based companies
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-•	Solve problems in contests similar to coding round for SDE role
+### `yarn build`
 
-•	Become a strong and efficient developer
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The only website you’ll ever require to master DSA. 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## 💡 Why did we build it ?
+### `yarn eject`
 
-Two major problems that students face who want to improve and sharpen their skills, practice questions are a good place to keep everything in an organized manner and keep track of their progress.
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-That is where Codeportal comes in. Complete with its own online compiler, user registration, interactive UI, and a platform to get all resources compiled by experts in their field, it solves the faced issues and also aims to get students to submit their code during home-brewed hackathons. 📋💯
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Sounds interesting? Well, it is 🔥
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-## 🚀 Installation
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-1. Open gitbash.
-2. Clone the project by running the command in gitbash given below :
-    `git clone [repo-url]`
-   Copy the link from github repo for repo-url. 
-3. Run : 
-    `npm install`
-4. After installation.
-   Run : 
-    `npm start`
+## Learn More
 
-## 👨‍💻 Dependencies
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-react  
-react-bootstrap  
-sawo  
+To learn React, check out the [React documentation](https://reactjs.org/).
 
+### Code Splitting
 
-## 🛑 Contributors
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-|     Mentors 🍀    |      Members 🐛      |      Learners 🌱     |
-|:----------------:|:-------------------:|:-------------------:|
-| Medhavi Basera   | Pratyay Saha        | Aditya Srivastav    |
-| Arnab Chatterjee | Spandan Chakravarty | Siddhanta Banerjee  |
-| Shreya Dhir      | Ankit Srivastava    | Ashish Kumar Mishra |
-| Akash Chouhan    |                     | Shreyansh Rai       |
-|                  |                     | Soham Dutta         |
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
