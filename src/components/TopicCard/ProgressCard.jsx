@@ -2,13 +2,21 @@ import React, { useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Badge from "react-bootstrap/Badge";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import { Pie } from "react-chartjs-2";
 import { Link } from "react-router-dom";
 import Aos from "aos";
 import Fade from "react-reveal/Fade";
+<<<<<<< HEAD:src/components/TopicCard/ProgressCard.jsx
 import { Container, Row, Col } from "react-bootstrap";
 import profile from "../Topic/images/Profile.jpeg";
+=======
+import { Container } from "react-bootstrap";
+import profile from "./images/Profile.jpeg";
+>>>>>>> parent of 02529d6 (sheet-1 modified):FRONTEND/src/components/Dashboard/ProgressCard.jsx
 import ScrollButton from "react-scroll-button";
+
 import "aos/dist/aos.css";
 import "./topicCard.css";
 
@@ -168,89 +176,73 @@ export default function ProgressCard({ questionData }) {
   };
 
   return (
-    <>
-      <div style={{ backgroundColor: "#e0e5ec" }}>
-        <div className="header-background" id="target">
-          <div className="header-title" data-aos="zoom-in-down">
-            <h1 className="sheet-heading"> 450 DSA </h1>
+    <div style={{ backgroundColor: "#e0e5ec" }}>
+      <div className="header-background" id="target">
+        <div className="header-title" data-aos="zoom-in-down">
+          <h1>DSA sheet by Fraz.</h1>
+        </div>
+      </div>
+      <Container className="hero">
+        <div className="dashboard-container ">
+          <Col
+            lg={4}
+            md={4}
+            sm={4}
+            className="progress-update"
+            // style={{ backgroundColor: "red", right: "0%", height: "100vh" }}
+          >
+            <Card className="boxes-1">
+              <div className="circle">
+                <img src={profile} alt="" className="circle-img" />
+              </div>
+              <div className="intro">
+                <h6 style={{ fontWeight: "600" }}>Welcome back,</h6>
+                <h4 style={{ fontWeight: "600" }}>Medhavi Basera</h4>
+              </div>
+            </Card>
+            <Card className="boxes-2">
+              <Card.Body>
+                <>
+                  <div className="header">
+                    <p className="title">Progress</p>
+                  </div>
+                  <Pie data={data} />
+                </>
+
+                {/* <PieChart data={(totalSolved, totalQuestions - totalSolved)} /> */}
+              </Card.Body>
+            </Card>
+            <Card className="boxes-3">
+              <Card.Body>
+                <div className="ques-data">
+                  <p>Total questions </p>
+                  <p> {totalQuestions}</p>
+                </div>
+                <div className="ques-data">
+                  <p>Solved questions </p>
+                  <p> {totalSolved}</p>
+                </div>
+                <div className="ques-data">
+                  <p>Unsolved questions </p>
+                  <p> {totalQuestions - totalSolved}</p>
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
+          <div className="card-col" id="style-1">
+            <ScrollButton
+              behavior={"smooth"}
+              buttonBackgroundColor={"#acb6e5"}
+              iconType={"arrow-up"}
+              style={{ fontSize: "24px" }}
+              targetId={"target"}
+            />
+            <Row xs={1} md={2} className="mx-5 px-0 g-2 order-2">
+              {ProgressCard}
+            </Row>
           </div>
         </div>
-        <Container className="hero">
-          <Row className="dashboard-container ">
-            {/* <div className="dashboard-container "> */}
-            <Col
-              lg={4}
-              md={12}
-              sm={12}
-              className="progress-update"
-              style={{
-                // backgroundColor: "yellow",
-                position: "relative",
-                display: "flex",
-                alignItems: "center",
-              }}
-            >
-              <Card className="boxes-1">
-                <div className="circle">
-                  <img src={profile} alt="" className="circle-img" />
-                </div>
-                <div className="intro">
-                  <h6 style={{ fontWeight: "600" }}>Welcome back,</h6>
-                  <h4 style={{ fontWeight: "600" }}>Medhavi Basera</h4>
-                </div>
-              </Card>
-              <Card className="boxes-2">
-                <Card.Body>
-                  <>
-                    <div className="header">
-                      <p className="title">Progress</p>
-                    </div>
-                    <Pie data={data} />
-                  </>
-
-                  {/* <PieChart data={(totalSolved, totalQuestions - totalSolved)} /> */}
-                </Card.Body>
-              </Card>
-              <Card className="boxes-3">
-                <Card.Body>
-                  <div className="ques-data">
-                    <p>Total questions </p>
-                    <p> {totalQuestions}</p>
-                  </div>
-                  <div className="ques-data">
-                    <p>Solved questions </p>
-                    <p> {totalSolved}</p>
-                  </div>
-                  <div className="ques-data">
-                    <p>Unsolved questions </p>
-                    <p> {totalQuestions - totalSolved}</p>
-                  </div>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col
-              lg={8}
-              md={12}
-              sm={12}
-              className="card-col"
-              // style={{ backgroundColor: "red" }}
-              id="style-1"
-            >
-              <ScrollButton
-                behavior={"smooth"}
-                buttonBackgroundColor={"#acb6e5"}
-                iconType={"arrow-up"}
-                style={{ fontSize: "24px" }}
-                targetId={"target"}
-              />
-              <Row xs={1} md={2} className="mx-5 px-0 g-2 order-2">
-                {ProgressCard}
-              </Row>
-            </Col>
-          </Row>
-          {/* </div> */}
-        </Container>
-      </div>
-    </>
+      </Container>
+    </div>
   );
 }

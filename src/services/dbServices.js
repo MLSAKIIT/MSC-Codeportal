@@ -1,5 +1,5 @@
 import Localbase from "localbase";
-import QuestionData, { version } from "../450DSAFinal";
+import QuestionData, { version } from "../sheets/450DSAFinal-1";
 let db = new Localbase("db");
 window.db = db;
 db.config.debug = false;
@@ -7,6 +7,7 @@ const localVersion = localStorage.getItem("450version");
 window.localVersion = localVersion;
 window.version = version;
 
+//insert function for sheet 1
 export function insertData(callback) {
   QuestionData.forEach((topic, index) => {
     db.collection("450dsaArchive").add(topic,topic.topicName.replace(/[^A-Z0-9]+/gi, "_").toLowerCase());
@@ -14,6 +15,7 @@ export function insertData(callback) {
   getData(callback);
 }
 
+//get data for sheet 1
 export function getData(callback) {
   db.collection("450dsaArchive")
     .get()
@@ -27,6 +29,7 @@ export function getData(callback) {
         if (localVersion === null || localVersion === undefined) {
           localStorage.setItem("450version", 100000000);
           setTimeout(() => {
+            console.log("reload");
             window.location.reload();
           }, 3000);
         }
@@ -63,6 +66,7 @@ export function getData(callback) {
           }
           localStorage.setItem("450version", version);
           setTimeout(() => {
+            console.log("reload");
             window.location.reload();
           }, 3000);
         } else {
@@ -72,6 +76,7 @@ export function getData(callback) {
     });
 }
 
+//get topic data for sheet 1
 export function getTopicData(key, callback) {
   db.collection("450dsaArchive")
     .doc(key)
@@ -81,6 +86,46 @@ export function getTopicData(key, callback) {
     });
 }
 
+//
 export function updateDBData(key, updateData) {
   db.collection("450dsaArchive").doc(key).update(updateData);
 }
+
+// export function resetDBData(callback) {
+//   db.collection("450dsaArchive")
+//     .delete()
+//     .then((response) => {
+//       callback(response);
+//     })
+//     .catch((error) => {
+//       console.log("There was an error, do something else", error);
+//     });
+// }
+
+// export function exportDBData(callback) {
+//   db.collection("450dsaArchive")
+//     .get()
+//     .then((data) => {
+//       callback(data);
+//     });
+// }
+
+// export function importDBData(data, callback) {
+//   resetDBData((response) => {
+//     new Promise((resolve, reject) => {
+//       data.forEach((topic, index) => {
+//         db.collection("450dsaArchive").add(
+//           topic,
+//           topic.topicName.replace(/[^A-Z0-9]+/gi, "_").toLowerCase()
+//         );
+//         if (index === data.length - 1) {
+//           resolve();
+//         }
+//       });
+//     }).then(() => {
+//       getData((data) => {
+//         callback(data);
+//       });
+//     });
+//   });
+// }
