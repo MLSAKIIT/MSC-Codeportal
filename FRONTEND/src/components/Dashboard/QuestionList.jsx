@@ -142,7 +142,7 @@ export default function QuestionList({ data, updateData }) {
   }
 
   return (
-    <div style={{ backgroundColor: "red" }}>
+    <div className="question-landing-1">
       <div className="question-landing">
         <h1 className="text-center mb-4 topic-name">{topicName}</h1>
 
@@ -160,7 +160,14 @@ export default function QuestionList({ data, updateData }) {
           >
             {(props) => (
               <div>
-                <div className="container " style={{ overflowAnchor: "none" }}>
+                <div
+                  className="container"
+                  style={{
+                    overflowAnchor: "none",
+                    // backgroundColor: "yellow",
+                    minHeight: "100vh",
+                  }}
+                >
                   <Fade duration={600}>
                     <BootstrapTable
                       {...props.baseProps}

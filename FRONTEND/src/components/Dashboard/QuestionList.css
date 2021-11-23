@@ -117,3 +117,7 @@ td > a {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
+.question-landing-1 {
+  /* background-color: #ff416c; */
+  min-height: 100vh;
+}
