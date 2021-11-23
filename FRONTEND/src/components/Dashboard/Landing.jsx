@@ -7,7 +7,7 @@ import img2 from "../Dashboard/practice.svg"
 
 export default function Landing() {
     return (
-        <>
+        <div className="getstarted-dashboard">
          <Container className="cols">
              <Row className="rows">
                   {/* <div className="greet">Hi, Username</div> */}
@@ -20,7 +20,7 @@ export default function Landing() {
                      <Row>
                         <Col className="des-p">
                             <div className="des-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu mauris maximus, porttitor mi nec.</div>
-                            <Button variant="primary" size="lg" href="/ide">Open Online IDE</Button>{' '}
+                            <Button className="white-btn" variant="primary" size="lg" href="/ide">Open Online IDE</Button>{' '}
                         </Col>
                      </Row>
                 </Col>
@@ -33,12 +33,12 @@ export default function Landing() {
                      <Row>
                         <Col className="des-p">
                            <div className="des-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu mauris maximus, porttitor mi nec.</div>
-                           <Button variant="primary" size="lg" href="/dashboard-sheet">Start Practicing</Button>{' '}
+                           <Button className="white-btn" variant="primary" size="lg" href="/dashboard-sheet">Start Practicing</Button>{' '}
                         </Col>
                      </Row>
                 </Col>
              </Row>
          </Container>
-        </>
+        </div>
     )
 }

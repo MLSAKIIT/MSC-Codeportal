@@ -21,7 +21,7 @@ export default function Features() {
         <ParallaxLayer
           offset={0}
           speed={0}
-          factor={1.3}
+          factor={1.15}
           className="layer-1"
           style={{
             ...alignCenter,
@@ -37,36 +37,32 @@ export default function Features() {
             src={landingimg}
             alt=""
           />
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              textAlign: "center",
-              // backgroundColor: "yellow",
-              paddingTop: "5%",
-            }}
-          >
-            <p
-              style={
-                {
-                  // backgroundColor: "blue",
-                }
-              }
-              className="scrollText"
-              data-aos="zoom-in-down"
-            >
-              Practice Compete Qode.
+          <div style={{ alignItems: "center", justifyContent: "center",}}>
+            <p className="scrollText landingText" data-aos="fade-down" data-aos-duration="1000">
+
+              <span className="animated-gradient-bg-1 animated-gradient-text-bg-1">
+                <span className="animated-gradient-fg-1 animated-gradient-text-fg-1">
+                  Practice.
+                </span>
+              </span>
+
+              <span className="animated-gradient-bg-2 animated-gradient-text-bg-2">
+                <span className="animated-gradient-fg-2 animated-gradient-text-fg-2">
+                  Compete.
+                </span>
+              </span>
+
+              <span className="animated-gradient-bg-3 animated-gradient-text-bg-3">
+                <span className="animated-gradient-fg-3 animated-gradient-text-fg-3">
+                  Qode.
+                </span>
+              </span>
+
+
+
             </p>
-            <div
-              style={{
-                // backgroundColor: "green",
-                width: "100%",
-                padding: "50px 0px",
-              }}
-            >
-              <Button variant="dark" className="cta-btn" href="/getstarted">
+            <div style={{ width: "100%", padding: "50px 0px"}}>
+              <Button variant="primary" className="cta-btn white-btn" href="/getstarted">
                 Get started
               </Button>
             </div>
