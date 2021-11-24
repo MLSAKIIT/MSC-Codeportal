@@ -38,7 +38,7 @@ export default function Features() {
             alt=""
           />
           <div style={{ alignItems: "center", justifyContent: "center",}}>
-            <p className="scrollText landingText" data-aos="fade-down" data-aos-duration="1000">
+            <p className="scrollText landingText" data-aos="fade-down" data-aos-duration="2000">
 
               <span className="animated-gradient-bg-1 animated-gradient-text-bg-1">
                 <span className="animated-gradient-fg-1 animated-gradient-text-fg-1">

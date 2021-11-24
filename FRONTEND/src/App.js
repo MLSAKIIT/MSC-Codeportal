@@ -61,22 +61,6 @@ function App() {
     setquestionData(reGenerateUpdatedData);
   }
 
-  // function updateData2(key, topicData, topicPosition) {
-  //   let reGenerateUpdatedData2 = questionData2.map((topic, index) => {
-  //     if (index === topicPosition) {
-  //       updateDBData2(key, topicData);
-  //       return {
-  //         topicName: topic.topicName,
-  //         position: topic.position,
-  //         ...topicData,
-  //       };
-  //     } else {
-  //       return topic;
-  //     }
-  //   });
-  //   setquestionData2(reGenerateUpdatedData2);
-  // }
-
   return (
     <Router>
       <Switch>
@@ -98,13 +82,6 @@ function App() {
             <Route path="/getstarted">
               <Dashboard />
             </Route>
-{/* 
-            <Route
-              path="/dashboard"
-              children={
-                <ProgressCard questionData={questionData}></ProgressCard>
-              }
-            ></Route> */}
             <Route path="/dashboard-sheet">
               <DashboardSheet />
             </Route>

@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Tilty from "react-tilty";
 import DashboardOverview from "./DashboardOverview";
+import "../Dashboard/Landing.css";
 
 const DashboardSheet = () => {
   const data = [
@@ -16,12 +17,14 @@ const DashboardSheet = () => {
     {
       id: 2,
       title: "DSA Sheet \n by Fraz",
-      content: "Curated SDE sheet 180 questions, which comes up with video editorials, comprising of 180+ ques",
+      content:
+        "Curated SDE sheet 180 questions, which comes up with video editorials, comprising of 180+ ques",
     },
     {
       id: 3,
       title: "450 DSA",
-      content: "Curated SDE sheet 180 questions, which comes up with video editorials, comprising of 180+ ques",
+      content:
+        "Curated SDE sheet 180 questions, which comes up with video editorials, comprising of 180+ ques",
     },
   ];
   //setting sheet id
@@ -41,14 +44,14 @@ const DashboardSheet = () => {
   const dataList = data.map((d) => <DashboardOverview d={d} />);
 
   return (
-    <>
+    <div className="dashboard-sheetpage">
       <CardsIndexContainer xs={1} md={3} className="g-4">
         <Col>
           <a
-            href="https://7f7e9984.msc-codeportal.pages.dev/"
+            href="https://a04627f3.msc-codeportal.pages.dev/"
             style={{ style: "none", textDecoration: "none" }}
           >
-            <Tilty className="tilty" glare scale={1.05} maxGlare={0.5}>
+            <Tilty className="tilty" glare scale={1.05} maxGlare={0.0}>
               <CardContainer onClick={sheet1}>
                 <CardWrapper>{dataList[0]}</CardWrapper>
               </CardContainer>
@@ -57,22 +60,24 @@ const DashboardSheet = () => {
         </Col>
         <Col>
           <a
-            href="https://7f7e9984.msc-codeportal.pages.dev/"
+            href="https://a04627f3.msc-codeportal.pages.dev/"
             style={{ style: "none", textDecoration: "none" }}
           >
-            <Tilty className="tilty" glare scale={1.05} maxGlare={0.5}>
+            <Tilty className="tilty" glare scale={1.05} maxGlare={0.0}>
               <CardContainer onClick={sheet2}>
-                <CardWrapper style={{alignItems: 'center'}}>{dataList[1]}</CardWrapper>
+                <CardWrapper style={{ alignItems: "center" }}>
+                  {dataList[1]}
+                </CardWrapper>
               </CardContainer>
             </Tilty>
           </a>
         </Col>
         <Col>
           <a
-            href="https://7f7e9984.msc-codeportal.pages.dev/"
+            href="https://a04627f3.msc-codeportal.pages.dev/"
             style={{ style: "none", textDecoration: "none" }}
           >
-            <Tilty className="tilty" glare scale={1.05} maxGlare={0.5}>
+            <Tilty className="tilty" glare scale={1.05} maxGlare={0.0}>
               <CardContainer onClick={sheet3}>
                 <CardWrapper>{dataList[2]}</CardWrapper>
               </CardContainer>
@@ -80,7 +85,7 @@ const DashboardSheet = () => {
           </a>
         </Col>
       </CardsIndexContainer>
-    </>
+    </div>
   );
 };
 
