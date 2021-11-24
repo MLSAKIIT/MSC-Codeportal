@@ -1,77 +1,93 @@
 .getstarted-dashboard {
-    
+  background-color: #acb6e52a;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
-.cols
-{
-    /* height:100vh; */
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 30px;
-    position: relative;
+.dashboard-sheetpage {
+  background-image: url(../Dashboard/images/Vector-1.svg);
+  background: #acb6e52a;
+  background: -webkit-linear-gradient(-135deg, #ffffff, #acb6e5b9);
+  background: linear-gradient(-135deg, #ffffff, #acb6e5b2);
+
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  padding: 50px 0px;
+  min-height: 100vh;
+  min-width: 100vw;
 }
-.rows
-{
-    padding-top: 10px ;
+
+.cols {
+  /* height:100vh; */
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+  position: relative;
 }
-.rows1
-{
-    padding-top: 100px ;
-    border: 0.5px solid #f2f2f2;
-    border-right: none;
-    padding: 30px;
+
+.rows {
+  padding-top: 90px;
 }
-.rows2
-{
-    padding-top: 100px ;
-    border: 0.5px solid #f2f2f2;
-    padding: 30px;
+.rows1 {
+  padding-top: 100px;
+  border: 0.5px solid #f2f2f2;
+  border-right: none;
+  padding: 30px;
 }
-.greet
-{
-    font-family: 'Space Mono', monospace;
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    font-family: 'Work Sans', sans-serif;
+.rows2 {
+  padding-top: 100px;
+  border: 0.5px solid #f2f2f2;
+  padding: 30px;
 }
-.image
-{
-    display:flex;
-    justify-content: center;
-    height: 240px;
+.greet {
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: "Work Sans", sans-serif;
 }
-.des-p
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'Space Mono', monospace;
+.image {
+  display: flex;
+  justify-content: center;
+  height: 240px;
 }
-.des-text
-{
-    text-align: center;
-    padding: 30px 0px;
-    font-size: 20px;
+.des-p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Space Mono", monospace;
+}
+.des-text {
+  text-align: center;
+  padding: 30px 0px;
+  font-size: 20px;
 }
 
 .custom-shape-divider-bottom-1637685451 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
 .custom-shape-divider-bottom-1637685451 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
 }
 
 .custom-shape-divider-bottom-1637685451 .shape-fill {
-    fill: #B8CFFA;
+  fill: #b8cffa;
 }
