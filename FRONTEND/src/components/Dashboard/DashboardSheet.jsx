@@ -16,12 +16,14 @@ const DashboardSheet = () => {
     {
       id: 2,
       title: "DSA Sheet \n by Fraz",
-      content: "Curated SDE sheet 180 questions, which comes up with video editorials, comprising of 180+ ques",
+      content:
+        "Curated SDE sheet 180 questions, which comes up with video editorials, comprising of 180+ ques",
     },
     {
       id: 3,
       title: "450 DSA",
-      content: "Curated SDE sheet 180 questions, which comes up with video editorials, comprising of 180+ ques",
+      content:
+        "Curated SDE sheet 180 questions, which comes up with video editorials, comprising of 180+ ques",
     },
   ];
   //setting sheet id
@@ -45,7 +47,7 @@ const DashboardSheet = () => {
       <CardsIndexContainer xs={1} md={3} className="g-4">
         <Col>
           <a
-            href="https://7f7e9984.msc-codeportal.pages.dev/"
+            href="https://a04627f3.msc-codeportal.pages.dev/"
             style={{ style: "none", textDecoration: "none" }}
           >
             <Tilty className="tilty" glare scale={1.05} maxGlare={0.5}>
@@ -57,19 +59,21 @@ const DashboardSheet = () => {
         </Col>
         <Col>
           <a
-            href="https://7f7e9984.msc-codeportal.pages.dev/"
+            href="https://a04627f3.msc-codeportal.pages.dev/"
             style={{ style: "none", textDecoration: "none" }}
           >
             <Tilty className="tilty" glare scale={1.05} maxGlare={0.5}>
               <CardContainer onClick={sheet2}>
-                <CardWrapper style={{alignItems: 'center'}}>{dataList[1]}</CardWrapper>
+                <CardWrapper style={{ alignItems: "center" }}>
+                  {dataList[1]}
+                </CardWrapper>
               </CardContainer>
             </Tilty>
           </a>
         </Col>
         <Col>
           <a
-            href="https://7f7e9984.msc-codeportal.pages.dev/"
+            href="https://a04627f3.msc-codeportal.pages.dev/"
             style={{ style: "none", textDecoration: "none" }}
           >
             <Tilty className="tilty" glare scale={1.05} maxGlare={0.5}>
