@@ -259,3 +259,27 @@
     height: 54vh;
   }
 }
+@media screen and (max-height: 750px) {
+  .container-custom {
+    height: 54vh;
+  }
+}
+@media screen and (max-width: 750px) {
+  .header-background {
+    display: flex;
+    justify-content: center;
+    padding: 70px 10px;
+    height: 50vh;
+    top: -140px;
+    width: 100%;
+  }
+  .header-title {
+    text-align: center;
+  }
+  .header-title > h1 {
+    text-align: center;
+    font-weight: 900 !important;
+    font-size: 3rem;
+    color: #fff;
+  }
+}
