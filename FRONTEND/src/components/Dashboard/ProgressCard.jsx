@@ -173,7 +173,7 @@ export default function ProgressCard({ questionData }) {
       <div style={{ backgroundColor: "#e0e5ec" }}>
         <div className="header-background" id="target">
           <div className="header-title" data-aos="zoom-in-down">
-            <h1 className="sheet-heading"> 450 DSA </h1>
+            <h1 className="sheet-heading"> Striver's sheet </h1>
           </div>
         </div>
         <Container className="hero">
