@@ -12,7 +12,7 @@ const DashboardSheet = () => {
       id: 1,
       title: "Striver's Sheet",
       content:
-        "Curated SDE sheet 180 questions, which comes up with video editorials, comprising of 180+ ques",
+        "Curated SDE sheet 300+ questions, which comes up with video editorials",
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const DashboardSheet = () => {
       id: 3,
       title: "450 DSA",
       content:
-        "Curated SDE sheet 180 questions, which comes up with video editorials, comprising of 180+ ques",
+        "Curated SDE sheet 400+ questions, which comes up with video editorials ",
     },
   ];
   //setting sheet id
@@ -48,7 +48,7 @@ const DashboardSheet = () => {
       <CardsIndexContainer xs={1} md={3} className="g-4">
         <Col>
           <a
-            href="https://a04627f3.msc-codeportal.pages.dev/"
+            href="https://8a866e95.msc-codeportal.pages.dev/"
             style={{ style: "none", textDecoration: "none" }}
           >
             <Tilty className="tilty" glare scale={1.05} maxGlare={0.0}>
@@ -60,7 +60,7 @@ const DashboardSheet = () => {
         </Col>
         <Col>
           <a
-            href="https://a04627f3.msc-codeportal.pages.dev/"
+            href="https://8a866e95.msc-codeportal.pages.dev/"
             style={{ style: "none", textDecoration: "none" }}
           >
             <Tilty className="tilty" glare scale={1.05} maxGlare={0.0}>
@@ -74,7 +74,7 @@ const DashboardSheet = () => {
         </Col>
         <Col>
           <a
-            href="https://a04627f3.msc-codeportal.pages.dev/"
+            href="https://603d2615.msc-codeportal.pages.dev/"
             style={{ style: "none", textDecoration: "none" }}
           >
             <Tilty className="tilty" glare scale={1.05} maxGlare={0.0}>
