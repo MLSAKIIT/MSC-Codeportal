@@ -42,7 +42,7 @@ export default function ProgressCard({ questionData }) {
         <Fade duration={500 + index * 0.4} key={index}>
           <div className="col mb-6">
             <Link
-              to={`/sheet1/${topic.topicName
+              to={`/sheet2/${topic.topicName
                 .replace(/[^A-Z0-9]+/gi, "_")
                 .toLowerCase()}`}
               style={{ textDecoration: "none" }}
@@ -100,7 +100,7 @@ export default function ProgressCard({ questionData }) {
         <Fade duration={500 + index * 50} key={index}>
           <div className="col mb-6">
             <Link
-              to={`/sheet1/${topic.topicName
+              to={`/sheet2/${topic.topicName
                 .replace(/[^A-Z0-9]+/gi, "_")
                 .toLowerCase()}`}
               style={{ textDecoration: "none" }}

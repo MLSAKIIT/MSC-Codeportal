@@ -1,5 +1,5 @@
 import Localbase from "localbase";
-import QuestionData, { version } from "../sheets/striver";
+import QuestionData, { version } from "../sheets/striver.js";
 let db = new Localbase("db");
 window.db = db;
 db.config.debug = false;
