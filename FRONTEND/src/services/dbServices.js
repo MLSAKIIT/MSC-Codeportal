@@ -1,21 +1,24 @@
 import Localbase from "localbase";
-import QuestionData, { version } from "../450DSAFinal";
+import QuestionData, { version } from "../sheets/Striver";
 let db = new Localbase("db");
 window.db = db;
 db.config.debug = false;
-const localVersion = localStorage.getItem("450version");
+const localVersion = localStorage.getItem("Striverversion");
 window.localVersion = localVersion;
 window.version = version;
 
 export function insertData(callback) {
   QuestionData.forEach((topic, index) => {
-    db.collection("450dsaArchive").add(topic,topic.topicName.replace(/[^A-Z0-9]+/gi, "_").toLowerCase());
+    db.collection("StriverArchive").add(
+      topic,
+      topic.topicName.replace(/[^A-Z0-9]+/gi, "_").toLowerCase()
+    );
   });
   getData(callback);
 }
 
 export function getData(callback) {
-  db.collection("450dsaArchive")
+  db.collection("StriverArchive")
     .get()
     .then((data) => {
       if (data.length === 0) {
@@ -25,7 +28,7 @@ export function getData(callback) {
           return a.position - b.position;
         });
         if (localVersion === null || localVersion === undefined) {
-          localStorage.setItem("450version", 100000000);
+          localStorage.setItem("Striverversion", 100000000);
           setTimeout(() => {
             window.location.reload();
           }, 3000);
@@ -36,7 +39,9 @@ export function getData(callback) {
           for (let topic of data) {
             let dataFromJSON = QuestionData[i].questions;
             let len = dataFromJSON.length;
-            let key = topic.topicName.replace(/[^A-Z0-9]+/gi, "_").toLowerCase();
+            let key = topic.topicName
+              .replace(/[^A-Z0-9]+/gi, "_")
+              .toLowerCase();
             topic.questions.forEach((qObj, index) => {
               if (index < len) {
                 if (qObj.Done) {
@@ -61,7 +66,7 @@ export function getData(callback) {
             });
             i++;
           }
-          localStorage.setItem("450version", version);
+          localStorage.setItem("Striverversion", version);
           setTimeout(() => {
             window.location.reload();
           }, 3000);
@@ -73,7 +78,7 @@ export function getData(callback) {
 }
 
 export function getTopicData(key, callback) {
-  db.collection("450dsaArchive")
+  db.collection("StriverArchive")
     .doc(key)
     .get()
     .then((document) => {
@@ -82,5 +87,5 @@ export function getTopicData(key, callback) {
 }
 
 export function updateDBData(key, updateData) {
-  db.collection("450dsaArchive").doc(key).update(updateData);
+  db.collection("StriverArchive").doc(key).update(updateData);
 }

@@ -201,7 +201,7 @@ export default [
   },
   {
     topicName: "Linked List",
-    position: 0,
+    position: 1,
     started: false,
     doneQuestions: 0,
     questions: [
@@ -313,7 +313,7 @@ export default [
   },
   {
     topicName: "Greedy",
-    position: 0,
+    position: 2,
     started: false,
     doneQuestions: 0,
     questions: [
@@ -369,7 +369,7 @@ export default [
   },
   {
     topicName: "Recursion",
-    position: 0,
+    position: 3,
     started: false,
     doneQuestions: 0,
     questions: [
@@ -425,7 +425,7 @@ export default [
   },
   {
     topicName: "Recursion & Backtracking",
-    position: 0,
+    position: 4,
     started: false,
     doneQuestions: 0,
     questions: [
@@ -481,7 +481,7 @@ export default [
   },
   {
     topicName: "Binary Search",
-    position: 0,
+    position: 5,
     started: false,
     doneQuestions: 0,
     questions: [
@@ -555,7 +555,7 @@ export default [
   },
   {
     topicName: "TRIES",
-    position: 0,
+    position: 6,
     started: false,
     doneQuestions: 0,
     questions: [
@@ -619,7 +619,7 @@ export default [
   },
   {
     topicName: "Stack and Queue",
-    position: 0,
+    position: 7,
     started: false,
     doneQuestions: 0,
     questions: [
@@ -763,7 +763,7 @@ export default [
   },
   {
     topicName: "String",
-    position: 0,
+    position: 8,
     started: false,
     doneQuestions: 0,
     questions: [
@@ -868,7 +868,7 @@ export default [
   },
   {
     topicName: "Binary Tree",
-    position: 0,
+    position: 9,
     started: false,
     doneQuestions: 0,
     questions: [
@@ -1060,7 +1060,7 @@ export default [
   },
   {
     topicName: "Binary Search Tree",
-    position: 0,
+    position: 10,
     started: false,
     doneQuestions: 0,
     questions: [
@@ -1180,7 +1180,7 @@ export default [
   },
   {
     topicName: "Trees Miscellaneous",
-    position: 0,
+    position: 11,
     started: false,
     doneQuestions: 0,
     questions: [
@@ -1236,7 +1236,7 @@ export default [
   },
   {
     topicName: "Graphs",
-    position: 0,
+    position: 12,
     started: false,
     doneQuestions: 0,
     questions: [
@@ -1381,7 +1381,7 @@ export default [
   },
   {
     topicName: "Dynamic Programming",
-    position: 0,
+    position: 13,
     started: false,
     doneQuestions: 0,
     questions: [
@@ -1508,4 +1508,4 @@ export default [
     ],
   },
 ];
-export const version = 100000013;
+export const version = 100000015;
