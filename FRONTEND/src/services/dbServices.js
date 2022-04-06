@@ -3,13 +3,13 @@ import QuestionData, { version } from "../sheets/striver.js";
 let db = new Localbase("db");
 window.db = db;
 db.config.debug = false;
-const localVersion = localStorage.getItem("Striverversion");
+const localVersion = localStorage.getItem("Frazversion");
 window.localVersion = localVersion;
 window.version = version;
 
 export function insertData(callback) {
   QuestionData.forEach((topic, index) => {
-    db.collection("StriverArchive").add(
+    db.collection("FrazArchive").add(
       topic,
       topic.topicName.replace(/[^A-Z0-9]+/gi, "_").toLowerCase()
     );
@@ -18,7 +18,7 @@ export function insertData(callback) {
 }
 
 export function getData(callback) {
-  db.collection("StriverArchive")
+  db.collection("FrazArchive")
     .get()
     .then((data) => {
       if (data.length === 0) {
@@ -28,7 +28,7 @@ export function getData(callback) {
           return a.position - b.position;
         });
         if (localVersion === null || localVersion === undefined) {
-          localStorage.setItem("Striverversion", 100000000);
+          localStorage.setItem("Frazversion", 100000000);
           setTimeout(() => {
             window.location.reload();
           }, 3000);
@@ -66,7 +66,7 @@ export function getData(callback) {
             });
             i++;
           }
-          localStorage.setItem("Striverversion", version);
+          localStorage.setItem("Frazversion", version);
           setTimeout(() => {
             window.location.reload();
           }, 3000);
@@ -78,7 +78,7 @@ export function getData(callback) {
 }
 
 export function getTopicData(key, callback) {
-  db.collection("StriverArchive")
+  db.collection("FrazArchive")
     .doc(key)
     .get()
     .then((document) => {
@@ -87,5 +87,5 @@ export function getTopicData(key, callback) {
 }
 
 export function updateDBData(key, updateData) {
-  db.collection("StriverArchive").doc(key).update(updateData);
+  db.collection("FrazArchive").doc(key).update(updateData);
 }
