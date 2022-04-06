@@ -37,9 +37,12 @@ export default function Features() {
             src={landingimg}
             alt=""
           />
-          <div style={{ alignItems: "center", justifyContent: "center",}}>
-            <p className="scrollText landingText" data-aos="fade-down" data-aos-duration="2000">
-
+          <div style={{ alignItems: "center", justifyContent: "center" }}>
+            <p
+              className="scrollText landingText"
+              data-aos="fade-down"
+              data-aos-duration="2000"
+            >
               <span className="animated-gradient-bg-1 animated-gradient-text-bg-1">
                 <span className="animated-gradient-fg-1 animated-gradient-text-fg-1">
                   Practice.
@@ -57,12 +60,13 @@ export default function Features() {
                   Qode.
                 </span>
               </span>
-
-
-
             </p>
-            <div style={{ width: "100%", padding: "50px 0px"}}>
-              <Button variant="primary" className="cta-btn white-btn" href="/getstarted">
+            <div style={{ width: "100%", padding: "50px 0px" }}>
+              <Button
+                variant="primary"
+                className="cta-btn white-btn"
+                href="/getstarted"
+              >
                 Get started
               </Button>
             </div>
@@ -160,7 +164,10 @@ export default function Features() {
             alignItems: "center",
           }}
         >
-          <p style={{ marginBottom: "40px", color: "azure" }} className="scrollText overhead">
+          <p
+            style={{ marginBottom: "40px", color: "azure" }}
+            className="scrollText overhead"
+          >
             We got you covered 💪
           </p>
 
@@ -244,5 +251,3 @@ export default function Features() {
     </div>
   );
 }
-
-

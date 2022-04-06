@@ -48,7 +48,7 @@ const DashboardSheet = () => {
       <CardsIndexContainer xs={1} md={3} className="g-4">
         <Col>
           <a
-            href="https://8a866e95.msc-codeportal.pages.dev/"
+            href="https://35854d8f.msc-codeportal.pages.dev/"
             style={{ style: "none", textDecoration: "none" }}
           >
             <Tilty className="tilty" glare scale={1.05} maxGlare={0.0}>
@@ -60,7 +60,7 @@ const DashboardSheet = () => {
         </Col>
         <Col>
           <a
-            href="https://8a866e95.msc-codeportal.pages.dev/"
+            href="https://c746f481.msc-codeportal.pages.dev/"
             style={{ style: "none", textDecoration: "none" }}
           >
             <Tilty className="tilty" glare scale={1.05} maxGlare={0.0}>
@@ -74,7 +74,7 @@ const DashboardSheet = () => {
         </Col>
         <Col>
           <a
-            href="https://603d2615.msc-codeportal.pages.dev/"
+            href="https://feb93ff1.msc-codeportal.pages.dev/"
             style={{ style: "none", textDecoration: "none" }}
           >
             <Tilty className="tilty" glare scale={1.05} maxGlare={0.0}>
