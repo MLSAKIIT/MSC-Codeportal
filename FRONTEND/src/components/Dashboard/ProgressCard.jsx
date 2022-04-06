@@ -196,8 +196,8 @@ export default function ProgressCard({ questionData }) {
                   <img src={profile} alt="" className="circle-img" />
                 </div>
                 <div className="intro">
-                  <h6 style={{ fontWeight: "600" }}>Welcome back,</h6>
-                  <h4 style={{ fontWeight: "600" }}>Medhavi Basera</h4>
+                  <h4 style={{ fontWeight: "600" }}>Welcome back</h4>
+                  {/* <h4 style={{ fontWeight: "600" }}>Coder</h4> */}
                 </div>
               </Card>
               <Card className="boxes-2">
