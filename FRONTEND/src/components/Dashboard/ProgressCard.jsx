@@ -173,7 +173,7 @@ export default function ProgressCard({ questionData }) {
       <div style={{ backgroundColor: "#e0e5ec" }}>
         <div className="header-background" id="target">
           <div className="header-title" data-aos="zoom-in-down">
-            <h1 className="sheet-heading"> Striver's sheet </h1>
+            <h1 className="sheet-heading"> Fraz's sheet </h1>
           </div>
         </div>
         <Container className="hero">
@@ -196,8 +196,8 @@ export default function ProgressCard({ questionData }) {
                   <img src={profile} alt="" className="circle-img" />
                 </div>
                 <div className="intro">
-                  <h6 style={{ fontWeight: "600" }}>Welcome back,</h6>
-                  <h4 style={{ fontWeight: "600" }}>Medhavi Basera</h4>
+                  <h4 style={{ fontWeight: "600" }}>Welcome back</h4>
+                  {/* <h4 style={{ fontWeight: "600" }}>Medhavi Basera</h4> */}
                 </div>
               </Card>
               <Card className="boxes-2">
