@@ -33,6 +33,10 @@ const pythonCode = `
 # your code goes here
 `;
 
+const jsCode = `
+// console.log("Hello World")
+`
+
 const files = {
   "cplusplus.cpp": {
     name: "C++",
@@ -57,6 +61,12 @@ const files = {
     language: "python",
     languageCode: "python3",
     value: pythonCode
+  },
+  "javascript.js": {
+    name: "JavaScript",
+    language: "javascript",
+    languageCode: "nodejs",
+    value: jsCode
   }
 };
 

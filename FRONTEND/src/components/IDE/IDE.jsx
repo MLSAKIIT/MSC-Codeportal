@@ -1,7 +1,9 @@
 import { React, useState } from 'react'
 import './IDE.css';
 import langScripts from '../IDE/langScripts'
-import qodeide from "../IDE/qodeide.png"
+import qodeide from "../IDE/Vector.png"
+
+import { SiCplusplus, SiC, SiJava, SiJavascript, SiPython } from 'react-icons/si';
 
 import { Row, Col, Button, Form, Dropdown } from 'react-bootstrap';
 import Editor from "@monaco-editor/react";
@@ -24,7 +26,7 @@ function IDE() {
   //fetching and storing language scripts in fileName state
   const [fileName, setFileName] = useState("cplusplus.cpp");
 
-  const [fontSize, setFontSize] = useState(12)
+  const [fontSize, setFontSize] = useState(16)
 
   const file = langScripts[fileName];
 
@@ -79,35 +81,40 @@ function IDE() {
         <img className="qodeide-logo" src={qodeide} />
 
         <div className="selection-console">
-          <Button className="run-btn" variant="outline-primary" href="/"  >Back Home</Button>
+          <Button className="run-btn console-btn" variant="outline-primary" href="/"  >Back Home</Button>
 
-          <Dropdown className="lang-selector">
+          <Dropdown className="lang-selector console-btn">
             <Dropdown.Toggle className="lang-selector-btn">
-              {fontSize}
+              Font Size : {fontSize}
             </Dropdown.Toggle>
 
             <Dropdown.Menu className="lang-selector-menu" variant="dark">
-              <Dropdown.Item onClick={() => setFileName("cplusplus.cpp")}><img src="https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png" height="22px" width="20px" style={{'margin' : '0 1rem'}}/>C++</Dropdown.Item>
-              <Dropdown.Item onClick={() => setFileName("c.c")}><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/695px-C_Programming_Language.svg.png" height="22px" width="20px" style={{'margin' : '0 1rem'}}/>C</Dropdown.Item>
-              <Dropdown.Item onClick={() => setFileName("java.java")}><img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" height="20px" width="20px" style={{'margin' : '0 1rem'}}/>JAVA</Dropdown.Item>
-              <Dropdown.Item onClick={() => setFileName("python.py")}><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" height="20px" width="20px" style={{'margin' : '0 1rem'}}/>PYTHON</Dropdown.Item>
+              <Dropdown.Item onClick={() => setFontSize(12)}>12</Dropdown.Item>
+              <Dropdown.Item onClick={() => setFontSize(14)}>14</Dropdown.Item>
+              <Dropdown.Item onClick={() => setFontSize(16)}>16</Dropdown.Item>
+              <Dropdown.Item onClick={() => setFontSize(18)}>18</Dropdown.Item>
+              <Dropdown.Item onClick={() => setFontSize(24)}>24</Dropdown.Item>
+              <Dropdown.Item onClick={() => setFontSize(36)}>36</Dropdown.Item>
             </Dropdown.Menu>
+
+
           </Dropdown>
 
-          <Dropdown className="lang-selector">
+          <Dropdown className="lang-selector console-btn">
             <Dropdown.Toggle className="lang-selector-btn">
               {(file || {}).name}
             </Dropdown.Toggle>
 
             <Dropdown.Menu className="lang-selector-menu" variant="dark">
-              <Dropdown.Item onClick={() => setFileName("cplusplus.cpp")}><img src="https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png" height="22px" width="20px" style={{'margin' : '0 1rem'}}/>C++</Dropdown.Item>
-              <Dropdown.Item onClick={() => setFileName("c.c")}><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/695px-C_Programming_Language.svg.png" height="22px" width="20px" style={{'margin' : '0 1rem'}}/>C</Dropdown.Item>
-              <Dropdown.Item onClick={() => setFileName("java.java")}><img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" height="20px" width="20px" style={{'margin' : '0 1rem'}}/>JAVA</Dropdown.Item>
-              <Dropdown.Item onClick={() => setFileName("python.py")}><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" height="20px" width="20px" style={{'margin' : '0 1rem'}}/>PYTHON</Dropdown.Item>
+              <Dropdown.Item onClick={() => setFileName("cplusplus.cpp")}><SiCplusplus style={{'margin' : '0.25rem 1rem'}}/>C++</Dropdown.Item>
+              <Dropdown.Item onClick={() => setFileName("c.c")}><SiC style={{'margin' : '0.25rem 1rem'}}/>C</Dropdown.Item>
+              <Dropdown.Item onClick={() => setFileName("java.java")}><SiJava style={{'margin' : '0.25rem 1rem'}}/>JAVA</Dropdown.Item>
+              <Dropdown.Item onClick={() => setFileName("python.py")}><SiPython style={{'margin' : '0.25rem 1rem'}}/>PYTHON</Dropdown.Item>
+              <Dropdown.Item onClick={() => setFileName("javascript.js")}><SiJavascript style={{'margin' : '0.25rem 1rem'}}/>JavaScript</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
 
-          <Button className="run-btn running" variant="success"  onClick={e => handleSubmit()}><LoaderButton />  </Button>
+          <Button className="run-btn running console-btn" variant="success"  onClick={e => handleSubmit()}><LoaderButton />  </Button>
         </div>
       </div>
 
@@ -122,6 +129,9 @@ function IDE() {
               onChange={handleEditorChange}
               theme="vs-dark"
               loading="Setting up your environment!"
+              options = {{
+                fontSize: fontSize,
+              }}
             />
           </div>
         </Col>
