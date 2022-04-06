@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Gilroy-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("../Landing//Gilroy-Bold");
+}
+@font-face {
+  font-family: "Gilroy-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("../Landing/Gilroy-Regular");
+}
+
+.tilty {
+  font-family: "Gilroy-Bold", "Space Mono", monospace;
+}
 .getstarted-dashboard {
   background-color: #acb6e52a;
   position: absolute;
@@ -41,18 +57,20 @@
   border: 0.5px solid #f2f2f2;
   border-right: none;
   padding: 30px;
+  height: 500px;
 }
 .rows2 {
   padding-top: 100px;
+  height: 500px;
+
   border: 0.5px solid #f2f2f2;
   padding: 30px;
 }
 .greet {
-  font-family: "Space Mono", monospace;
+  font-family: "Gilroy-Bold", "Space Mono", monospace;
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 10px;
-  font-family: "Work Sans", sans-serif;
 }
 .image {
   display: flex;
@@ -63,12 +81,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: "Space Mono", monospace;
+  height: 200px;
+  font-family: "Gilroy-Bold", "Space Mono", monospace;
 }
 .des-text {
   text-align: center;
   padding: 30px 0px;
   font-size: 20px;
+  height: 100px;
 }
 
 .custom-shape-divider-bottom-1637685451 {

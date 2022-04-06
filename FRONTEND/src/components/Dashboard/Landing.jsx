@@ -20,8 +20,7 @@ export default function Landing() {
             <Row>
               <Col className="des-p">
                 <div className="des-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus eu mauris maximus, porttitor mi nec.
+                  Full fledged IDE with C++, Java, Python and more support !
                 </div>
                 <Button
                   className="white-btn"
@@ -43,8 +42,7 @@ export default function Landing() {
             <Row>
               <Col className="des-p">
                 <div className="des-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus eu mauris maximus, porttitor mi nec.
+                  Practice over 1000+ questions of Data Structure and Algorithms.
                 </div>
                 <Button
                   className="white-btn"
