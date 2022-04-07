@@ -51,6 +51,17 @@
   }
 }
 
-.btn-primary:hover {
+.navbar-btn {
+  font-size: 1rem;
+  font-family: "Gilroy-Bold";
+  background-color: transparent !important;
+  color: #000;
+  font-weight: 500;
+  border-radius: 0.5rem !important;
+  border: 2px solid rgb(0, 0, 123);
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-btn:hover {
   color: #0b5ed7;
 }

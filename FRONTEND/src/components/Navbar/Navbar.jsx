@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import qode_white from "../Landing/Images/qode_white.png";
 import { Link } from "react-scroll";
 
@@ -29,7 +29,7 @@ export default function NavBar() {
 
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="ms-auto">
-                <Nav.Link href="#home" className="px-4 my-auto navText">
+                {/* <Nav.Link href="#home" className="px-4 my-auto navText">
                   Home
                 </Nav.Link>
                 <Link to="about" smooth={true}>
@@ -41,7 +41,16 @@ export default function NavBar() {
                   <Nav.Link href="#features" className="px-4 my-auto navText">
                     Features
                   </Nav.Link>
-                </Link>
+                </Link> */}
+
+                <Button
+                  variant="primary"
+                  className="navbar-btn"
+                  href="/getstarted"
+                  size="sm"
+                >
+                  Get started
+                </Button>
               </Nav>
             </Navbar.Collapse>
           </Container>
